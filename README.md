@@ -1,19 +1,18 @@
-# TÍTULO DO PROJETO
+# PROJETO DE APLICAÇÃO WEB: Studyset
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS | PUC MINAS`
+`PROJETO: DESENVOLVIMENTO DE APLICAÇÃO WEB`
+`TURMA 4|EIXO 2|2023.2`
 
-`DISCIPLINA`
-
-`SEMESTRE`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`Este trabalho procura resolver o problema da dificuldade de organização e gestão de conteúdo dos estudantes através de um site que atuomatize e simplifique alguns desses processos.`
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ademir Colares Dos Santos Junior
+* Ana Beatriz Leite de Souza
+* Israel Cunha Da Silva
+* Jefferson Freitas Da Silva
+* Leonardo Júnio De Paula
 
 ## Orientador
 
