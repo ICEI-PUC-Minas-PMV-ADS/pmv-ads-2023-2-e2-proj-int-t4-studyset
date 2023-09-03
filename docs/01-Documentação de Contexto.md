@@ -1,13 +1,14 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e disciplinas nas quais investimos tempo, buscando adquirir conhecimento e aprimorar habilidades. A vasta quantidade de material e as limitações de tempo, no entanto, transformam em um verdadeiro desafio as tarefas de administrar todas as matérias, organizar a agenda e gerenciar o tempo diário de estudo. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Este projeto busca resolver o problema da dificuldade de gerenciar a rotina de estudos e organizar os conteúdos estudados. 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+A dificuldade em administrar estas questões, muitas vezes, acaba atrapalhando o rendimento dos estudantes. Por mais que existam vários métodos para organização da rotina e das anotações, tanto analógicos (agendas de papel, cadernos, fichários) quanto digitais (aplicativos de agenda e blocos de notas, arquivos de texto etc.), seria pertinente a existência de um ambiente online interativo adequado, que pudesse convergir as necessidades de organização dos estudos. 
+
+ 
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
