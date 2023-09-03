@@ -72,7 +72,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| O sistema deve permitir a leitura imersiva (acessibilidade) | MEDIA |
 |RNF-006| A aplicação deve ser compatível com os principais navegadores do mercado | ALTA |
 |RNF-007| O sistema deve possuir um limite de caracteres para o conteúdo registrado pelo usuário | MEDIA |
-|RNF-OO8| O back-end deverá ser desenvolvido na linguagem C# | ALTA | 
+|RNF-008| O back-end deverá ser desenvolvido na linguagem C# | ALTA | 
 |RNF-009| O sistema deve permitir verificação em duas etapas, recuperação/ mudança de senha | ALTA |
 |RNF-010| O sistema deve permitir o download de relatórios e arquivos contidos no sistema apenas pelo seu respectivo dono | ALTA |
 |RNF-011| O projeto deverá ser entregue até o final do semestre | ALTA |
