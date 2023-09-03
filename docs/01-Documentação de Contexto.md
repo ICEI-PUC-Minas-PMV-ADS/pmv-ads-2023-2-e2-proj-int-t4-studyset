@@ -16,12 +16,18 @@ A dificuldade em administrar estas questões, muitas vezes, acaba atrapalhando o
  
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+<div align="justify">
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Buscando resolver tal problema, este trabalho tem como objetivo geral implementar um site de apoio à organização e gestão do conhecimento acadêmico. Por meio da aplicação, os objetivos específicos buscam auxiliar estudantes em aspectos cruciais para um bom desempenho, como: 
+
+</div>
+
+- Gerenciamento de resumos e anotações; 
+
+- Criação de cronogramas;  
+
+- Gestão do tempo de estudo. 
 
 ## Justificativa
 
