@@ -1,7 +1,7 @@
 # Introdução
 <div align="justify">
  
-Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e disciplinas nas quais investimos tempo buscando adquirir conhecimento e aprimorar habilidades. A vasta quantidade de material e as limitações de tempo, no entanto, transformam em um verdadeiro desafio as tarefas de administrar todas as matérias, organizar a agenda e gerenciar o tempo diário de estudo. 
+Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e disciplinas nas quais investimos tempo buscando adquirir conhecimento e aprimorar habilidades. A vasta quantidade de material e as limitações de tempo, no entanto, transformam em um verdadeiro desafio as tarefas de administrar todas as matérias, organizar a agenda e gerenciar o tempo de estudo diário. 
 
 </div>
 
