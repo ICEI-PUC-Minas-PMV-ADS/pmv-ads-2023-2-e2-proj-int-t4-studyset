@@ -7,10 +7,12 @@ Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e di
 
 ## Problema
 
+<div align="justify">
+ 
 Este projeto busca resolver o problema da dificuldade de gerenciar a rotina de estudos e organizar os conteúdos estudados. 
-
 A dificuldade em administrar estas questões, muitas vezes, acaba atrapalhando o rendimento dos estudantes. Por mais que existam vários métodos para organização da rotina e das anotações, tanto analógicos (agendas de papel, cadernos, fichários) quanto digitais (aplicativos de agenda e blocos de notas, arquivos de texto etc.), seria pertinente a existência de um ambiente online interativo adequado, que pudesse convergir as necessidades de organização dos estudos. 
 
+</div>
  
 
 > **Links Úteis**:
