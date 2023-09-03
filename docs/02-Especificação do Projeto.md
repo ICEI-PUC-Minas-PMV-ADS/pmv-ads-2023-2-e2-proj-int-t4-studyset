@@ -49,7 +49,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| O sistema deve permitir login de usuário | ALTA |
-|RF-002| O sistema deve permitir a recuperação de senha através de e-mail  | BAIXA |
+|RF-002| O sistema deve permitir a recuperação de senha através de e-mail | BAIXA |
 |RF-003| O sistema deve permitir o controle e organização de datas no calendário | ALTA |
 |RF-004| O sistema deve permitir o armazenamento de resumos e fichamentos | ALTA |
 |RF-005| O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas | ALTA |
@@ -59,7 +59,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-009| O sistema deve permitir o cadastro de metas de estudo por matéria/conteúdo | BAIXA |
 |RF-010| O sistema não deve permitir que as matérias escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário | ALTA |
 |RF-011| O sistema deve permitir a criação de anotações/comentários na agenda | BAIXA |
-|RF-012| O sistema deve permitir a criação de anotações/comentários na agenda | BAIXA |
+|RF-012| O sistema deve mostrar uma porcentagem para conclusão de estudos e entregas de trabalhos | BAIXA |
 
 ### Requisitos não Funcionais
 
