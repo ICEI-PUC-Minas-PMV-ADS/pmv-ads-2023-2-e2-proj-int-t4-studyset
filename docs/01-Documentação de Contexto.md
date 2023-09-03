@@ -43,4 +43,8 @@ No entanto, essa abordagem leva à descentralização das informações, o que p
 
 ## Público-Alvo
 
+<div align="justify">
+ 
 O StudySet tem como público-alvo estudantes de diversas idades, desde o ensino básico ao ensino superior em diante, assim também como pessoas autodidatas.
+
+</div>
