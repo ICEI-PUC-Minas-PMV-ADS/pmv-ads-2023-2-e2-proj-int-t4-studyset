@@ -97,21 +97,23 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                         |Prioridade |
+|ID| Restrição | Descrição da Restrição                |Prioridade |
 |--|---------------------------------------------------|----|
 |01| O sistema de permitir um limite de armazenamento máximo permitido para anotações e prints (50mb a 200mb) | ALTA |
 
 ## Regras de Negócio
 
-|ID| Restrição                                         |Proridade |
+|ID| Descrição da Regra de Negócio                     |Proridade |
 |--|---------------------------------------------------|----|
-|RN| O sistema deve impor um limite de horas de estudo máximo diário | MEDIO |
+|RN-001| O sistema deve impor um limite de horas de estudo máximo diário | MEDIO |
 
 ## Regras de Gestão
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-
+|ID| Descrição da Regras de Gestão                     |Prioridade |
+|--|---------------------------------------------------|----|
+|RG-001| O sistema deve limitar o número de matérias diário | ALTA |
+|RG-002| O sistema deve requerer ao usuário a finalização do cronograma a ser seguindo | ALTA |
+|RG-003| O controle e representação de prazos no projeto deverá utilizar Gantt | ALTA |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
