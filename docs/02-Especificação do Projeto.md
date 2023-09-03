@@ -48,24 +48,32 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001|  O sistema deve permitir login de usuário | ALTA |
-|RF-002|  O sistema deve permitir a recuperação de senha através de e-mail  | BAIXA |
-|RF-003|  O sistema deve permitir o controle e organização de datas no calendário | ALTA |
-|RF-004|  O sistema deve permitir o armazenamento de resumos e fichamentos | ALTA |
-|RF-005|  O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas | ALTA |
-|RF-006|  O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria | ALTA |
-|RF-007|  O sistema deve permitir que os usuários distribuam os cards de estudos durante os dias da semana na agenda | ALTA | 
-|RF-008|  O sistema deve gerar notificações das datas importantes e metas a serem cumpridas, assim também como os compromissos diários | BAIXA |
-|RF-009|  O sistema deve permitir o cadastro de metas de estudo por matéria/conteúdo | BAIXA |
-|RF-010|  O sistema não deve permitir que as matérias escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário | ALTA |
-|RF-011|  O sistema deve permitir a criação de anotações/comentários na agenda | BAIXA |
+|RF-001| O sistema deve permitir login de usuário | ALTA |
+|RF-002| O sistema deve permitir a recuperação de senha através de e-mail  | BAIXA |
+|RF-003| O sistema deve permitir o controle e organização de datas no calendário | ALTA |
+|RF-004| O sistema deve permitir o armazenamento de resumos e fichamentos | ALTA |
+|RF-005| O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas | ALTA |
+|RF-006| O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria | ALTA |
+|RF-007| O sistema deve permitir que os usuários distribuam os cards de estudos durante os dias da semana na agenda | ALTA | 
+|RF-008| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas, assim também como os compromissos diários | BAIXA |
+|RF-009| O sistema deve permitir o cadastro de metas de estudo por matéria/conteúdo | BAIXA |
+|RF-010| O sistema não deve permitir que as matérias escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário | ALTA |
+|RF-011| O sistema deve permitir a criação de anotações/comentários na agenda | BAIXA |
+|RF-012| O sistema deve permitir a criação de anotações/comentários na agenda | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve permitir | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve permitir destacar/ocultar o conteúdo escolhido pelo usuário | BAIXA | 
+|RNF-002| O sistema deve ser responsivo em diferentes dispositivos e tamanhos de telas | ALTA | 
+|RNF-003| O sistema deve permitir o salvamento automático | MEDIA |
+|RNF-004| O sistema deve permitir que o tempo de resposta não ultrapasse os 8 segundos | ALTA |
+|RNF-005| O sistema deve permitir a leitura imersiva (acessibilidade) | MEDIA |
+|RNF-006| A aplicação deve ser compatível com os principais navegadores do mercado | ALTA |
+|RNF-007| O sistema deve possuir um limite de caracteres para o conteúdo registrado pelo usuário | MEDIA |
+|RNF-OO8| O back-end deverá ser desenvolvido na linguagem C# | ALTA | 
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
