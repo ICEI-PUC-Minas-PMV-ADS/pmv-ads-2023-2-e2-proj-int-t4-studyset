@@ -97,7 +97,7 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição | Descrição da Restrição                |Prioridade |
+|ID| Descrição da Restrição                |Prioridade |
 |--|---------------------------------------------------|----|
 |01| O sistema de permitir um limite de armazenamento máximo permitido para anotações e prints (50mb a 200mb) | ALTA |
 
