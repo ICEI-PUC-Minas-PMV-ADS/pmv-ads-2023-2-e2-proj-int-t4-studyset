@@ -4,7 +4,7 @@
 `PROJETO: DESENVOLVIMENTO DE APLICAÇÃO WEB`
 `TURMA 4|EIXO 2|2023.2`
 
-`Este trabalho procura resolver o problema da dificuldade de organização e gestão de conteúdo dos estudantes através de um site que atuomatize e simplifique alguns desses processos.`
+`Este trabalho procura resolver o problema da dificuldade de organização e gestão de conteúdo dos estudantes através de um site que automatize e simplifique alguns desses processos.`
 
 ## Integrantes
 
