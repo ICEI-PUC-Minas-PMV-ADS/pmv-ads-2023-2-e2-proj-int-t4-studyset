@@ -31,12 +31,15 @@ Buscando resolver tal problema, este trabalho tem como objetivo geral implementa
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+<div align="justify">
+ 
+Na busca por uma melhor organização dos estudos, os estudantes recorrem a uma variedade de métodos. Por exemplo, utilizam aplicativos de agenda digital ou agendas de papel para criar eficazes cronogramas de estudo e registrar datas importantes, como provas e prazos de entrega de trabalhos acadêmicos.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Por outro lado, quando se trata de gerenciar o conhecimento e relembrar informações previamente estudadas, é comum que os estudantes guardem resumos e anotações em cadernos ou arquivos de texto, muitas vezes organizados em pastas no computador.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+No entanto, essa abordagem leva à descentralização das informações, o que pode tornar desafiadora a tarefa de manter uma organização eficiente dos estudos. Portanto, surge a necessidade evidente de uma aplicação interativa que possa unificar todas essas funcionalidades, oferecendo uma solução completa para a organização dos estudos.
+
+</div>
 
 ## Público-Alvo
 
