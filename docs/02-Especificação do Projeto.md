@@ -48,14 +48,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001|  O sistema deve permitir login de usuário | ALTA |
+|RF-002|  O sistema deve permitir a recuperação de senha através de e-mail  | BAIXA |
+|RF-003|  O sistema deve permitir o controle e organização de datas no calendário | ALTA |
+|RF-004|  O sistema deve permitir o armazenamento de resumos e fichamentos | ALTA |
+|RF-005|  O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas | ALTA |
+|RF-006|  O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-001| O sistema deve permitir | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
