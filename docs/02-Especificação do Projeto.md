@@ -103,7 +103,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Regras de Negócio
 
-|ID| Descrição da Regra de Negócio                     |Proridade |
+|ID| Descrição da Regra de Negócio                     |Prioridade |
 |--|---------------------------------------------------|----|
 |RN-001| O sistema deve impor um limite de horas de estudo máximo diário | MEDIO |
 
