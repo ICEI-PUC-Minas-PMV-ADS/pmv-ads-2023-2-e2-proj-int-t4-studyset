@@ -54,6 +54,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004|  O sistema deve permitir o armazenamento de resumos e fichamentos | ALTA |
 |RF-005|  O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas | ALTA |
 |RF-006|  O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria | ALTA |
+|RF-007|  O sistema deve permitir que os usuários distribuam os cards de estudos durante os dias da semana na agenda | ALTA | 
+|RF-008|  O sistema deve gerar notificações das datas importantes e metas a serem cumpridas, assim também como os compromissos diários | BAIXA |
+|RF-009|  O sistema deve permitir o cadastro de metas de estudo por matéria/conteúdo | BAIXA |
+|RF-010|  O sistema não deve permitir que as matérias escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário | ALTA |
+|RF-011|  O sistema deve permitir a criação de anotações/comentários na agenda | BAIXA |
 
 ### Requisitos não Funcionais
 
