@@ -97,10 +97,20 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
+|ID| Restrição                                         |Prioridade |
+|--|---------------------------------------------------|----|
+|01| O sistema de permitir um limite de armazenamento máximo permitido para anotações e prints (50mb a 200mb) | ALTA |
+
+## Regras de Negócio
+
+|ID| Restrição                                         |Proridade |
+|--|---------------------------------------------------|----|
+|RN| O sistema deve impor um limite de horas de estudo máximo diário | MEDIO |
+
+## Regras de Gestão
+
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
