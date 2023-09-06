@@ -33,11 +33,9 @@ Buscando resolver tal problema, este trabalho tem como objetivo geral implementa
 
 <div align="justify">
  
-Na busca por uma melhor organização dos estudos, os estudantes recorrem a uma variedade de métodos. Por exemplo, utilizam aplicativos de agenda digital ou agendas de papel para criar eficazes cronogramas de estudo e registrar datas importantes, como provas e prazos de entrega de trabalhos acadêmicos.
+Na busca por uma melhor organização dos estudos, os estudantes recorrem a uma variedade de métodos. Por exemplo, utilizam aplicativos de agenda digital ou agendas de papel para criar cronogramas de estudo e registrar datas importantes, como provas e prazos de entrega de trabalhos acadêmicos. Quando se trata de gerenciar o conhecimento e relembrar informações previamente estudadas, é comum que os estudantes guardem resumos e anotações em cadernos ou arquivos de texto, muitas vezes organizados em pastas no computador.
 
-Por outro lado, quando se trata de gerenciar o conhecimento e relembrar informações previamente estudadas, é comum que os estudantes guardem resumos e anotações em cadernos ou arquivos de texto, muitas vezes organizados em pastas no computador.
-
-No entanto, essa abordagem leva à descentralização das informações, o que pode tornar desafiadora a tarefa de manter uma organização eficiente dos estudos. Portanto, surge a necessidade evidente de uma aplicação interativa que possa unificar todas essas funcionalidades, oferecendo uma solução completa para a organização dos estudos.
+No entanto, essas abordagens podem levar à descentralização das informações, dificultando a tarefa de manter uma organização eficiente dos estudos. Portanto, surge a necessidade de uma aplicação interativa que possa unificar todas essas funcionalidades, oferecendo uma solução completa para a organização dos estudos.
 
 </div>
 
@@ -45,6 +43,6 @@ No entanto, essa abordagem leva à descentralização das informações, o que p
 
 <div align="justify">
  
-O StudySet tem como público-alvo estudantes de diversas idades, desde o ensino básico ao ensino superior em diante, assim também como pessoas autodidatas.
+O StudySet tem como público-alvo estudantes de diversas idades, desde o ensino básico ao ensino superior e pós-graduação, assim como pessoas autodidatas.
 
 </div>
