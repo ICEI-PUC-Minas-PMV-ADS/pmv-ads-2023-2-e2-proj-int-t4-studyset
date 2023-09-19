@@ -43,30 +43,29 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| O sistema deve permitir login de usuário. | ALTA |
 |RF-002| O sistema deve permitir a recuperação de senha através de e-mail. | BAIXA |
 |RF-003| O sistema deve permitir o controle e organização de datas no calendário. | ALTA |
-|RF-004| O sistema deve permitir o armazenamento de resumos e fichamentos. | ALTA |
-|RF-005| O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas. | ALTA |
-|RF-006| O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria. | ALTA |
-|RF-007| O sistema deve permitir que os usuários distribuam os cards de estudos durante os dias da semana na agenda. | ALTA | 
-|RF-008| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas, assim também como os compromissos diários. | BAIXA |
-|RF-009| O sistema deve permitir o cadastro de metas de estudo por matéria/conteúdo. | BAIXA |
-|RF-010| O sistema não deve permitir que as matérias escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. | ALTA |
-|RF-011| O sistema deve permitir a criação de anotações/comentários na agenda. | BAIXA |
-|RF-012| O sistema deve mostrar uma porcentagem para conclusão de estudos e entregas de trabalhos. | BAIXA |
+|RF-004| O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria. | ALTA |
+|RF-005| O sistema deve permitir o armazenamento de resumos e fichamentos. | ALTA |
+|RF-006| O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas. | ALTA |
+|RF-007| O sistema deve permitir que os usuários distribuam os cards de estudos durante os dias da semana na agenda. | ALTA |
+|RF-008| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. | ALTA |
+|RF-009| O sistema deve permitir o cadastro de metas de estudo. | BAIXA |
+|RF-010| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | BAIXA |
+|RF-011| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve permitir destacar/ocultar o conteúdo escolhido pelo usuário. | BAIXA | 
-|RNF-002| O sistema deve ser responsivo em diferentes dispositivos e tamanhos de telas. | ALTA | 
-|RNF-003| O sistema deve permitir o salvamento automático. | MEDIA |
-|RNF-004| O sistema deve permitir que o tempo de resposta não ultrapasse os 8 segundos. | ALTA |
-|RNF-005| O sistema deve permitir a leitura imersiva (acessibilidade). | MEDIA |
-|RNF-006| A aplicação deve ser compatível com os principais navegadores do mercado. | ALTA |
-|RNF-007| O sistema deve possuir um limite de caracteres para o conteúdo registrado pelo usuário. | MEDIA |
-|RNF-008| O back-end deverá ser desenvolvido na linguagem C#. | ALTA | 
-|RNF-009| O sistema deve permitir verificação em duas etapas, recuperação/ mudança de senha. | ALTA |
-|RNF-010| O sistema deve permitir o download de relatórios e arquivos contidos no sistema apenas pelo seu respectivo dono. | ALTA |
+|RNF-001| O sistema deve ser responsivo em diferentes dispositivos e tamanhos de telas. | ALTA |
+|RNF-002| A aplicação deve ser compatível com os principais navegadores do mercado. | ALTA |
+|RNF-003| O sistema deve permitir a leitura imersiva (acessibilidade). | MEDIA |
+|RNF-004| O sistema deve permitir destacar/ocultar o conteúdo escolhido pelo usuário. | BAIXA | 
+|RNF-005| O sistema deve permitir o salvamento automático. | MEDIA |
+|RNF-006| O sistema deve possuir um limite de caracteres para o conteúdo registrado pelo usuário. | MEDIA |
+|RNF-007| O sistema deve permitir verificação em duas etapas, recuperação/alteração de senha. | BAIXA |
+|RNF-008| O sistema deve permitir o acesso aos dados e relatórios apenas ao respectivo usuário. | ALTA |
+|RNF-009| O tempo de resposta do sistema não deve ultrapassar os 8 segundos. | ALTA |
+|RNF-010| O back-end deverá ser desenvolvido na linguagem C#. | ALTA | 
 |RNF-011| O projeto deverá ser entregue até o final do semestre. | ALTA |
 |RNF-012| O projeto deverá ser executado apenas pelos alunos que compõe o grupo, sem contratação de profissionais. | ALTA |
 
@@ -77,12 +76,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Descrição da Restrição                |Prioridade |
 |--|---------------------------------------------------|----|
 |01| O sistema de permitir um limite de armazenamento máximo permitido para anotações e prints (50mb a 200mb). | ALTA |
-
-## Regras de Negócio
-
-|ID| Descrição da Regra de Negócio                     |Prioridade |
-|--|---------------------------------------------------|----|
-|RN-001| O sistema deve impor um limite de horas de estudo máximo diário. | MEDIO |
 
 ## Regras de Gestão
 
@@ -95,5 +88,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
+<!-- ATUALIZAR COM A VERSÃO MAIS RECENTE GERADA NO ASTAH -->
 ![Diagrama de casos de uso 01](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/ee89cefb-c4e6-409e-aa17-b5886193c1ce)
 
