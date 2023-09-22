@@ -1,43 +1,64 @@
 # Arquitetura da Solução
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+<div align="justify">
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Nesta seção é definida a estrutura do software em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+
+</div>
 
 ## Diagrama de Classes
 
+<div align="justify">
+ 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+Aluno se refere ao usuário da aplicação, que cria/gerencia sua agenda, os cards (espaços para matérias) e sessões de estudo.
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+</div>
+
+<div align="center">
+<img width="800" src="img/diagrama_Classes.png">
+</div>
 
 ## Modelo ER (Projeto Conceitual)
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
+<div align="justify">
 
-Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
+O Modelo Entidade-Relacionamento representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
+</div>
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+<div align="center">
+<img width="900" src="img/modelo_EntidadeRelacionamento.png">
+</div>
 
 ## Projeto da Base de Dados
 
+<div align="justify">
+
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
 
-## Tecnologias Utilizadas
+<div align="center">
+<img width="800" src="img/projeto_BasedeDados.png">
+</div>
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+</div>
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+## Tecnologias Utilizadas e Hospedagem
 
-## Hospedagem
+ - IDEs de desenvolvimento: Visual Studio Code e Visual Studio 2022;
+ - Linguagens utilizadas: HTML, CSS, JavaScript, C# e SQL;
+ - Ferramenta de design: Figma;
+ - Ferramenta de Diagramação: Lucidchart;
+ - Ferramenta de versionamento: Git;
+ - Ferramenta de Gestão de Projeto: Github Projects;
+ - Plataforma para hospedagem do Site: Github Pages.
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+<!--
+ - Ferramentas de modelagem do banco de dados: [MySQL Workbench](https://www.mysql.com/products/workbench/);
+ - Framework de ORM: [Entity](https://learn.microsoft.com/en-us/ef/);
+ - Plataforma para hospedagem do banco de dados: [Microsoft SQL Server (Azure)](https://azure.microsoft.com/pt-br/products/azure-sql/?culture=pt-br&country=br#product-overview);
 
 > **Links Úteis**:
 >
@@ -45,3 +66,4 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 > - [Programação colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
 > - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+-->
