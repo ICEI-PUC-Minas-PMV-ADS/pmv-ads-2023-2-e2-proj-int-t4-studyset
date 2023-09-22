@@ -59,7 +59,7 @@ O projeto adotará uma metodologia ágil, o Scrum.
 
 ### Processo
 
-O trabalho da equipe será dividido em sprints semanais para a execução das atividades de cada etapa, previstas no Backlog do projeto. Às segundas-feiras haverá o planejamento das ações a serem desenvolvidas na sprint e aos sábados será feita a entrega das atividades propostas. 
+O trabalho da equipe será dividido em sprints semanais para a execução das atividades de cada etapa, previstas no Backlog do projeto. Às segundas-feiras será feita a entrega e revisão das atividades propostas, e em seguida haverá o planejamento das ações a serem desenvolvidas na próxima sprint. 
 
 O projeto será gerenciado através do Github Projects, utilizando um board Kanban organizado da seguinte forma:
 
