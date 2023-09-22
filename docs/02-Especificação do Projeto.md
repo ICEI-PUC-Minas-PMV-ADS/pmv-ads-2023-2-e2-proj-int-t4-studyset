@@ -88,6 +88,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-<!-- ATUALIZAR COM A VERSÃO MAIS RECENTE GERADA NO ASTAH -->
-![Diagrama de casos de uso 01](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/ee89cefb-c4e6-409e-aa17-b5886193c1ce)
-
+<div align="center">
+<img width="800" src="img/diagrama_CasosdeUso.png">
+</div>
