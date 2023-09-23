@@ -91,5 +91,6 @@ Conteúdo dentro do Resumo:
 ![Conteúdo dentro de resumo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/e387a4da-a737-4054-a659-75d1f2a12aea)
 
 Sobre:
+
 ![Sobre](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/22623c3e-5c23-436e-88d9-f64730b23e0d)
 
