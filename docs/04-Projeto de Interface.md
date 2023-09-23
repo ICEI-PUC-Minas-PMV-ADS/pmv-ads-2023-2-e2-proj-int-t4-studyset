@@ -74,7 +74,7 @@ PopUp para personalizar os ciclos de estudo:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/8563dd53-ffcf-4a1a-a488-f8dbc5416061)
 
-Página de relatórios:
+Página para gerar relatórios:
 
 ![Conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/2e6a303a-bf43-4d61-b12e-24049bc2111e)
 
