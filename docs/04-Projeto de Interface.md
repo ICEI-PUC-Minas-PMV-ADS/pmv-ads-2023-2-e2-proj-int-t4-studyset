@@ -25,9 +25,13 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 ## Wireframes
 
 
+Home page
 
-
+<div align="justify">
+ 
 ![HomePage](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/7dd85f1a-0d39-4f23-b1c6-d388ea2efa7b)
+
+</div>
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/0e8b5668-b947-474b-a609-68af27124cbf)
 
