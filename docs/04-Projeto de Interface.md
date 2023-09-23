@@ -33,6 +33,17 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/9b9d6371-0e8d-42a0-a38c-ac5be4287e89)
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/6400aa26-b1cb-4779-b725-09ea4a5d0d18)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/c702f50a-9361-42e2-8647-963d4e3a5f24)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/12fd347f-e889-46c6-bf45-03c2945d8fe2)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/8b42dff2-d217-4f1f-a421-7c517ba5ad21)
+
+
+
+
 
 
 
