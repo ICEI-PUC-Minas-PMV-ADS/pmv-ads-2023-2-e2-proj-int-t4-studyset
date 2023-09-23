@@ -35,11 +35,11 @@ Home page
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/0e8b5668-b947-474b-a609-68af27124cbf)
 
-<div align="center">
+<p align="center">
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/9b9d6371-0e8d-42a0-a38c-ac5be4287e89)
 
-</div>
+</p>
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/6400aa26-b1cb-4779-b725-09ea4a5d0d18)
 
