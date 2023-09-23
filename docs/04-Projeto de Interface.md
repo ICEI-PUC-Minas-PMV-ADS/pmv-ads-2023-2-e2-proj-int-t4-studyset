@@ -78,14 +78,18 @@ Página para gerar relatórios:
 
 ![Conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/2e6a303a-bf43-4d61-b12e-24049bc2111e)
 
-
+Tela de Cards do usuário:
 ![Tela de Cards](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/ce3a3632-ff97-43e4-b459-57cab56ccdf6)
 
+Conteúdo dentro dos cards:
 ![Card conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/6b718a0a-b5bb-4f37-ac83-31de1e61332f)
 
+Tela de Resumos:
 ![Resumos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/733de206-22c3-44cc-b1df-d6b5555b68b1)
 
+Conteúdo dentro do Resumo:
 ![Conteúdo dentro de resumo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/e387a4da-a737-4054-a659-75d1f2a12aea)
 
+Sobre:
 ![Sobre](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/22623c3e-5c23-436e-88d9-f64730b23e0d)
 
