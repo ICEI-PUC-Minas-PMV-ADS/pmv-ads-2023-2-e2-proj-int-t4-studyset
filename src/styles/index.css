@@ -1,0 +1,8 @@
+#indexContent {
+    color: var(--mediumColor);
+    margin-top: 2rem;
+}
+
+#indexContent .box {
+    background-color: var(--lightColor);
+}
