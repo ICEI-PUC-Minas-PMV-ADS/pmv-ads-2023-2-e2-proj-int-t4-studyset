@@ -34,11 +34,12 @@ body{
 
 h1 {
     font-size: var(--biggerFontSize);
+    font-weight: var(--boldWeight);
 }
 
 h2 {
-    font-size: var(--titleFontSize);
-    text-transform: uppercase;
+    font-size: var(--largeFontSize);
+    font-weight: var(--boldWeight);
 }
 
 h3 {
