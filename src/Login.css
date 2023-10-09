@@ -3,6 +3,11 @@ body{
     margin: 0;
 }
 
+.nav-bar,logo, img{
+    display: flex;
+    height: 30px;
+}
+
 .nav-bar{
     background-color: #2B2E34;
     display: flex;
@@ -31,7 +36,7 @@ body{
     padding: 50px;
     border-radius: 15px;
     color: white;
-    height: 45%;
+    height: 40%;
 }
 
 login,h1{
