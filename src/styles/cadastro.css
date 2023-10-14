@@ -1,4 +1,4 @@
-c.login {
+.login {
   display: flex;
   flex-direction: column;
   background-color: var(--darkColor);
@@ -6,7 +6,7 @@ c.login {
   padding: 50px;
   border-radius: 15px;
   color: white;
-  height: 620px;
+  height: 610px;
   width: 400px;
   margin-top: 2rem;
   justify-content: left;
@@ -43,7 +43,6 @@ c.login {
 .login button {
   background-color: var(--mediumColor);
   padding: 15px;
-  border: none;
   border-radius: 10px;
   width: 105%;
   color: white;
@@ -54,4 +53,5 @@ c.login {
 .login button:hover {
   background-color: #2471b9;
   cursor: pointer;
+  
 }
