@@ -5,7 +5,7 @@
 namespace studyset.Migrations
 {
     /// <inheritdoc />
-    public partial class M01AddTableAluno : Migration
+    public partial class M01AddTableUsuarios : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,15 +14,17 @@ namespace studyset.Migrations
                 name: "Usuarios",
                 columns: table => new
                 {
-                    Email = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     NomeUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TempoEstudo = table.Column<int>(type: "int", nullable: false),
                     MetaEstudo = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Usuarios", x => x.Email);
+                    table.PrimaryKey("PK_Usuarios", x => x.Id);
                 });
         }
 

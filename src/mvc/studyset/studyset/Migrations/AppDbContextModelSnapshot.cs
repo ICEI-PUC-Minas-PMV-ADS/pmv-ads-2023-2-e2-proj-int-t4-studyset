@@ -23,8 +23,15 @@ namespace studyset.Migrations
 
             modelBuilder.Entity("studyset.Models.Aluno", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(450)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MetaEstudo")
                         .HasColumnType("int");
@@ -40,7 +47,7 @@ namespace studyset.Migrations
                     b.Property<int>("TempoEstudo")
                         .HasColumnType("int");
 
-                    b.HasKey("Email");
+                    b.HasKey("Id");
 
                     b.ToTable("Usuarios");
                 });
