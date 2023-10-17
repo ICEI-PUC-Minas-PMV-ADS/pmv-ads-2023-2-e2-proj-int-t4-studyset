@@ -25,10 +25,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Gisele Lima | De uma aplicação que centralize meu planejamento de estudos | Criar uma rotina de aprendizagem satisfatória e organizar o conteúdo estudado |
+|Gisele Lima | De uma aplicação que centralize meu planejamento de estudos | Criar uma rotina de aprendizagem satisfatória |
 |Juliana Dantas | Criar cronogramas de estudos | Conseguir dividir minha rotina semanal e estudar todas as matérias que preciso |
-|Paulo Freitas | Organizar minha agenda | Não perder datas de provas e prazos importantes do meu curso|
-|Mário Júnior | De um espaço online onde eu consiga salvar anotações e resumos dos conteúdos estudados| Ter fácil acesso aos conteúdos quando precisar revisar, podendo pesquisar entre eles por data, temas e autores|
+|Paulo Freitas | Organizar minha agenda | Não perder datas de provas e prazos importantes do meu curso |
+|Mário Júnior | De um espaço online onde eu consiga salvar anotações e resumos dos conteúdos estudados | Ter fácil acesso aos conteúdos quando precisar revisar, podendo pesquisar entre eles por data, temas e autores |
 |Clara Silva | De ferramentas que me permitam criar metas de estudos e ver o meu desempenho| Para que eu possa me motivar dentro dos meus objetivos |
 |Raquel Soares | De uma ferramenta que me auxilie na concentração | Para que eu consiga aproveitar todo o tempo livre que possuo para meus estudos |
 
