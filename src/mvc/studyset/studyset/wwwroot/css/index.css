@@ -1,0 +1,32 @@
+﻿#indexContent {
+    color: var(--mediumColor);
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+    #indexContent .box {
+        background-color: var(--lightColor);
+        margin-top: 2rem;
+        border-radius: 5%;
+        height: 355px;
+    }
+
+    #indexContent .icon {
+        width: 100px;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+
+    #indexContent a {
+        background-color: var(--mediumColor);
+        margin-top: 1.5rem;
+        width: 240px;
+        border: none;
+    }
+
+        #indexContent a:hover {
+            background-color: #2471b9;
+        }
+
+@media (max-width: 768px) {
+}
