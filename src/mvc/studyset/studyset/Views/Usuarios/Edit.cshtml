@@ -1,0 +1,51 @@
+﻿@model studyset.Models.Aluno
+
+@{
+    ViewData["Title"] = "Editar usuário";
+}
+
+<h1>Editar usuário</h1>
+
+<h4>Aluno</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NomeUsuario" class="control-label"></label>
+                <input asp-for="NomeUsuario" class="form-control" />
+                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Senha" class="control-label"></label>
+                <input asp-for="Senha" class="form-control" />
+                <span asp-validation-for="Senha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TempoEstudo" class="control-label"></label>
+                <input asp-for="TempoEstudo" class="form-control" />
+                <span asp-validation-for="TempoEstudo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetaEstudo" class="control-label"></label>
+                <input asp-for="MetaEstudo" class="form-control" />
+                <span asp-validation-for="MetaEstudo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-primary">Voltar</a>
+                <input type="submit" value="Salvar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

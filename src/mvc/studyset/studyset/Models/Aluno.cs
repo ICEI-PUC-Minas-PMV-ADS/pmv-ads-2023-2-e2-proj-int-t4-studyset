@@ -10,6 +10,7 @@ namespace studyset.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o nome")]
+        [Display(Name = "Nome")]
         public string NomeUsuario { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o email")]
@@ -19,9 +20,11 @@ namespace studyset.Models
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o tempo disponível para estudos")]
+        [Display(Name = "Tempo disponível de estudo")]
         public int TempoEstudo { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a meta de estudos")]
+        [Display(Name = "Meta de estudo")]
         public int MetaEstudo { get; set; }
     }
 }
