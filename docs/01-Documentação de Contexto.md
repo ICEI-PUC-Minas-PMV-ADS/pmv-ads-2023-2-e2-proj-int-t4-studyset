@@ -23,7 +23,7 @@ Buscando resolver tal problema, este trabalho tem como objetivo geral implementa
 
 </div>
 
-- Gerenciamento de resumos e anotações; 
+- Gerenciamento de anotações; 
 
 - Criação de cronogramas;  
 
