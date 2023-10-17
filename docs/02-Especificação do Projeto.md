@@ -43,14 +43,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| O sistema deve permitir login de usuário. | ALTA |
 |RF-002| O sistema deve permitir a recuperação de senha através de e-mail. | BAIXA |
 |RF-003| O sistema deve permitir o controle e organização de datas no calendário. | ALTA |
-|RF-004| O sistema deve permitir a criação de diferentes espaços de estudo (cards) para cada conteúdo/matéria. | ALTA |
-|RF-005| O sistema deve permitir o armazenamento de resumos e fichamentos. | ALTA |
-|RF-006| O sistema deve permitir a busca de resumos cadastrados por meio de palavras-chaves numa barra de pesquisas. | ALTA |
-|RF-007| O sistema deve permitir que os usuários distribuam os cards de estudos durante os dias da semana na agenda. | ALTA |
-|RF-008| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. | ALTA |
-|RF-009| O sistema deve permitir o cadastro de metas de estudo. | BAIXA |
-|RF-010| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | BAIXA |
-|RF-011| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. | BAIXA |
+|RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. | ALTA |
+|RF-005| O sistema deve permitir o cadastro de metas de estudo. | BAIXA |
+|RF-006| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | BAIXA |
+|RF-007| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. | BAIXA |
 
 ### Requisitos não Funcionais
 
@@ -75,7 +71,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Descrição da Restrição                |Prioridade |
 |--|---------------------------------------------------|----|
-|01| O sistema de permitir um limite de armazenamento máximo permitido para anotações e prints (50mb a 200mb). | ALTA |
+|01| O sistema deve permitir um limite máximo de caracteres para anotações. | Média |
 
 ## Regras de Gestão
 
