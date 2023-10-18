@@ -13,7 +13,7 @@ Nesta seção é definida a estrutura do software em termos dos componentes que 
  
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-Aluno se refere ao usuário da aplicação, que cria/gerencia sua agenda, os cards (espaços para matérias) e sessões de estudo.
+Aluno se refere ao usuário da aplicação, que cria/gerencia sua agenda e sessões de estudo.
 
 </div>
 
