@@ -14,7 +14,7 @@ A interface da plataforma foi pensada de forma a atender os requisitos funcionai
 
 <div align="justify">
  
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo. Antes de realizar o login, o usuário pode acessar a página inicial e a página "Sobre" da aplicação. Após o cadastro e login o usuário é direcionado para as páginas de gerenciamento de agenda, cards e sessões de estudo, além de acessar relatório gerado pelo sistema, como desenhado abaixo:
+O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo. Antes de realizar o login, o usuário pode acessar a página inicial e a página "Sobre" da aplicação. Após o cadastro e login o usuário é direcionado para as páginas de gerenciamento de agenda e sessões de estudo, como desenhado abaixo:
 
 </div>
 
