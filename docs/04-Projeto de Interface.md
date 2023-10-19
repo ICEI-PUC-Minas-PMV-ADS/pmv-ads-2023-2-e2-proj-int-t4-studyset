@@ -36,7 +36,7 @@ Home page:
 
 Login:
  
-![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/99223d6b-2ca8-4856-8a7b-e0daf5c52dad)
+![Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/604a01ad-d926-47c8-904f-ebce79733883)
 
 
 
@@ -53,7 +53,7 @@ Menu principal:
 
 Agenda:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/c702f50a-9361-42e2-8647-963d4e3a5f24)
+![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/99223d6b-2ca8-4856-8a7b-e0daf5c52dad)
 
 PopUp para cadastro de novo evento:
 
