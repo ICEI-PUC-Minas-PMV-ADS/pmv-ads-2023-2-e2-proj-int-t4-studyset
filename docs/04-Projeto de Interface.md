@@ -51,13 +51,16 @@ Menu principal:
 
 ![menuPrincipal](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/9ade5965-7b6c-4a7f-a02b-f7e86413e345)
 
+
 Agenda:
 
 ![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/99223d6b-2ca8-4856-8a7b-e0daf5c52dad)
 
+
 PopUp para cadastro de novo evento:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/12fd347f-e889-46c6-bf45-03c2945d8fe2)
+
 
 PopUp para cadastro de agenda:
 
@@ -69,24 +72,14 @@ Pomodoro e controlhe do tempo diário:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/d8607fec-44cc-4811-be7b-3c7cbedd863f)
 
 
-PopUp para personalizar os ciclos de estudo:
+PopUp
+para personalizar os ciclos de estudo:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/8563dd53-ffcf-4a1a-a488-f8dbc5416061)
 
+
 Página para gerar relatórios:
 ![Conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/2e6a303a-bf43-4d61-b12e-24049bc2111e)
-
-Tela de Cards do usuário:
-![Tela de Cards](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/ce3a3632-ff97-43e4-b459-57cab56ccdf6)
-
-Conteúdo dentro dos cards:
-![Card conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/6b718a0a-b5bb-4f37-ac83-31de1e61332f)
-
-Tela de Resumos:
-![Resumos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/733de206-22c3-44cc-b1df-d6b5555b68b1)
-
-Conteúdo dentro do Resumo:
-![Conteúdo dentro de resumo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/e387a4da-a737-4054-a659-75d1f2a12aea)
 
 Sobre:
 <div align="center">
