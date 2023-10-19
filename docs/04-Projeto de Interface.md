@@ -36,7 +36,7 @@ Home page:
 
 Login:
  
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/0e8b5668-b947-474b-a609-68af27124cbf)
+![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/99223d6b-2ca8-4856-8a7b-e0daf5c52dad)
 
 
 
