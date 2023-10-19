@@ -49,8 +49,7 @@ PopUp para cadastro de novo usuário:
 
 Menu principal:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/6400aa26-b1cb-4779-b725-09ea4a5d0d18)
-
+![menuPrincipal](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/9ade5965-7b6c-4a7f-a02b-f7e86413e345)
 
 Agenda:
 
@@ -75,7 +74,6 @@ PopUp para personalizar os ciclos de estudo:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/8563dd53-ffcf-4a1a-a488-f8dbc5416061)
 
 Página para gerar relatórios:
-
 ![Conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/2e6a303a-bf43-4d61-b12e-24049bc2111e)
 
 Tela de Cards do usuário:
