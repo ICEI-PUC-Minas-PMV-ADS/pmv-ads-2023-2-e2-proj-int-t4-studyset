@@ -1,0 +1,74 @@
+﻿.main {
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkColor);
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    border-radius: 3%;
+    color: white;
+    width: 400px;
+    margin-top: 3rem;
+}
+
+.login label {
+   font-size: var(--mediumFontSize);
+   margin-bottom: 0.5rem;
+}
+
+    .login input {
+        padding: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        height: 2.5rem;
+        font-size: var(--smallFontSize);
+    }
+
+.login .recSenha {
+   color: white;
+   font-size: var(--smallFontSize);
+   text-decoration: underline;
+}
+
+.login .recSenha:hover {
+   color: var(--lightColor);
+}
+
+.login .recSenha:visited {
+    text-decoration: none;
+}
+
+    .login .submit {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-top: 1rem;
+    }
+
+    .login .button, a.button {
+        background-color: var(--mediumColor);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: var(--mediumFontSize);
+        margin-left: 1rem;
+        padding: 1rem;
+        height: 3.5rem;
+        width: 6.5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+    }
+
+.login .button:hover {
+    background-color: #2471b9;
+    cursor: pointer;
+}
