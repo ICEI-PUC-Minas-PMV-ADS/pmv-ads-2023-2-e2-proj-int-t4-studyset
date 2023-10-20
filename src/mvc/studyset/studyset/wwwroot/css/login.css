@@ -1,4 +1,5 @@
-﻿.main {
+﻿/*Páginas Cadastro e Login*/
+.main {
     display: flex;
     justify-content: center;
     text-transform: lowercase;
@@ -68,7 +69,40 @@
         text-decoration: none;
     }
 
-.login .button:hover {
-    background-color: #2471b9;
-    cursor: pointer;
+        .login .button:hover {
+            background-color: #2471b9;
+            cursor: pointer;
+        }
+
+    .login .deleteLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        
+    }
+
+    .login a.deleteLink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .login .deleteLink:hover {
+        color: red;
+    }
+
+/*Página Deletar Cadastro*/
+.delete {
+    text-align: center;
 }
+
+    .delete h1 {
+        font-size: var(--largeFontSize);
+    }
+
+    .delete .submit {
+        justify-content: center;
+    }
+
+    .delete .submit #deleteButton:hover {
+        background-color: red;
+    }

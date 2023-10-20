@@ -1,51 +1,34 @@
 ﻿@model studyset.Models.Aluno
 
 @{
-    ViewData["Title"] = "Remover usuário";
+    ViewData["Title"] = "Apagar conta";
 }
 
-<h1>Remover usuário</h1>
-
-<h3>Tem certeza que deseja remover este usuário?</h3>
-<div>
-    <h4>Aluno</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeUsuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NomeUsuario)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Senha)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Senha)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TempoEstudo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TempoEstudo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaEstudo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MetaEstudo)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />        
-        <a asp-action="Index" class="btn btn-primary">Voltar</a> |
-        <input type="submit" value="Remover" class="btn btn-danger" />
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="login delete">
+        <h1>Tem certeza que deseja apagar sua conta?</h1>
+        <form asp-action="Delete" class="form-group submit">
+            <input type="hidden" asp-for="Id" />
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="button">Voltar</a>
+            <input type="submit" value="apagar" class="button" id="deleteButton" />
+        </form>
+        </div>
+    </div>
+</body>

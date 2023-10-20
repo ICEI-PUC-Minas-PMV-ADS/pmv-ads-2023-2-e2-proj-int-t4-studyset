@@ -18,10 +18,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
           crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/root.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/login.css" />
-    <link rel="icon" type="image/png" href="/img/studyset_iconCinza.png" />
-    <title>Login</title>
 </head>
 <body>
     <div class="main">
@@ -55,7 +52,10 @@
             </div>
             <div class="form-group submit">
                 <a class="button" asp-action="Index">Cancelar</a>
-                <input class="button" type="submit" value="cadastrar" />
+                <input class="button" type="submit" value="salvar" />
+            </div>
+            <div class="form-group delete">
+                <a class="deleteLink" asp-action="Delete" asp-route-id="@Model.Id">Apagar conta</a>
             </div>
         </form>
     </div>
