@@ -24,6 +24,15 @@ namespace studyset.Controllers
         public async Task<IActionResult> Create(Aluno aluno)
         {
             if(ModelState.IsValid) {
+                /// Verifica se o e-mail já está cadastrado
+                var emailExistente = await _context.Usuarios.AnyAsync(u => u.Email == aluno.Email);
+
+                if (emailExistente)
+                {
+                    ModelState.AddModelError("Email", "Este e-mail já foi cadastrado.");
+                    return View(aluno);
+                }
+
                 _context.Usuarios.Add(aluno);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
@@ -53,6 +62,16 @@ namespace studyset.Controllers
 
             if (ModelState.IsValid)
             {
+                // Mantém a senha original se o campo no formulário estiver vazio
+                if (string.IsNullOrEmpty(aluno.Senha))
+                {
+                    var alunoBanco = await _context.Usuarios.FindAsync(id);
+                    if (alunoBanco != null)
+                    {
+                        aluno.Senha = alunoBanco.Senha;
+                    }
+                }
+
                 _context.Usuarios.Update(aluno);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
