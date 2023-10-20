@@ -1,0 +1,51 @@
+﻿:root {
+    --darkColor: #303030;
+    --mediumColor: #267BCA;
+    --lightColor: #A8CAEA;
+    --bgColor: white;
+    --smallFontSize: 16px;
+    --mediumFontSize: 18px;
+    --largeFontSize: 20px;
+    --titleFontSize: 24px;
+    --biggerFontSize: 32px;
+    --mediumWeight: 500;
+    --boldWeight: 700;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--mediumFontSize);
+}
+
+body {
+    background: white;
+    font-size: 100%;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: var(--biggerFontSize);
+    font-weight: var(--boldWeight);
+}
+
+h2 {
+    font-size: var(--largeFontSize);
+    font-weight: var(--boldWeight);
+}
+
+h3 {
+    font-size: var(--largeFontSize);
+}
+
+p {
+    font-size: var(--mediumFontSize);
+}

@@ -1,0 +1,18 @@
+﻿#mainNavbar {
+    background-color: var(--darkColor);
+}
+
+    #mainNavbar #logo {
+        width: 120px;
+        margin-left: 5px;
+    }
+
+    #mainNavbar a.nav-link {
+        color: white;
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+
+        #mainNavbar a.nav-link:hover {
+            color: var(--lightColor);
+        }
