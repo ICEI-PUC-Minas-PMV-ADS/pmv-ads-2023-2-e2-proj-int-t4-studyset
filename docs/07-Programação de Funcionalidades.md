@@ -9,9 +9,9 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-------------------------|--------------------------|
 |RF-001| O sistema deve permitir login de usuário. |  |
-|RF-002| O sistema deve permitir a recuperação de senha através de e-mail. |  |
-RF-003| O sistema deve permitir o controle e organização de datas no calendário |  |
-|RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. |  |
+|RF-002| O sistema deve permitir a recuperação de senha através de e-mail. | 22222222 |
+RF-003| O sistema deve permitir o controle e organização de datas no calendário | 22222222 |
+|RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. | 22222222 |
 |RF-005| O sistema deve permitir o cadastro de metas de estudo. |  |
 |RF-006| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. |  |
 |RF-007| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. |  |
