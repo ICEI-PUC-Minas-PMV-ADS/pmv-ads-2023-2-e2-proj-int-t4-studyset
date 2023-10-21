@@ -22,6 +22,7 @@ Todas as telas contarão com o padrão:
 . Body: exibirá o conteúdo das páginas selecionadas
 
 ## Tela Incial 
+
 Tela que abrange todas as informações inicias do site e contempla área para que o usuário possa fazer o seu login/cadastro
 
 ![HomePage](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/7dd85f1a-0d39-4f23-b1c6-d388ea2efa7b)
@@ -43,9 +44,11 @@ Tela de agenda é responsável po auxiliar o usuário a organizar suas demandas 
 ![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/99223d6b-2ca8-4856-8a7b-e0daf5c52dad)
 
 Cadastro de eventos do usuário 
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/12fd347f-e889-46c6-bf45-03c2945d8fe2)
 
 Cadastro de agenda 
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/8b42dff2-d217-4f1f-a421-7c517ba5ad21)
 
 Tela de pomodoro responsavél por implementar a utilização da técnica na rotimna de estudo do usuário
