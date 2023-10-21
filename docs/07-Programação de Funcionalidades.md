@@ -7,7 +7,7 @@ Implementação do sistema descrita por meio dos requisitos funcionais e/ou não
 Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
-|------|-----------------------------------------|----|
+|------|-------------------------|--------------------------|
 |RF-001| O sistema deve permitir login de usuário. |  |
 |RF-002| O sistema deve permitir a recuperação de senha através de e-mail. |  |
 RF-003| O sistema deve permitir o controle e organização de datas no calendário |  |
