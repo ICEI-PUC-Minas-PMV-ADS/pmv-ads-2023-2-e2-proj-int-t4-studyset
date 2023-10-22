@@ -20,7 +20,7 @@ CT-003: Caso de uso
 | :--- | :---: |
 | Pré-condições| Estar na tela "Homepage"|
 | Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro|
-| Dados de entrada | Login: Leo, senha: 1235 (senha correta: 1234|
+| Dados de entrada | Nome: Leo, Email: Teste@gmail.com e senha: 1235 (senha correta: 1234|
 | Resultado esperado | |
 | Avaliação (pegou/ não pegou erro) | |
 | Evidência (print screen) | |
