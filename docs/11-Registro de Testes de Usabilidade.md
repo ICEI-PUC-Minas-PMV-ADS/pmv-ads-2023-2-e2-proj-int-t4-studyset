@@ -4,5 +4,8 @@ Após realizar os testes de usabilidade, obtém-se um relatório a partir das an
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+|Caso de Teeste de Usuário |Nota de Usuário |Comentario e observações|Exito ou Falha|
+|:---:|:---:|:---:|:---:|
+|CTU-001  Consistência e padronização (navbar) |05| Mantem-se padronizado todas as telas da aplicação.|Exito|
+|CTU-002: Visibilidade de status|05| O sistema notifica as ações do usuário corretamente.|Exito|
+|CTU-003: Prevenção de erros|05| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
