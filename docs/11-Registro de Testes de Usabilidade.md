@@ -8,7 +8,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 
 |Tabela de avaliação|
-|:---:|
+
 
 |Nível de avaliação|Descrição de avaliação|
 |:---:|:---:|
