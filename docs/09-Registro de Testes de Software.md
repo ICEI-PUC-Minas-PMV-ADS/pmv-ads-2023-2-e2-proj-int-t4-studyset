@@ -16,6 +16,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 |:---:| :------: | :---: |
 
 
-| :Laboratório de Projeto de Software: |
+| **Laboratório de Projeto de Software** |
+|:---: |
 Prof: Carlos Pietrobon
 | | |
