@@ -7,9 +7,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **Testes Realizados** 	|
 |:---:	|:---:	|
 | CT-001: Cadastro de acesso do usuário | |
-
 | CT-002: Recuperação de senha	| |
-
 | CT-003: Gerenciamento de datas | |
 
 
