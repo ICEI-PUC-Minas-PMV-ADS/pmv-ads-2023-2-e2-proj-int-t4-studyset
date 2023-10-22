@@ -23,7 +23,7 @@ CT-003: Caso de uso
 | Dados de entrada | Inserir Nome: Leo, E-mail: teste@gmail.com (Email já foi cadastrado) e Senha: 1234|
 | Resultado esperado | Aviso de erro: "Este email já foi cadastrado" |
 | Avaliação (pegou/ não pegou erro) | O programa foi capaz de identificar o erro |
-| Evidência (print screen) | <a href="docs/img/erro de cadastro loign.png"> |
+| Evidência (print screen) | ![erro de cadastro loign](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/3f626bb1-8903-4620-8a64-02c543efde81) |
 
 | **Caso de Teste** | **CT-002: Login e recuperação de senha** |
 | :--- | :---: |
