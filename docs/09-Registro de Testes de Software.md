@@ -11,4 +11,6 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
 
+
 | **STUDY** |  | **20/10/2023** |
+|:---:| :---: | :--: |
