@@ -15,6 +15,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 | **STUDY** |  | **22/10/2023** |
 |:---:| :------: | :---: |
 | | |
+| :---: |
 Laboratório de Projeto de Software
 Prof: Carlos Pietrobon
 | | |
