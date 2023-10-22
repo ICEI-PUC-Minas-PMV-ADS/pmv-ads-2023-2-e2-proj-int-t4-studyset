@@ -15,7 +15,7 @@ Nesta seção são apresentados os cenários de testes utilizados na realizaçã
 |Critério de Êxito | - Os campos do formulário devem validar as informações inseridas (nome, e-mail, senha e tempo de estudo disponível) <br> - A conta deve ser criada com êxito |
 |  	|  	|
 |   |   |
-| Caso de Teste 	| CT-002: Recuperação de senha	|
+| Caso de Teste 	| CT-002: Login e recuperação de senha	|
 |Requisito Associado | RF-002: O sistema deve permitir a recuperação de senha através de e-mail |
 | Objetivo do Teste 	| Verificar se o usuário consegue recuperar a senha |
 | Passos 	| 1. Acessar a página de login <br> 2. Clicar em recuperar senha <br> 3. Inserir e-mail do usuário <br> 4. Acessar a caixa de e-mail e verificar o recebimento do protocolo |
