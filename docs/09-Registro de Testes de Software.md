@@ -41,7 +41,7 @@ CT-003: Caso de uso
 | Dados de entrada | |
 | Resultado esperado | |
 | Avaliação (pegou/ não pegou erro) | |
-| Evidência (print screen) | docs/img/erro de cadastro loign.png |
+| Evidência (print screen) | <a href="docs/img/erro de cadastro loign.png"> |
 
 
 ## Avaliação
