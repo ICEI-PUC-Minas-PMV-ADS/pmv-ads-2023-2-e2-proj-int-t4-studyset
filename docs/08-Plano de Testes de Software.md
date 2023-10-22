@@ -14,6 +14,7 @@ Nesta seção são apresentados os cenários de testes utilizados na realizaçã
 | Passos 	| 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro|
 |Critério de Êxito | - Os campos do formulário devem validar as informações inseridas (nome, e-mail, senha e tempo de estudo disponível) <br> - A conta deve ser criada com êxito |
 |  	|  	|
+|   |   |
 | Caso de Teste 	| CT-002: Recuperação de senha	|
 |Requisito Associado | RF-002: O sistema deve permitir a recuperação de senha através de e-mail |
 | Objetivo do Teste 	| Verificar se o usuário consegue recuperar a senha |
