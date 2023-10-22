@@ -11,6 +11,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | CT-003: Gerenciamento de datas |
 
 As abordagens escolhidas serão:
+| :---	|
 CT-001: Funcional
 CT-002: Caso de uso
 CT-003: Caso de uso
