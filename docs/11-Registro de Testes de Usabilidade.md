@@ -7,7 +7,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 Estabelecemos a seguinte escala para classificar os níveis de questões de usabilidade que a equipe precisa resolver:
 
 
-|Tabela de avaliação|
+##Tabela de avaliação
 
 
 |Nível de avaliação|Descrição de avaliação|
