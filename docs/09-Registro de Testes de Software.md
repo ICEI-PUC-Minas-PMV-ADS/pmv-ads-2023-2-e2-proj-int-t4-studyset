@@ -38,8 +38,7 @@ CT-003: Caso de uso
 | :--- | :---: |
 | Pré-condições| Acessar tela Agenda|
 | Procedimentos (passo à passo) | 1. Acessar Homepage <br> 2. Inserir e-mail e senha do usuário <br> 3. Na aba perfil selecionar "Agenda" <br> 4. Clicar no botão "Adicionar novo evento"|
-| Dados de entrada | | |
-| Dados de entrada | |
+| Dados de entrada | | 
 | Resultado esperado | |
 | Avaliação (pegou/ não pegou erro) | |
 | Evidência (print screen) |  |
