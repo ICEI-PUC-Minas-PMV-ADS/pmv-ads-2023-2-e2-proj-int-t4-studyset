@@ -7,41 +7,42 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste a serem testados:** 	|
 | :---	|
 | CT-001: Cadastro de acesso do usuário |
-| CT-002: Recuperação de senha	|
+| CT-002: Login e recuperação de senha	|
 | CT-003: Gerenciamento de datas |
 
 As abordagens escolhidas serão:
 | :---	|
 CT-001: Funcional
-CT-002: Caso de uso
+CT-002: Funcional
 CT-003: Caso de uso
 
-| **Caso de Teste**| **T-001: Cadastro de acesso do usuário** |
+| **Caso de Teste**| **CT-001: Cadastro de acesso do usuário** |
 | :--- | :---: |
-| Pré-condições| Estar na tela "Homepage"|
-| Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro|
-| Dados de entrada | Nome: Leo, Email: Teste@gmail.com e senha: 1235 (senha correta: 1234)|
-| Resultado esperado | Mensagem de erro: Este e-mail já foi cadastrado |
-| Avaliação (pegou/ não pegou erro) | O programa reconheceu apenas que o email já foi cadastrado. |
-| Evidência (print screen) | |
+| Pré-condições | Estar na tela Homepage |
+| Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro |
+| Dados de entrada | Inserir Nome: Leo, E-mail: teste@gmail.com (Email já foi cadastrado) e Senha: 1234|
+| Resultado esperado | Aviso de erro: "Este email já foi cadastrado" |
+| Avaliação (pegou/ não pegou erro) | O programa foi capaz de identificar o erro |
+| Evidência (print screen) | <a href="docs/img/erro de cadastro loign.png"> |
 
-| **Caso de Teste**| **T-002: Recuperação de senha** |
+| **Caso de Teste** | **CT-002: Login e recuperação de senha** |
 | :--- | :---: |
-| Pré-condições| |
-| Procedimentos (passo à passo) | |
-| Dados de entrada | |
-| Resultado esperado | |
+| Pré-condições | Estar na tela de Homepage |
+| Procedimentos (passo à passo) | 1. Acessar a Homepage e procurar botão de login <br> 2. Inserir e-mail e senha do usuário|
+| Dados de entrada | E-mail: Teste@gmail.com, senha: 1234 (senha verdadeira: 1235) |
+| Resultado esperado | Aviso de erro: Usuário ou senha inválido |
 | Avaliação (pegou/ não pegou erro) | |
 | Evidência (print screen) | |
 
-| **Caso de Teste**| **T-003: Gerenciamento de datas** |
+| **Caso de Teste**| **CT-003: Gerenciamento de datas** |
 | :--- | :---: |
-| Pré-condições| |
-| Procedimentos (passo à passo) | |
+| Pré-condições| Acessar tela Agenda|
+| Procedimentos (passo à passo) | 1. Acessar Homepage <br> 2. Inserir e-mail e senha do usuário <br> 3. Na aba perfil selecionar "Agenda" <br> 4. Clicar no botão "Adicionar novo evento"|
+| Dados de entrada | | |
 | Dados de entrada | |
 | Resultado esperado | |
 | Avaliação (pegou/ não pegou erro) | |
-| Evidência (print screen) | <a href="erro de cadastro loign.png"> |
+| Evidência (print screen) |  |
 
 
 ## Avaliação
