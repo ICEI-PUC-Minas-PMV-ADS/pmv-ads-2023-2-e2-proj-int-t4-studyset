@@ -25,6 +25,24 @@ CT-003: Caso de uso
 | Avaliação (pegou/ não pegou erro) | |
 | Evidência (print screen) | |
 
+| **Caso de Teste**| **T-002: Recuperação de senha** |
+| :--- | :---: |
+| Pré-condições| |
+| Procedimentos (passo à passo) | |
+| Dados de entrada | |
+| Resultado esperado | |
+| Avaliação (pegou/ não pegou erro) | |
+| Evidência (print screen) | |
+
+| **Caso de Teste**| **T-003: Gerenciamento de datas** |
+| :--- | :---: |
+| Pré-condições| |
+| Procedimentos (passo à passo) | |
+| Dados de entrada | |
+| Resultado esperado | |
+| Avaliação (pegou/ não pegou erro) | |
+| Evidência (print screen) | |
+
 
 ## Avaliação
 
