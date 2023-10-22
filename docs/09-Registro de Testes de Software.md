@@ -21,8 +21,8 @@ CT-003: Caso de uso
 | Pré-condições| Estar na tela "Homepage"|
 | Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro|
 | Dados de entrada | Nome: Leo, Email: Teste@gmail.com e senha: 1235 (senha correta: 1234|
-| Resultado esperado | |
-| Avaliação (pegou/ não pegou erro) | |
+| Resultado esperado | Mensagem de erro: e-mail ou senha inválido |
+| Avaliação (pegou/ não pegou erro) | A avaliação identificou que o programa reconheceu que o email já foi cadastrado. |
 | Evidência (print screen) | |
 
 | **Caso de Teste**| **T-002: Recuperação de senha** |
