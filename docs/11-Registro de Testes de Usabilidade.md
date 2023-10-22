@@ -4,7 +4,7 @@ Após realizar os testes de usabilidade, obtém-se um relatório a partir das an
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
 
-<p>**A finalidade da avaliação**</p>
+<h1>A finalidade da avaliação</h1>
 
 O objetivo principal é avaliar cuidadosamente tanto a interface como o desempenho da solução, garantindo que proporcionem uma experiência de melhor qualidade ao usuário. Isso nos permite identificar eventuais necessidades de ajustes e melhorias antes da conclusão do projeto.
 
