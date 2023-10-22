@@ -20,8 +20,8 @@ CT-003: Caso de uso
 | :--- | :---: |
 | Pré-condições| Estar na tela "Home" e apertar no botão "cadastre-se"|
 | Procedimentos (passo à passo) | 1) Acessar a página de cadastro a partir da homepage do site
-2) Preencher os dados do formulário seguindo as respectivas validações
-3) Submeter o cadastro|
+| |2) Preencher os dados do formulário seguindo as respectivas validações|
+| |3) Submeter o cadastro|
 | Dados de entrada | |
 | Resultado esperado | |
 | Avaliação (pegou/ não pegou erro) | |
