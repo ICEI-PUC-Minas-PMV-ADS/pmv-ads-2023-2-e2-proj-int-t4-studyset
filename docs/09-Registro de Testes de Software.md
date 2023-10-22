@@ -23,9 +23,8 @@ CT-003: Caso de uso
 | Dados de entrada | Nome: Leo, Email: Teste@gmail.com e senha: 1235 (senha correta: 1234|
 | Resultado esperado | Mensagem de erro: Este e-mail já foi cadastrado |
 | Avaliação (pegou/ não pegou erro) | O programa reconheceu apenas que o email já foi cadastrado. |
-| Evidência (print screen) |<div>
-<img width="300" src="img/erro de cadastro loign.png">
-</div> |
+| Evidência (print screen) |
+<img width="300" src="img/erro de cadastro loign.png"> |
 
 | **Caso de Teste**| **T-002: Recuperação de senha** |
 | :--- | :---: |
