@@ -9,7 +9,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 
 
-<i>Tabela de Avaliação
+(*Tabela de Avaliação*)
 |Nível de avaliação|Descrição de avaliação|
 |:---:|:---:|
 |01|Não há preocupações com usabilidade.|
