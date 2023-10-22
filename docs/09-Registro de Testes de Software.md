@@ -9,6 +9,11 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | CT-001: Cadastro de acesso do usuário |
 | CT-002: Login e recuperação de senha	|
 | CT-003: Gerenciamento de datas |
+| CT-004: Restrição no cadastro de cronograma |
+| CT-005:  Cadastro de metas |
+| CT-006:  Notificações de metas |
+| CT-007:  Visualização de progresso |
+
 
 As abordagens escolhidas serão:
 | :---	|
@@ -38,9 +43,7 @@ CT-003: Caso de uso
 | :--- | :---: |
 | Pré-condições| Acessar tela Agenda|
 | Procedimentos (passo à passo) | 1. Acessar Homepage <br> 2. Inserir e-mail e senha do usuário <br> 3. Na aba perfil selecionar "Agenda" <br> 4. Clicar no botão "Adicionar novo evento"|
-| Dados de entrada | | 
 | Resultado esperado | |
-| Avaliação (pegou/ não pegou erro) | |
 | Evidência (print screen) |  |
 
 
