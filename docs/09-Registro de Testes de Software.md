@@ -12,10 +12,10 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
 
 
-| **STUDY** |  | **22/10/2023** |
+| **STUDYSET** |  | **22/10/2023** |
 |:---:| :------: | :---: |
-| | |
-| :---: |
+
+
 Laboratório de Projeto de Software
 Prof: Carlos Pietrobon
 | | |
