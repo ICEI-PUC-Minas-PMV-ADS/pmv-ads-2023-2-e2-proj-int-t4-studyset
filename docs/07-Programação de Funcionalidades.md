@@ -8,7 +8,7 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-------------------------|--------------------------|
-|RF-001| O sistema deve permitir login de usuário. |  |
+|RF-001| O sistema deve permitir login de usuário. | Views/Login.cshtml |
 |RF-002| O sistema deve permitir a recuperação de senha através de e-mail. |  |
 RF-003| O sistema deve permitir o controle e organização de datas no calendário |  |
 |RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. |  |
