@@ -24,7 +24,7 @@ CT-003: Caso de uso
 | Resultado esperado | Mensagem de erro: Este e-mail já foi cadastrado |
 | Avaliação (pegou/ não pegou erro) | O programa reconheceu apenas que o email já foi cadastrado. |
 | Evidência (print screen) |
-<img width="300" src="img/erro de cadastro loign.png"> |
+<link href="/css/root.css" />docs/img/erro de cadastro loign.png> |
 
 | **Caso de Teste**| **T-002: Recuperação de senha** |
 | :--- | :---: |
