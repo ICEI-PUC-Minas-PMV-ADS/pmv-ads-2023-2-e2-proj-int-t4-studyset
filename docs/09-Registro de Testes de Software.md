@@ -18,7 +18,7 @@ CT-003: Caso de uso
 
 | **Caso de Teste**| **T-001: Cadastro de acesso do usuário** |
 | :--- | :---: |
-| Pré-condições| |
+| Pré-condições| Estar na tela "Home" e apertar no botão "cadastre-se"|
 | Procedimentos (passo à passo) | |
 | Dados de entrada | |
 | Resultado esperado | |
