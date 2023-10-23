@@ -25,9 +25,20 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |05|Enfrentamos problemas que exigem correção imediata, impactando a entrega da funcionalidade.|
 
 
-|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
-|:---:|:---:|:---:|:---:|
-|CTU-001  Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação.|Exito|
-|CTU-002: Visibilidade de status|03| O sistema notifica as ações do usuário corretamente.|Exito|
-|CTU-003: Prevenção de erros|01| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
-
+|Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
+|:---:|:---:|:---:|:---:|:---:|
+|Usuário 01|CTU-001:  Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação.|Exito|
+|Usuário 01|CTU-002: Visibilidade de status|03| O sistema notifica as ações do usuário corretamente.|Exito|
+|Usuário 01|CTU-003: Prevenção de erros|01| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
+|||
+|||
+|||
+|Usuário 02|CTU-001  Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação.|Exito|
+|Usuário 02|CTU-002: Visibilidade de status|03| O sistema notifica as ações do usuário corretamente.|Exito|
+|Usuário 02|CTU-003: Prevenção de erros|01| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
+|||
+|||
+|||
+|Usuário 01|CTU-003:  Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação.|Exito|
+|Usuário 01|CTU-003: Visibilidade de status|03| O sistema notifica as ações do usuário corretamente.|Exito|
+|Usuário 01|CTU-003: Prevenção de erros|01| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
