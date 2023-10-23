@@ -36,14 +36,14 @@ CT-003: Caso de uso
 | Procedimentos (passo à passo) | 1. Acessar a Homepage e procurar botão de login <br> 2. Inserir e-mail e senha do usuário|
 | Dados de entrada | E-mail: Teste@gmail.com, senha: 1234 (senha verdadeira: 1235) |
 | Resultado esperado | Aviso de erro: Usuário ou senha inválido |
-| Avaliação (pegou/ não pegou erro) | |
+| Avaliação (pegou/ não pegou erro) | INCOMPLETADO|
 | Evidência (print screen) | |
 
 | **Caso de Teste**| **CT-003: Gerenciamento de datas** |
 | :--- | :---: |
 | Pré-condições| Acessar tela Agenda|
 | Procedimentos (passo à passo) | 1. Acessar Homepage <br> 2. Inserir e-mail e senha do usuário <br> 3. Na aba perfil selecionar "Agenda" <br> 4. Clicar no botão "Adicionar novo evento"|
-| Resultado esperado | |
+| Resultado esperado | INCOMPLETO|
 | Evidência (print screen) |  |
 
 
