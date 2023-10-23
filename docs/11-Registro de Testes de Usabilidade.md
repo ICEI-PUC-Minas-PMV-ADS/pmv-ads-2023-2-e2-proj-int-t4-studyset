@@ -30,7 +30,9 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |Usuário 01|CTU-001:  Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação.|Exito|
 |Usuário 01|CTU-002: Visibilidade de status|03| O sistema notifica as ações do usuário corretamente.|Exito|
 |Usuário 01|CTU-003: Prevenção de erros|01| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
+
 <br>
+
 |Usuário 02|CTU-001  Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação.|Exito|
 |Usuário 02|CTU-002: Visibilidade de status|03| O sistema notifica as ações do usuário corretamente.|Exito|
 |Usuário 02|CTU-003: Prevenção de erros|01| Antes de excluir algun dado o usuário e notificado e é confirmado sobre sua descisão.|Exito| 
