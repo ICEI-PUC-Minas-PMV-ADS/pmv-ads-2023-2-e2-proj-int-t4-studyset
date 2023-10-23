@@ -33,7 +33,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 02|CTU-001  Consistência e padronização (navbar) |01|-----------------|Exito|
+|Usuário 02|CTU-001  Consistência e padronização (navbar) |01| |Exito|
 |Usuário 02|CTU-002: Visibilidade de status|03| O sistema não me notificou de forma clara algumas ações |Exito|
 |Usuário 02|CTU-003: Prevenção de erros|01|Fui notificado sempre que iria excluir algum dado |Exito| 
 
@@ -41,4 +41,4 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 03|CTU-001:  Consistência e padronização (navbar) |01| O sistema está com todas as telas padronizadas|Exito|
 |Usuário 03|CTU-002: Visibilidade de status|03| O sistema notificou as minhas ações|Exito|
-|Usuário 03|CTU-003: Prevenção de erros|01| ----------------------------------------|Exito| 
+|Usuário 03|CTU-003: Prevenção de erros|01| |Exito| 
