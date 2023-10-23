@@ -34,7 +34,7 @@ CT-003: Caso de uso
 | :--- | :---: |
 | Pré-condições | Estar na tela de Homepage |
 | Procedimentos (passo à passo) | 1. Acessar a Homepage e procurar botão de login <br> 2. Inserir e-mail e senha do usuário|
-| Dados de entrada | E-mail: Teste@gmail.com, senha: 1234 (senha verdadeira: 1235) |
+| Dados de entrada | E-mail: Leonardojunio@gmail.com, senha: 1234 (senha verdadeira: 1235) |
 | Resultado esperado | Aviso de erro: Usuário ou senha inválido |
 | Avaliação (pegou/ não pegou erro) | EM PROCESSO|
 | Evidência (print screen) | |
