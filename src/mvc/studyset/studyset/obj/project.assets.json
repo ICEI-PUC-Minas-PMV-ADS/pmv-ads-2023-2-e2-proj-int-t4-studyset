@@ -11368,19 +11368,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anabm\\.nuget\\packages\\": {}
+    "C:\\Users\\55929\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset-main\\src\\mvc\\studyset\\studyset\\studyset.csproj",
+      "projectUniqueName": "F:\\_studySetMvc\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\studyset.csproj",
       "projectName": "studyset",
-      "projectPath": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset-main\\src\\mvc\\studyset\\studyset\\studyset.csproj",
-      "packagesPath": "C:\\Users\\anabm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset-main\\src\\mvc\\studyset\\studyset\\obj\\",
+      "projectPath": "F:\\_studySetMvc\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\studyset.csproj",
+      "packagesPath": "C:\\Users\\55929\\.nuget\\packages\\",
+      "outputPath": "F:\\_studySetMvc\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anabm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\55929\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11388,6 +11388,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
