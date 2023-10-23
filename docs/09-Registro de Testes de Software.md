@@ -25,10 +25,10 @@ CT-003: Caso de uso
 | :--- | :---: |
 | Pré-condições | Estar na tela Homepage |
 | Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro |
-| Dados de entrada | Inserir nome: Leo, e-mail: teste@gmail.com (Email já foi cadastrado) e senha: 1234|
+| Dados de entrada | Inserir nome: Leo, e-mail: Leonardojunio@gmail.com (Email já foi cadastrado) e senha: 1234|
 | Resultado esperado | Aviso de erro: "Este email já foi cadastrado" |
 | Avaliação (pegou/ não pegou erro) | O programa foi capaz de identificar o erro |
-| Evidência (print screen) |![Erro de cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/130614485/b58e6014-73c8-4ee5-a70d-9d4516364ace)
+| Evidência (print screen) | ![Erro de cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/130614485/b58e6014-73c8-4ee5-a70d-9d4516364ace)
  <br> ![usuarios cadastrados ](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/130614485/32bf34f1-f669-4adf-8d6c-031d8b036473) |
 
 | **Caso de Teste** | **CT-002: Login e recuperação de senha** |
