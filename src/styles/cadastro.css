@@ -1,0 +1,57 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkColor);
+  margin-inline: auto;
+  padding: 50px;
+  border-radius: 15px;
+  color: white;
+  height: 610px;
+  width: 400px;
+  margin-top: 2rem;
+  justify-content: left;
+}
+
+.login h1 {
+  font-size: var(--largeFontSize);
+  margin-bottom: 1rem;
+}
+
+.login input {
+  width: 105%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.login .recSenha {
+  color: white;
+  font-size: var(--smallFontSize);
+  text-decoration: underline;
+}
+
+.login .recSenha:hover {
+  color: var(--lightColor);
+}
+
+.login .recSenha:visited {
+  text-decoration: none;
+}
+
+.login button {
+  background-color: var(--mediumColor);
+  padding: 15px;
+  border-radius: 10px;
+  width: 105%;
+  color: white;
+  font-size: var(--mediumFontSize);
+  margin-top: 1.3rem;
+}
+
+.login button:hover {
+  background-color: #2471b9;
+  cursor: pointer;
+  
+}
