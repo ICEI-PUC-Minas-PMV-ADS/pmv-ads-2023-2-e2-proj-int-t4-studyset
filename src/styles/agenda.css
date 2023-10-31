@@ -1,0 +1,13 @@
+main {
+    background-color: var(--lightColor);
+    margin: 30px;
+}
+
+#secondNavbar a.nav-link {
+    color: black;
+    font-size: var(--smallFontSize);
+}
+
+#secondNavbar .icon {
+    margin-right: 0.3rem;
+}
