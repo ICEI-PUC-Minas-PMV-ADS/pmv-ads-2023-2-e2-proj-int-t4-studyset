@@ -7,9 +7,14 @@ Implementação do sistema descrita por meio dos requisitos funcionais e/ou não
 Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | tarefas.shtml / tarefas.cs / controllertarefas.cs | 
-|RF-002| Emitir um relatório de tarefas no mês   | relatorio.shtml |
+|------|-------------------------|--------------------------|
+|RF-001| O sistema deve permitir login de usuário. | Views/Login.cshtml |
+|RF-002| O sistema deve permitir a recuperação de senha através de e-mail. |  |
+RF-003| O sistema deve permitir o controle e organização de datas no calendário |  |
+|RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. |  |
+|RF-005| O sistema deve permitir o cadastro de metas de estudo. |  |
+|RF-006| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. |  |
+|RF-007| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. |  |
 
 # Instruções de acesso
 

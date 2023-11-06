@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Studyset";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body>
+    <section id="indexContent" class="container justify-content-center">
+        <h1>Dê um up nos seus estudos!</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="box col-md-3 mx-1 py-4">
+                <h2>Gerencie seu tempo</h2>
+                <img class="icon" src="/img/icon_Relogio.png" alt="" />
+                <p>
+                    Use o método pomodoro para ajudar na sua rotina de estudo diário
+                </p>
+            </div>
+            <div class="box col-md-3 mx-1 py-4">
+                <h2>Gerencie datas importantes</h2>
+                <img class="icon" src="/img/icon_Agenda.png" alt="" />
+                <p>Personalize sua agenda com datas importantes e receba lembretes</p>
+            </div>
+            <div class="box col-md-3 mx-1 py-4">
+                <h2>Gerencie seu conteúdo</h2>
+                <img class="icon" src="/img/icon_Nota.png" alt="" />
+                <p>Crie anotações e gerencie conteúdo de forma simples e prática</p>
+            </div>
+        </div>
+        <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Usuarios" asp-action="Create">cadastre-se</a>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+</html>
+

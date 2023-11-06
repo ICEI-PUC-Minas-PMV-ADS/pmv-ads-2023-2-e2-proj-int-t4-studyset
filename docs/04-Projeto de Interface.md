@@ -14,12 +14,12 @@ A interface da plataforma foi pensada de forma a atender os requisitos funcionai
 
 <div align="justify">
  
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo. Antes de realizar o login, o usuário pode acessar a página inicial e a página "Sobre" da aplicação. Após o cadastro e login o usuário é direcionado para as páginas de gerenciamento de agenda, cards e sessões de estudo, além de acessar relatório gerado pelo sistema, como desenhado abaixo:
+O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo. Antes de realizar o login, o usuário pode acessar a página inicial e a página "Sobre" da aplicação. Após o cadastro e login o usuário é direcionado para as páginas de gerenciamento de agenda e sessões de estudo, como desenhado abaixo:
 
 </div>
 
 <div align="center">
-<img width="600" src="img/diagrama_Fluxo.png">
+<img width= "600" src="img/diagrama_Fluxo.png">
 </div>
 
 ## Wireframes
@@ -36,7 +36,7 @@ Home page:
 
 Login:
  
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/0e8b5668-b947-474b-a609-68af27124cbf)
+![Login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/604a01ad-d926-47c8-904f-ebce79733883)
 
 
 
@@ -49,12 +49,13 @@ PopUp para cadastro de novo usuário:
 
 Menu principal:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/6400aa26-b1cb-4779-b725-09ea4a5d0d18)
+![menuPrincipal](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/9ade5965-7b6c-4a7f-a02b-f7e86413e345)
 
 
 Agenda:
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/c702f50a-9361-42e2-8647-963d4e3a5f24)
+![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129237541/99223d6b-2ca8-4856-8a7b-e0daf5c52dad)
+
 
 PopUp para cadastro de novo evento:
 
@@ -70,25 +71,14 @@ Pomodoro e controlhe do tempo diário:
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/d8607fec-44cc-4811-be7b-3c7cbedd863f)
 
 
-PopUp para personalizar os ciclos de estudo:
+PopUp
+para personalizar os ciclos de estudo:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/8563dd53-ffcf-4a1a-a488-f8dbc5416061)
 
+
 Página para gerar relatórios:
-
 ![Conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/19398297/2e6a303a-bf43-4d61-b12e-24049bc2111e)
-
-Tela de Cards do usuário:
-![Tela de Cards](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/ce3a3632-ff97-43e4-b459-57cab56ccdf6)
-
-Conteúdo dentro dos cards:
-![Card conteúdo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/6b718a0a-b5bb-4f37-ac83-31de1e61332f)
-
-Tela de Resumos:
-![Resumos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/733de206-22c3-44cc-b1df-d6b5555b68b1)
-
-Conteúdo dentro do Resumo:
-![Conteúdo dentro de resumo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/127978114/e387a4da-a737-4054-a659-75d1f2a12aea)
 
 Sobre:
 <div align="center">
