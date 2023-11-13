@@ -1,0 +1,297 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\studyset.bundle.scp.css",
+      "PackagePath": "staticwebassets\\studyset.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\root.css",
+      "PackagePath": "staticwebassets\\css\\root.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\img\\icon_Agenda.png",
+      "PackagePath": "staticwebassets\\img\\icon_Agenda.png"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\img\\icon_Nota.png",
+      "PackagePath": "staticwebassets\\img\\icon_Nota.png"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\img\\icon_Relogio.png",
+      "PackagePath": "staticwebassets\\img\\icon_Relogio.png"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\img\\studyset_logoBranco.png",
+      "PackagePath": "staticwebassets\\img\\studyset_logoBranco.png"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.studyset.props",
+      "PackagePath": "build\\studyset.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.studyset.props",
+      "PackagePath": "buildMultiTargeting\\studyset.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.studyset.props",
+      "PackagePath": "buildTransitive\\studyset.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.studyset.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

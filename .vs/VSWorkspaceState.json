@@ -1,12 +1,12 @@
 {
-<<<<<<< HEAD
-  "ExpandedNodes": [],
-=======
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\mvc",
+    "\\src\\mvc\\studyset",
+    "\\src\\mvc\\studyset\\studyset",
+    "\\src\\mvc\\studyset\\studyset\\Models"
   ],
-  "SelectedNode": "\\src\\mvc",
->>>>>>> 6ab5869227c83461e8f8481e85b687eb1817c7a5
+  "SelectedNode": "\\src\\mvc\\studyset\\studyset\\Models\\Aluno.cs",
   "PreviewInSolutionExplorer": false
 }

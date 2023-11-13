@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace studyset.Models
@@ -26,5 +27,7 @@ namespace studyset.Models
         [Required(ErrorMessage = "Obrigatório informar a meta de estudos")]
         [Display(Name = "Meta de estudo")]
         public int MetaEstudo { get; set; }
+
+        public ICollection<Evento> Agenda { get; set; }
     }
 }
