@@ -10,7 +10,7 @@ namespace studyset.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o título do evento")]
-        [Display(Name = "Nome do evento")]
+        [Display(Name = "Evento")]
         public string NomeEvento { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a data do evento")]

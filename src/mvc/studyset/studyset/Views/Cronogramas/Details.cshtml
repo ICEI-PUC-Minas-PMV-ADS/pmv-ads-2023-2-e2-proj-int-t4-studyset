@@ -1,0 +1,36 @@
+﻿@model studyset.Models.Cronograma
+
+@{
+    ViewData["Title"] = "Visualizar dados do cronograma";
+}
+
+<h1>Visualizar dados</h1>
+
+<div>
+    <h4>Cronograma</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ConteudoEstudo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ConteudoEstudo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataEstudo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataEstudo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Aluno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Aluno.NomeUsuario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-info">Voltar</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a>
+</div>

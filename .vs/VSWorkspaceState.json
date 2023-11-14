@@ -7,6 +7,6 @@
     "\\src\\mvc\\studyset\\studyset",
     "\\src\\mvc\\studyset\\studyset\\Models"
   ],
-  "SelectedNode": "\\src\\mvc\\studyset\\studyset\\Models\\Aluno.cs",
+  "SelectedNode": "\\src\\mvc\\studyset\\studyset\\Models\\AppDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

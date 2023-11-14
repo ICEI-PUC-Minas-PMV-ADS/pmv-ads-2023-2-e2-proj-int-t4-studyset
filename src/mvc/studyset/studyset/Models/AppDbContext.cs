@@ -10,5 +10,7 @@ namespace studyset.Models
         public DbSet<Aluno> Usuarios { get; set; }
 
         public DbSet<Evento> Agenda { get; set; }
+
+        public DbSet<Cronograma> Cronogramas { get; set; }
     }
 }
