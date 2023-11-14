@@ -1,0 +1,51 @@
+﻿@model studyset.Models.Sessao
+
+@{
+    ViewData["Title"] = "Criar sessão de estudo";
+}
+
+<h1>Criar sessão de estudo</h1>
+
+<h4>Sessão de estudo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TituloSessao" class="control-label"></label>
+                <input asp-for="TituloSessao" class="form-control" />
+                <span asp-validation-for="TituloSessao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataSessao" class="control-label"></label>
+                <input asp-for="DataSessao" class="form-control" />
+                <span asp-validation-for="DataSessao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InicioSessao" class="control-label"></label>
+                <input asp-for="InicioSessao" class="form-control" type="time" value="@((Model != null && Model.InicioSessao != DateTime.MinValue) ? Model.InicioSessao.ToString("HH:mm") : "")" />
+                <span asp-validation-for="InicioSessao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FimSessao" class="control-label"></label>
+                <input asp-for="FimSessao" class="form-control" type="time" value="@((Model != null && Model.FimSessao != DateTime.MinValue) ? Model.FimSessao.ToString("HH:mm") : "")" />
+                <span asp-validation-for="FimSessao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlunoId" class="control-label"></label>
+                <select asp-for="AlunoId" class="form-control" asp-items="ViewBag.AlunoId"></select>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
+                <input type="submit" value="Salvar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
