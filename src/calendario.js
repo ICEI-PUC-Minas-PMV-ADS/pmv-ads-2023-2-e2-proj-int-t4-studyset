@@ -53,3 +53,16 @@ prevNextIcon.forEach(icon => {
         renderCalendar();
     });
 });
+
+// Cronograma
+const notes = document.querySelectorAll('.note');
+
+  notes.forEach(note => {
+    note.addEventListener('input', function () {
+      const maxWords = parseInt(this.getAttribute('data-max-words'), 10);
+      const words = this.innerText.split(/\s+/).filter(word => word !== '');
+      if (words.length > maxWords) {
+        this.innerText = words.slice(0, maxWords).join(' ');
+      }
+    });
+  });
