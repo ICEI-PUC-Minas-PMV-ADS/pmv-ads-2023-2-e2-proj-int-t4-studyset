@@ -233,8 +233,11 @@ body {
   }
 
 
-
-
+  .titulosH2{
+    margin-left: 15rem;
+    font-size: 26px;
+    font-family: sans-serif;
+  }
 
   .formContainerGrande {
     background-color: #333333;
@@ -242,4 +245,47 @@ body {
     width: 400px;
     padding: 20px;
     border-radius: 10px;
+    margin-left: 15rem;
 }
+
+.formBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #0d6efd;
+    box-shadow: 1px 1px #ccc;
+  }
+
+  .btnArea {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.inputText {
+    border-radius: 5px;
+    display: block;
+    height: 4.5vh;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0.5px solid #d9d9d9;
+  }
+
+  /* .titulosH2{
+    text-align: center;
+    margin:50px 0px 50px 0px;
+    font-size: var(--titleFontSizeBiger);
+    color: var(--titleColorDark);
+  
+  }
+  
+  .titulosH3{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+  } */
