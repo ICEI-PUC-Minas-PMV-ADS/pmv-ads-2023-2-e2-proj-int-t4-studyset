@@ -231,3 +231,15 @@ body {
     background: none;
     outline: none;
   }
+
+
+
+
+
+  .formContainerGrande {
+    background-color: #333333;
+    color: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
