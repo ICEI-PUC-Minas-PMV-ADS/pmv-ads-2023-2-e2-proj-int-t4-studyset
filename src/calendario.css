@@ -277,6 +277,17 @@ body {
     border: 0.5px solid #d9d9d9;
   }
 
+  .listaDetalhes {
+    width: 30%;
+    height: 40vh;
+    overflow: hidden scroll;
+    background-color: rgb(157, 157, 158);
+    border-radius: 5px;
+    margin: 30px;
+    float: right;
+    display: flexbox;
+}
+
   /* .titulosH2{
     text-align: center;
     margin:50px 0px 50px 0px;

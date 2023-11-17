@@ -55,6 +55,7 @@
                             <ul class="days"></ul>
                         </div>
                     </div>
+                    
             </aside>
             <nav>
                 <div class="container">
@@ -126,47 +127,35 @@
         </div>
             <h2 class="titulosH2">Adicionar novo evento</h2>
 
+          <div id="partedomeio">
             <div id="containerGrande">
-                <form
-                action=""
-                id="eventos"
-                class="formContainer formContainerGrande">
+                <form action=""id="eventos" class="formContainer formContainerGrande">
 
-                <div id="campoTitulo">
-                    <label for="cargoTitulo">Título do evento:</label>
-                    <input
-                    type="text"
-                    name="cargoTitulo"
-                    id="Titulo"
-                    class="inputText inputData"/>
-                </div>
+                  <div id="campoTitulo">
+                      <label for="cargoTitulo">Título do evento:</label>
+                      <input type="text" name="cargoTitulo" id="Titulo" class="inputText inputData"/>
+                  </div>
+                
+                  <div id="campoTipo">
+                      <label for="Tipo" class="labelForm">Tipo:</label>
+                      <input type="text" name="areaTipo" id="areaTipo" class="inputText inputData"/>
+                  </div>
     
-                <div id="campoTipo">
-                    <label for="Tipo" class="labelForm">Tipo:</label>
-                    <input
-                    type="text"
-                    name="areaTipo"
-                    id="areaTipo"
-                    class="inputText inputData"/>
-                </div>
-    
-                <div id="campoRelevancia">
-                    <label for="relevancia" class="">Relevância:</label>
-                    <input
-                    type="text"
-                    name="instituicaoAtuacao"
-                    id="instituicaoAtuacao"
-                    class="inputText inputData"/>
-                </div>
-    
-                <div id="btnArea" class="btnArea">
-                    <button id="btnSalvarXp" class="formBtn">salvar</button>
-                    <button id="btnLimpar" type="reset" class="formBtn">limpar</button>
-                </div>
+                  <div id="campoRelevancia">
+                      <label for="relevancia" class="">Relevância:</label>
+                      <input type="text" name="instituicaoAtuacao" id="instituicaoAtuacao" class="inputText inputData"/>
+                  </div>
+                
+                  <div id="btnArea" class="btnArea">
+                      <button id="btnSalvarXp" class="formBtn">salvar</button>
+                      <button id="btnLimpar" type="reset" class="formBtn">limpar</button>
+                  </div>
                 </form>
-    
+                
                 <div class="listaExp listaDetalhes" id="listaDetalhes"></div>
-            </div>
+              </div>
+
+          </div>
         <footer>
             <p>Footer</p>
         </footer>
