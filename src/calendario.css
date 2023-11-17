@@ -175,7 +175,7 @@ footer {
 }
 
 /* Cronograma começa aqui */
-  
+  s
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -184,7 +184,7 @@ body {
   .container2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     background-color: #2B2E34;
   }
 
@@ -256,7 +256,8 @@ body {
     text-align: center;
     margin-left: 5px;
     background-color: #0d6efd;
-    box-shadow: 1px 1px #ccc;
+    border: none;
+    color: #fff;
   }
 
   .btnArea {
@@ -278,14 +279,13 @@ body {
   }
 
   .listaDetalhes {
-    width: 30%;
-    height: 40vh;
+    width: 29%;
+    height: 39vh;
     overflow: hidden scroll;
     background-color: rgb(157, 157, 158);
     border-radius: 5px;
-    margin: 30px;
     float: right;
-    display: flexbox;
+    margin-right: 10rem;
 }
 
   /* .titulosH2{
