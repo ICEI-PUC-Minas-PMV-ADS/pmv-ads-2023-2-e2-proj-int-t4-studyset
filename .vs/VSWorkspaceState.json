@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\mvc",
-    "\\src\\mvc\\studyset",
-    "\\src\\mvc\\studyset\\studyset",
-    "\\src\\mvc\\studyset\\studyset\\Models",
-    "\\src\\mvc\\studyset\\studyset\\Views",
-    "\\src\\mvc\\studyset\\studyset\\Views\\Home"
+    ""
   ],
-  "SelectedNode": "\\src\\mvc\\studyset\\studyset\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\studyset.sln",
   "PreviewInSolutionExplorer": false
 }
