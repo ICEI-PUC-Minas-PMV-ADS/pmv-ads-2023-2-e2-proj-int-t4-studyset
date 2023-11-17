@@ -40,8 +40,14 @@ namespace studyset.Controllers
 
         public IActionResult Create()
         {
+            // Configura a data da sessão como a data atual
+            Sessao novaSessao = new Sessao
+            {
+                DataSessao = DateTime.Today
+            };
+
             ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario");
-            return View();
+            return View(novaSessao);
         }
 
         [HttpPost]

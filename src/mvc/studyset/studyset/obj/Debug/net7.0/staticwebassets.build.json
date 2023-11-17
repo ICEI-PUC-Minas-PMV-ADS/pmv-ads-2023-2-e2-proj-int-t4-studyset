@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QTNVNjPYr7YqYsvxUHCO6MueI9D+LRB1hoKK59Q4iKU=",
+  "Hash": "L5LGTI8p+BA7ZVL3EJ0z1NSUjU3qO1Ausjt6oB7DPHU=",
   "Source": "studyset",
   "BasePath": "_content/studyset",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
+      "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\main.css",
+      "SourceId": "studyset",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\",
+      "BasePath": "_content/studyset",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
       "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\navbar.css",
       "SourceId": "studyset",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\root.css"
+    },
+    {
+      "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\sessaoEstudo.css",
+      "SourceId": "studyset",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\",
+      "BasePath": "_content/studyset",
+      "RelativePath": "css/sessaoEstudo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sessaoEstudo.css"
     },
     {
       "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\site.css",
@@ -219,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\studyset_logoBranco.png"
+    },
+    {
+      "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\pomodoro.js",
+      "SourceId": "studyset",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\",
+      "BasePath": "_content/studyset",
+      "RelativePath": "js/pomodoro.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pomodoro.js"
     },
     {
       "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\site.js",

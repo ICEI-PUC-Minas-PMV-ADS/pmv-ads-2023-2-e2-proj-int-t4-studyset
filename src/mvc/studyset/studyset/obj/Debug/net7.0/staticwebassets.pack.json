@@ -13,12 +13,20 @@
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
       "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
       "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\root.css",
       "PackagePath": "staticwebassets\\css\\root.css"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\sessaoEstudo.css",
+      "PackagePath": "staticwebassets\\css\\sessaoEstudo.css"
     },
     {
       "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\site.css",
@@ -43,6 +51,10 @@
     {
       "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\img\\studyset_logoBranco.png",
       "PackagePath": "staticwebassets\\img\\studyset_logoBranco.png"
+    },
+    {
+      "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\pomodoro.js",
+      "PackagePath": "staticwebassets\\js\\pomodoro.js"
     },
     {
       "Id": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\site.js",
