@@ -47,6 +47,11 @@ namespace studyset.Controllers
             };
 
             ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario");
+
+            // Obtém o histórico de sessões
+            var historico = _context.Sessoes.Include(c => c.Aluno).ToList();
+            ViewBag.Historico = historico;
+
             return View(novaSessao);
         }
 
@@ -55,9 +60,16 @@ namespace studyset.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Capitaliza a primeira letra do título
+                sessao.TituloSessao = CapitalizeFirstLetter(sessao.TituloSessao);
+
                 _context.Sessoes.Add(sessao);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+
+                // Armazena o histórico para persistir entre solicitações
+                TempData["Historico"] = _context.Sessoes.Include(c => c.Aluno).ToList();
+
+                return View("Create", sessao);
             }
 
             return View();
@@ -145,6 +157,17 @@ namespace studyset.Controllers
         private bool SessaoExists(int id)
         {
             return _context.Sessoes.Any(e => e.Id == id);
+        }
+
+        // Método para capitalizar a primeira letra de string
+        private string CapitalizeFirstLetter(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            return char.ToUpper(input[0]) + input.Substring(1);
         }
     }
 }

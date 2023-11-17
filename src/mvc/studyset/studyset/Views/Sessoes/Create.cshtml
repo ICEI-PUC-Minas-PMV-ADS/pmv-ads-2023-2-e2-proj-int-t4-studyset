@@ -2,6 +2,13 @@
 
 @{
     ViewData["Title"] = "Criar sessão de estudo";
+
+    // Verifica se TempData["Historico"] não é nulo e preenche a ViewBag.Historico
+    if (TempData["Historico"] != null)
+    {
+        var historico = TempData["Historico"] as List<Sessao>;
+        ViewBag.Historico = historico;
+    }
 }
 
 <!DOCTYPE html>
@@ -29,7 +36,7 @@
   </head>
   <body>
     <main>
-      <ul id="secondNavbar" class="nav justify-content-end">
+      <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
         <li class="nav-item">
           <a
             class="nav-link active"
@@ -105,10 +112,9 @@
         </div>
         <form asp-action="Create" id="sessionForm" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="TituloSessao" class="control-label"></label>
-                <input asp-for="TituloSessao" class="form-control tituloSessao" id="tituloSessaoInput" type="text" placeholder="título da sessão..." />
-                    <span asp-validation-for="TituloSessao" class="text-danger"></span>
+            <div class="form-group tituloSessao">
+                <input asp-for="TituloSessao" class="form-control" id="tituloSessaoInput" type="text" placeholder="título da sessão..." />
+                <span asp-validation-for="TituloSessao" class="text-danger"></span>
             </div>
             <div class="acoes">
               <button type="button" class="acoes-btn" id="start">iniciar</button>
@@ -134,24 +140,20 @@
 
       <section class="historico container">
         <h2>histórico</h2>
-        <div class="listaHistorico">
-          <div class="conteudoHistorico row text-center">
-            <p class="col-1 data">DD/MM/AA</p>
-            <p class="col tituloSessaoHistorico">titulo da sessao</p>
-            <p class="col-1 duracaoSessao">tempo</p>
-          </div>
-
-          <div class="conteudoHistorico row text-center">
-            <p class="col-1 data">DD/MM/AA</p>
-            <p class="col tituloSessaoHistorico">titulo da sessao</p>
-            <p class="col-1 duracaoSessao">tempo</p>
-          </div>
-
-          <div class="conteudoHistorico row text-center">
-            <p class="col-1 data">DD/MM/AA</p>
-            <p class="col tituloSessaoHistorico">titulo da sessao</p>
-            <p class="col-1 duracaoSessao">tempo</p>
-          </div>
+        <div class="historicoSection">
+            @if (ViewBag.Historico != null) {
+                @foreach (var historicoItem in ViewBag.Historico) {
+                    <div class="conteudoHistorico">
+                        <ul class="listaHistorico">
+                            <li class="col data">@historicoItem.DataSessao.ToShortDateString()</li>
+                            <li class="col tituloSessaoHistorico">@historicoItem.TituloSessao</li>
+                            <li class="col duracaoSessao">@historicoItem.DuracaoSessao.ToString("hh\\:mm")</li>
+                            <li><i class="col fa-regular fa-pen-to-square" style="color: #ffffff;"></i></li>
+                            <li><i class="col fa-solid fa-trash" style="color: #ffffff;"></i></li>
+                        </ul>
+                    </div>
+                }
+            }
         </div>
       </section>
     </main>
@@ -172,39 +174,44 @@
     ></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var startBtn = document.querySelector("#start");
-            var stopBtn = document.querySelector("#stop");
-            var inicioSessaoInput = document.querySelector("#inicioSessao");
-            var fimSessaoInput = document.querySelector("#fimSessao");
-            var tituloSessaoInput = document.querySelector("#tituloSessaoInput");
+    document.addEventListener("DOMContentLoaded", function () {
+        var startBtn = document.querySelector("#start");
+        var stopBtn = document.querySelector("#stop");
+        var inicioSessaoInput = document.querySelector("#inicioSessao");
+        var fimSessaoInput = document.querySelector("#fimSessao");
+        var tituloSessaoInput = document.querySelector("#tituloSessaoInput");
 
-            var startTime, endTime;
+        var startTime, endTime;
 
-            startBtn.addEventListener("click", function () {
+        startBtn.addEventListener("click", function () {
+            // Verificar se o título da sessão foi fornecido antes de iniciar
+            if (!tituloSessaoInput.value) {
+                alert("Informe um título e dê início a uma nova sessão de estudo.");
+            } else {
                 startTime = new Date();
                 inicioSessaoInput.value = startTime.toISOString();
-            });
-
-            stopBtn.addEventListener("click", function () {
-                if (startTime) {
-                    endTime = new Date();
-                    fimSessaoInput.value = endTime.toISOString();
-                    // Salvar automaticamente o formulário ao pressionar "Parar"
-                    document.querySelector("#sessionForm").submit();
-                }
-            });
-
-            // Verificar se o formulário está pronto antes de enviar
-            document.querySelector("#sessionForm").addEventListener("submit", function () {
-                // Validar se os campos necessários estão preenchidos
-                if (!tituloSessaoInput.value || !inicioSessaoInput.value || !fimSessaoInput.value) {
-                    alert("Por favor, preencha todos os campos.");
-                    return false; // Isso impedirá o envio do formulário
-                }
-            });
+            }
         });
-    </script>
+
+        stopBtn.addEventListener("click", function () {
+            if (startTime) {
+                endTime = new Date();
+                fimSessaoInput.value = endTime.toISOString();
+                // Salvar automaticamente o formulário ao pressionar "Parar"
+                document.querySelector("#sessionForm").submit();
+            }
+        });
+
+        // Verificar se o formulário está pronto antes de enviar
+        document.querySelector("#sessionForm").addEventListener("submit", function () {
+            // Validar se os campos necessários estão preenchidos
+            if (!tituloSessaoInput.value || !inicioSessaoInput.value || !fimSessaoInput.value) {
+                alert("Por favor, preencha todos os campos.");
+                return false; // Isso impedirá o envio do formulário
+            }
+        });
+    });
+</script>
   </body>
 </html>
 

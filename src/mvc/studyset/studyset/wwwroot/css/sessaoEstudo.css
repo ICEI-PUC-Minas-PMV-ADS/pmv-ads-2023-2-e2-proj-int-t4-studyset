@@ -128,6 +128,7 @@ h1 {
 .config-btn-menos {
     color: #777;
     background: none;
+    border: none;
     font-size: 1.3rem;
     margin: 0.5rem;
     margin-bottom: 1rem;
@@ -138,20 +139,27 @@ h1 {
         color: #64d7db;
     }
 
-.tituloSessao {
+#tituloSessaoInput {
     padding: 1rem;
     border: none;
     outline: none;
     border-radius: 10px;
     margin-bottom: 1rem;
     height: 2.5rem;
-    width: 35%;
+    width: 100%;
     font-size: var(--smallFontSize);
+}
+
+#tituloSessaoInput:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .acoes .acoes-btn {
     background-color: var(--mediumColor);
     border-radius: 10px;
+    border: none;
     color: white;
     padding: 1rem;
     margin: 1rem;
@@ -171,11 +179,11 @@ h1 {
     width: 62%;
 }
 
-    .historico h2 {
-        color: black;
-    }
+.historico h2 {
+    color: black;
+}
 
-.listaHistorico {
+.historicoSection {
     max-height: 150px;
     overflow: hidden;
     overflow-y: scroll;
@@ -186,10 +194,20 @@ h1 {
     color: white;
     border-radius: 6px;
     margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 1px;
+    margin-right: 5px;
     padding: 1rem;
-    padding-bottom: 0;
+    padding-bottom: 0.1rem;
+}
+
+.listaHistorico {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.listaHistorico li {
+    margin-left: 0;
+    margin-right: 1rem;
 }
 
 @media (max-width: 768px) {
