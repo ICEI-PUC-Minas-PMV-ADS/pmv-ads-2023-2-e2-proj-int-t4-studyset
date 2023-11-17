@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/styles/root.css" />
+    <link rel="stylesheet" href="/src/styles/navbar.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/sessaoEstudo.css" />
+    <link rel="icon" type="image/png" href="/src/img/studyset_iconCinza.png" />
+    <script src="/src/scripts/pomodoro.js"></script>
+    <title>StudySet</title>
+  </head>
+  <body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/src/pages/index.html"
+          ><img id="logo" src="/src/img/studyset_logoBranco.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <ul id="secondNavbar" class="nav justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="/src/pages/agenda.html"
+            ><i
+              class="icon fa-regular fa-calendar-days"
+              style="color: #000000"
+            ></i
+            >Agenda</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pages/sessaoEstudo.html"
+            ><i class="icon fa-regular fa-clock" style="color: #000000"></i
+            >Sessões</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pages/perfil.html"
+            ><i class="icon fa-solid fa-user-pen" style="color: #000000"></i
+            >Perfil</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pages/dashboard.html"
+            ><i class="icon fa-solid fa-list-check" style="color: #000000"></i
+            >Relatórios</a
+          >
+        </li>
+      </ul>
+
+      <section class="novaSessao container">
+        <h1>sessão de estudo</h1>
+        <div class="circulo progressoSegundos">
+          <div class="progressoTotal">
+            <div class="meioCirculo">
+              <div id="timer">
+                <div id="timerTitulo"></div>
+                <span class="hidden" id="horas"></span>
+                <span id="minutos"></span>
+                <span id="segundos"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="config">
+          <div class="configSessao">
+            <h2 class="configTitulo">tempo de estudo</h2>
+            <div class="configTime">
+              <button class="config-btn-mais" id="estudoMais" type="button">
+                +
+              </button>
+              <h3 id="tempoEstudo"></h3>
+              <button class="config-btn-menos" id="estudoMenos" type="button">
+                -
+              </button>
+            </div>
+          </div>
+          <div class="configDescanso">
+            <h2 class="configTitulo">tempo de descanso</h2>
+            <div class="configTime">
+              <button class="config-btn-mais" id="descansoMais" type="button">
+                +
+              </button>
+              <h3 id="tempoDescanso"></h3>
+              <button class="config-btn-menos" id="descansoMenos" type="button">
+                -
+              </button>
+            </div>
+          </div>
+        </div>
+        <input class="tituloSessao" type="text" placeholder="título da sessão..." />
+        
+        <div class="acoes">
+          <button type="button" class="acoes-btn" id="start">iniciar</button>
+          <!--       <button type="button" class="acoes-btn" id="pause">pausar</button> -->
+          <button type="button" class="acoes-btn" id="stop">parar</button>
+        </div>
+      </section>
+
+      <section class="historico container">
+        <h2>histórico</h2>
+        <div class="listaHistorico">
+          <div class="conteudoHistorico row text-center">
+            <p class="col-1 data">DD/MM/AA</p>
+            <p class="col tituloSessaoHistorico">titulo da sessao</p>
+            <p class="col-1 duracaoSessao">tempo</p>
+          </div>
+
+          <div class="conteudoHistorico row text-center">
+            <p class="col-1 data">DD/MM/AA</p>
+            <p class="col tituloSessaoHistorico">titulo da sessao</p>
+            <p class="col-1 duracaoSessao">tempo</p>
+          </div>
+
+          <div class="conteudoHistorico row text-center">
+            <p class="col-1 data">DD/MM/AA</p>
+            <p class="col tituloSessaoHistorico">titulo da sessao</p>
+            <p class="col-1 duracaoSessao">tempo</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/331a34d5ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+.novaSessao {
+  margin-top: 30px;
+  background-color: var(--darkColor);
+  border-radius: 8px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  margin-top: 1rem;
+  font-weight: var(--mediumWeight);
+}
+
+/* TIMER */
+
+.circulo {
+  width: 12rem;
+  height: 12rem;
+  min-height: 12rem;
+  border: 0.25rem solid white;
+  border-radius: 50%;
+  margin: 0.5rem;
+  color: var(--mediumColor);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo.progressoTotal {
+  background-image: linear-gradient(
+      90deg,
+      transparent 50%,
+      var(--darkColor) 50%
+    ),
+    linear-gradient(90deg, var(--darkColor) 50%, transparent 50%);
+}
+
+.circulo .progressoTotal {
+  border-radius: 50%;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo.progressoSegundos {
+  background-image: linear-gradient(
+      90deg,
+      transparent 50%,
+      var(--darkColor) 50%
+    ),
+    linear-gradient(90deg, var(--darkColor) 50%, transparent 50%);
+}
+
+.meioCirculo {
+  border-radius: 50%;
+  background-color: var(--darkColor);
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer #timerTitulo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.1rem;
+  font-size: var(--mediumFontSize);
+  color: white;
+}
+
+#horas,
+#minutos,
+#segundos {
+  font-size: var(--biggerFontSize);
+}
+
+.hidden {
+  display: none;
+}
+
+/* CONFIGURAÇÕES */
+
+.config {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.configSessao,
+.configDescanso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.configSessao {
+  margin-right: 1.5rem;
+}
+
+.config .configTitulo {
+  color: white;
+  font-size: var(--smallFontSize);
+  font-weight: var(--mediumWeight);
+  margin-bottom: 0;
+}
+
+.config .configSessao #tempoEstudo,
+.config .configDescanso #tempoDescanso,
+.config .configSessao #tempoEstudo,
+.config .configDescanso #tempoDescanso {
+  font-size: var(--mediumFontSize);
+  color: var(--lightColor);
+}
+
+.configTime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.config-btn-mais,
+.config-btn-menos {
+  color: #777;
+  background: none;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.config-btn-mais:hover,
+.config-btn-menos:hover {
+  color: #64d7db;
+}
+
+.tituloSessao {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  width: 35%;
+  font-size: var(--smallFontSize);
+}
+
+.acoes .acoes-btn {
+  background-color: var(--mediumColor);
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  align-items: center;
+  width: 6rem;
+}
+
+.acoes .acoes-btn:hover {
+  background-color: #2471b9;
+  cursor: pointer;
+}
+
+/* HISTÓRICO */
+
+.historico {
+  margin-top: 30px;
+  width: 62%;
+}
+
+.historico h2 {
+  color: black;
+}
+
+.listaHistorico {
+  max-height: 150px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.conteudoHistorico {
+  background-color: var(--darkColor);
+  color: white;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 1px;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .novaSessao {
+    width: 90%;
+  }
+
+  .historico {
+    width: 90%;
+  }
+}

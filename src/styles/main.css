@@ -1,0 +1,15 @@
+main {
+    background-color: var(--bgColor);
+    border-radius: 8px;
+    margin: 30px;
+}
+
+#secondNavbar a.nav-link {
+    color: black;
+    font-size: var(--smallFontSize);
+    margin-top: 10px;
+}
+
+#secondNavbar .icon {
+    margin-right: 0.3rem;
+}
