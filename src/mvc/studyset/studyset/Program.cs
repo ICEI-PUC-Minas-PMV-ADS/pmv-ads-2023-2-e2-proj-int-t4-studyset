@@ -18,24 +18,24 @@ var configuration = builder.Configuration;
 //    googleOptions.CallbackPath = "https://localhost:44354";
 //});
 
-builder.Services.AddAuthentication().AddGoogle(googleOptions =>
-{
-    googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
-    googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
-    googleOptions.CallbackPath = "/signin-google";
+//builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+//{
+//    googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+//    googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+//    googleOptions.CallbackPath = "/signin-google";
 
-    googleOptions.Events = new OAuthEvents
-    {
-        OnRedirectToAuthorizationEndpoint = context =>
-        {
-            // Personalize o redirecionamento conforme necessário
-            context.Response.Redirect("/localhost:44354");
-            context.HandleResponse();
+//    googleOptions.Events = new OAuthEvents
+//    {
+//        OnRedirectToAuthorizationEndpoint = context =>
+//        {
+//            // Personalize o redirecionamento conforme necessário
+//            context.Response.Redirect("/localhost:44354");
+//            context.HandleResponse();
 
-            return Task.CompletedTask;
-        }
-    };
-});
+//            return Task.CompletedTask;
+//        }
+//    };
+//});
 
 
 builder.Services.AddControllersWithViews();
