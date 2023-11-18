@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aX8WQkCuPMtc/JX1nM89DZHWT1l1bzuDMT3jw8J5RbX+IfqB179e+Mli0fKipXPUHTR2JxWqdL8y4PmyJyrmpw==",
+  "dgSpecHash": "/ufW6TnXjmaGwSPGdg1lxbnU6aut01X50b0ZsWynR4FForFwERzYmqDRl0XfNJZl2k6Mq+1+aWvgSDX8DWy65w==",
   "success": true,
   "projectFilePath": "F:\\_studyset\\src\\mvc\\studyset\\studyset\\studyset.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "C:\\Users\\55929\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\55929\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\55929\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\55929\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.0\\microsoft.aspnetcore.authentication.google.7.0.0.nupkg.sha512",
     "C:\\Users\\55929\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.12\\microsoft.aspnetcore.cryptography.internal.7.0.12.nupkg.sha512",
     "C:\\Users\\55929\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.12\\microsoft.aspnetcore.cryptography.keyderivation.7.0.12.nupkg.sha512",
     "C:\\Users\\55929\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.12.nupkg.sha512",
