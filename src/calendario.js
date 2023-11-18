@@ -511,30 +511,30 @@ btnSalvarXp.addEventListener("click", function (e) {
     reloadParaAlvo("containerGrande");
   } else {
     let listaExp = document.querySelector("#listaDetalhes");
-    let formExp = document.querySelector("#experiencias");
-    salvarFormularioNoLocalStorage(formExp, "experiencias");
+    let formExp = document.querySelector("#containerGrande");
+    salvarFormularioNoLocalStorage(formExp, "containerGrande");
 
     let divContainerCard = criarEstruturaCardExp();
     let tituloDiv = divContainerCard.querySelector("h2");
     let areaExp = divContainerCard.querySelector("#cargoTitulo");
-    let instituicao = divContainerCard.querySelector("#instituicaoAtuacao");
+    let areaTipo = divContainerCard.querySelector("#campoRelevancia");
     let cargo = divContainerCard.querySelector("#cargoTitulo");
-    let descricao = divContainerCard.querySelector("#descricaoAtuacao");
+    // let descricao = divContainerCard.querySelector("#descricaoAtuacao");
     let inicioExp = divContainerCard.querySelector("#inicioAtuacao");
-    let fimExp = divContainerCard.querySelector("#fimAtuacao");
+    // let fimExp = divContainerCard.querySelector("#fimAtuacao");
 
     let inputCargo = formExp.querySelector("#cargoTitulo");
-    let inputAreaAtuacao = formExp.querySelector("#cargoTitulo");
-    let inputInstituicao = formExp.querySelector("#instituicaoAtuacao");
-    let inputDescricao = formExp.querySelector("#descricaoAtuacao");
-    let inputInicio = formExp.querySelector("#inicioPeriodoAtuacao");
-    let inputFim = formExp.querySelector("#fimPeriodoAtuacao");
+    let inputcampoTitulo = formExp.querySelector("#cargoTitulo");
+    let inputcampoRelevancia = formExp.querySelector("#campoRelevancia");
+    // let inputDescricao = formExp.querySelector("#descricaoAtuacao");
+    // let inputInicio = formExp.querySelector("#inicioPeriodoAtuacao");
+    // let inputFim = formExp.querySelector("#fimPeriodoAtuacao");
 
     tituloDiv.innerText = inputCargo.value;
-    areaExp.innerText = inputAreaAtuacao.value;
+    areaExp.innerText = inputcampoTitulo.value;
     instituicao.innerText = inputInstituicao.value;
     cargo.innerText = inputCargo.value;
-    descricao.innerText = inputDescricao.value;
+    // descricao.innerText = inputDescricao.value;
     inicioExp.innerText = inputInicio.value;
     fimExp.innerText = inputFim.value;
 
@@ -602,3 +602,27 @@ botaoSalvarPerfil.addEventListener("click", function () {
   geraPerfilCompleto();
   window.location.href = "paginaFormPerfilLog.html";
 });
+
+
+
+
+
+
+
+// document.addEventListener("containerGrande", function () {
+//   // Adiciona um ouvinte de evento ao botão com o id "btnSalvarXp"
+//   document.getElementById("btnSalvarXp").addEventListener("click", function (event) {
+//       // Evita o comportamento padrão do formulário (recarregar a página)
+//       event.preventDefault();
+
+//       // Obtém os valores dos campos de entrada
+//       var titulo = document.getElementById("Titulo").value;
+//       var tipo = document.getElementById("areaTipo").value;
+//       var relevancia = document.getElementById("campoRelevancia").value;
+
+//       // Aqui você pode fazer o que quiser com os valores, por exemplo, imprimir no console
+//       console.log("campoTitulo:", titulo);
+//       console.log("campoTipo:", tipo);
+//       console.log("campoRelevancia:", relevancia);
+//   });
+// });

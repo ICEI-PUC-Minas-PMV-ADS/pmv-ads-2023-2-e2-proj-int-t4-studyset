@@ -237,6 +237,7 @@ body {
     margin-left: 15rem;
     font-size: 26px;
     font-family: sans-serif;
+    margin-top: -30px;
   }
 
   .formContainerGrande {
@@ -280,12 +281,20 @@ body {
 
   .listaDetalhes {
     width: 29%;
-    height: 39vh;
+    height: 37vh;
     overflow: hidden scroll;
     background-color: rgb(157, 157, 158);
     border-radius: 5px;
     float: right;
     margin-right: 10rem;
+}
+
+.tituloproxevento{
+    margin-left: 75rem;
+    font-size: 26px;
+    font-family: sans-serif;
+    margin-top: 50px;
+
 }
 
   /* .titulosH2{
