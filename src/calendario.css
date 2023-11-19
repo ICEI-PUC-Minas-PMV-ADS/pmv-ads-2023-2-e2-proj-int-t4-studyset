@@ -9,18 +9,46 @@ body {
     justify-content: space-between;
 }
 
+
 aside{
     flex: 1;
     background-color: #ddd;
     text-align: -webkit-center;
 }
 
+
+#mainNavbar #logo {
+    width: 120px;
+    margin-left: 5px;
+}
+
+#mainNavbar a.nav-link {
+    color: white;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+#mainNavbar a.nav-link:hover {
+    color: #75BCFE;
+}
+
+section {
+    padding-top: 10px;
+    background-color: #ddd;
+    padding-right: 10rem;
+}
+
 nav{
     flex: 1;
     background-color: #ddd;
     padding: 20px;
+    background-color: #2B2E34
 }
 
+/* .container-fluid img {
+    justify-content: left;
+    background-color: red
+} */
 
 /*  CÓDIGO DO CALENDÁRIO*/
 
@@ -175,7 +203,6 @@ footer {
 }
 
 /* Cronograma começa aqui */
-  s
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -186,6 +213,8 @@ body {
     flex-direction: column;
     /* align-items: center; */
     background-color: #2B2E34;
+    border-radius: 10px;
+    height: 20px;
   }
 
   .day {
@@ -232,7 +261,6 @@ body {
     outline: none;
   }
 
-
   .titulosH2{
     margin-left: 15rem;
     font-size: 26px;
@@ -247,6 +275,10 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-left: 15rem;
+}
+
+.container3 {
+    background-color: #ddd;
 }
 
 .formBtn {
@@ -281,31 +313,30 @@ body {
 
   .listaDetalhes {
     width: 29%;
-    height: 37vh;
+    height: 36vh;
     overflow: hidden scroll;
-    background-color: rgb(157, 157, 158);
+    background-color: #2B2E34;
     border-radius: 5px;
     float: right;
     margin-right: 10rem;
+    margin-top: 1rem;
 }
 
 .tituloproxevento{
     margin-left: 75rem;
     font-size: 26px;
     font-family: sans-serif;
-    margin-top: 50px;
-
+    padding-top: 30px;
 }
 
-  /* .titulosH2{
-    text-align: center;
-    margin:50px 0px 50px 0px;
-    font-size: var(--titleFontSizeBiger);
-    color: var(--titleColorDark);
-  
-  }
-  
-  .titulosH3{
-    text-align: center;
-    margin: 10px 0px 10px 0px;
-  } */
+.detalhesEvento {
+    border: 20px solid #2B2E34;
+    padding: 1px;
+    background-color: white;
+}
+
+.detalhesEvento h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
