@@ -46,6 +46,15 @@ CT-003: Caso de uso
 | Resultado esperado | EM PROCESSO|
 | Evidência (print screen) |  |
 
+| **Caso de Teste**| **CT-006: Sessões de estudo** |
+| :--- | :---: |
+| Pré-condições | Estar na tela de Sessão de estudo |
+| Procedimentos (passo à passo) | 1. Acessar a página de sessões <br> 2. Ajustar os tempos de estudo/descanso da dessão <br> 3. Iniciar e parar a sessão de estudo <br> 4. Verificar se a sessão foi cadastrada no histórico |
+| Dados de entrada | Tempo padrão (25-5 minutos); Inserir título: Sessão teste |
+| Resultado esperado | "Sessão teste" aparece no histórico de sessões |
+| Avaliação | O sistema foi capaz de executar a sessão de estudo e cadastrá-la no banco de dados |
+| Evidência (print screen) | ![Realização da sessão](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129805332/72d21986-4285-48b1-8d4e-4117f991ec08) <br> ![Sessão cadastrada](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129805332/8148b204-4c11-4b56-a67c-1b20dfdc4ce6) |
+
 
 ## Avaliação
 
