@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     ViewData["Title"] = "Studyset";
 }
 
@@ -40,7 +45,7 @@
                 <p>Crie anotações e gerencie conteúdo de forma simples e prática</p>
             </div>
         </div>
-        <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Usuarios" asp-action="Create">cadastre-se</a>
+        <a class="btn btn-primary btn-lg" id="register" asp-area="Identity" asp-page="/Account/Register">cadastre-se</a>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
