@@ -1,0 +1,39 @@
+﻿@model studyset.Models.Cronograma
+
+@{
+    ViewData["Title"] = "Adicionar novo item";
+}
+
+<h1>Adicionar novo item</h1>
+
+<h4>Cronograma</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ConteudoEstudo" class="control-label"></label>
+                <input asp-for="ConteudoEstudo" class="form-control" />
+                <span asp-validation-for="ConteudoEstudo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataEstudo" class="control-label"></label>
+                <input asp-for="DataEstudo" class="form-control" />
+                <span asp-validation-for="DataEstudo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlunoId" class="control-label"></label>
+                <select asp-for="AlunoId" class ="form-control" asp-items="ViewBag.AlunoId"></select>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
+                <input type="submit" value="Salvar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

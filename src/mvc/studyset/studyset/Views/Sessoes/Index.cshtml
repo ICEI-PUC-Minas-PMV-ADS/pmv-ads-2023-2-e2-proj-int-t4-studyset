@@ -1,0 +1,59 @@
+﻿@model IEnumerable<studyset.Models.Sessao>
+
+@{
+    ViewData["Title"] = "Sessões";
+}
+
+<h1>Sessões</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Adicionar nova sessão de estudo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TituloSessao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataSessao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InicioSessao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FimSessao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno.NomeUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TituloSessao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataSessao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InicioSessao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FimSessao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aluno.NomeUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

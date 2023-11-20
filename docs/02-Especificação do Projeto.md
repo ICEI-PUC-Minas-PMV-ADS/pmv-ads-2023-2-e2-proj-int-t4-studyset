@@ -41,9 +41,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| O sistema deve permitir a recuperação de senha através de e-mail. | BAIXA |
 |RF-003| O sistema deve permitir o controle e organização de datas no calendário. | ALTA |
 |RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. | ALTA |
-|RF-005| O sistema deve permitir o cadastro de metas de estudo. | BAIXA |
-|RF-006| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | BAIXA |
-|RF-007| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. | BAIXA |
+|RF-005| O sistema deve permitir o cadastro de metas de estudo | ALTA |
+|RF-006| O sistema deve permitir ao usuário realizar sessões de estudo com base no método pomodoro. | BAIXA |
+|RF-007| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | BAIXA |
+|RF-008| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. | BAIXA |
 
 ### Requisitos não Funcionais
 

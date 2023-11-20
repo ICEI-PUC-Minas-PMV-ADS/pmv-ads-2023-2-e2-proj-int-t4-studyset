@@ -1,0 +1,47 @@
+﻿@model IEnumerable<studyset.Models.Cronograma>
+
+@{
+    ViewData["Title"] = "Cronogramas";
+}
+
+<h1>Cronogramas</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Criar novo item de cronograma</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ConteudoEstudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataEstudo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno.NomeUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConteudoEstudo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataEstudo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aluno.NomeUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

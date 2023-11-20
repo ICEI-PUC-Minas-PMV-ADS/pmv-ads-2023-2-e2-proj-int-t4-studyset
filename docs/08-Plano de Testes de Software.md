@@ -43,15 +43,22 @@ Nesta seção são apresentados os cenários de testes utilizados na realizaçã
 |Critério de Êxito | - Ao editar seus dados no site, o usuário deve conseguir cadastrar metas de estudo com êxito |
 |  	|  	|
 |   |   |
-| Caso de Teste 	| CT-006: Notificações de metas	|
-|Requisito Associado | RF-006: O sistema deve gerar notificações das datas importantes e metas a serem cumpridas |
+| Caso de Teste 	| CT-006: Sessões de estudo	|
+|Requisito Associado | RF-006: O sistema deve permitir ao usuário realizar sessões de estudo com base no método pomodoro |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar sessões de estudo |
+| Passos 	| 1. Acessar a página de sessões <br> 2. Ajustar os tempos de estudo/descanso da dessão <br> 3. Iniciar e parar a sessão de estudo <br> 4. Verificar se a sessão foi cadastrada no histórico |
+|Critério de Êxito | - Ao realizar uma sessão de estudo, ela deve ser registrada com base na duração do timer |
+|  	|  	|
+|   |   |
+| Caso de Teste 	| CT-007: Notificações de metas	|
+|Requisito Associado | RF-007: O sistema deve gerar notificações das datas importantes e metas a serem cumpridas |
 | Objetivo do Teste 	| Verificar se o usuário recebe notificações |
 | Passos 	| 1. Acessar a página de agenda do usuário <br> 2.  Verificar se são mostradas notificações referentes aos eventos cadastrados, assim como às metas de estudo |
 |Critério de Êxito | - O usuário deve visualizar as notificações na página de agenda |
 |  	|  	|
 |   |   |
-| Caso de Teste 	| CT-007:  Visualização de progresso	|
-|Requisito Associado | RF-007: O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado |
+| Caso de Teste 	| CT-008:  Visualização de progresso	|
+|Requisito Associado | RF-008: O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado |
 | Objetivo do Teste 	| Verificar se o sistema mostra ao usuário seu andamento com relação às metas cadastradas |
 | Passos 	| 1. Acessar a página de agenda do usuário <br> 2. Verificar se o sistema mostra o andamento do usuário com relação às metas cadastradas |
 |Critério de Êxito | - O andamento deve estar em local visível ao usuário <br> - O andamento deve corresponder corretamente às metas e às sessões de estudo cadastradas |

@@ -1,12 +1,7 @@
 {
-<<<<<<< HEAD
-  "ExpandedNodes": [],
-=======
   "ExpandedNodes": [
-    "",
-    "\\src"
+    ""
   ],
-  "SelectedNode": "\\src\\mvc",
->>>>>>> 6ab5869227c83461e8f8481e85b687eb1817c7a5
+  "SelectedNode": "\\studyset.sln",
   "PreviewInSolutionExplorer": false
 }
