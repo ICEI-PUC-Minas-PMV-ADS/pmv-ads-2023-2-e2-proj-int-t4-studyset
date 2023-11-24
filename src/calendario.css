@@ -11,9 +11,10 @@ body {
 
 
 aside{
-    flex: 1;
+    flex: auto;
     background-color: #ddd;
     text-align: -webkit-center;
+    padding-right: 15rem;
 }
 
 
@@ -39,7 +40,7 @@ section {
 }
 
 nav{
-    flex: 1;
+    flex: auto;
     background-color: #ddd;
     padding: 20px;
     background-color: #2B2E34
