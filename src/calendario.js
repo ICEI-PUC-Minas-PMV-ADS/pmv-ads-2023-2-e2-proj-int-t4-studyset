@@ -85,6 +85,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnSalvarXp = document.getElementById("btnSalvarXp");
     const btnLimpar = document.getElementById("btnLimpar");
 
+
+
+// Verificar se esta certo
+    // Carrega os dados do armazenamento local
+    const eventosSalvos = JSON.parse(localStorage.getItem("eventos")) || [];
+
+    // Adiciona detalhes dos eventos salvos à lista
+    eventosSalvos.forEach(evento => {
+        adicionarDetalhesEvento(evento.titulo, evento.tipo, evento.relevancia);
+    });
+
+
+
+
+
     // Adiciona um ouvinte de evento para o botão "Salvar"
     btnSalvarXp.addEventListener("click", function(event) {
         event.preventDefault();
@@ -132,4 +147,25 @@ document.addEventListener("DOMContentLoaded", function() {
         tipoInput.value = "";
         relevanciaInput.value = "";
     }
+
+
+
+    // Verificar se esta certo
+    
+    // Função para excluir um evento da lista e do armazenamento local
+    function excluirEvento(titulo) {
+        const eventosSalvos = JSON.parse(localStorage.getItem("eventos")) || [];
+        const eventosAtualizados = eventosSalvos.filter(evento => evento.titulo !== titulo);
+        localStorage.setItem("eventos", JSON.stringify(eventosAtualizados));
+    
+        // Remove o evento da lista
+        const detalhesEvento = document.querySelector(`.detalhesEvento h3:contains('${titulo}')`).parentElement;
+        detalhesEvento.remove();
+    }
+    
+    // Função auxiliar para verificar se um elemento contém um determinado texto
+    jQuery.expr[':'].contains = function(a, i, m) {
+        return jQuery(a).text().toUpperCase()
+            .indexOf(m[3].toUpperCase()) >= 0;
+    };
 });
