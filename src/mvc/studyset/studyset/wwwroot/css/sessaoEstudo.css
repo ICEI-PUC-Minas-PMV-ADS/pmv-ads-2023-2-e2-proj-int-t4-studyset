@@ -210,6 +210,11 @@ h1 {
     margin-right: 1rem;
 }
 
+.excluirSessao {
+    background: none;
+    border: none;
+}
+
 @media (max-width: 768px) {
     .novaSessao {
         width: 90%;

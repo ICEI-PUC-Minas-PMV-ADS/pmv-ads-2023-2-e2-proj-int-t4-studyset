@@ -148,9 +148,28 @@
                             <li class="col data">@historicoItem.DataSessao.ToShortDateString()</li>
                             <li class="col tituloSessaoHistorico">@historicoItem.TituloSessao</li>
                             <li class="col duracaoSessao">@historicoItem.DuracaoSessao.ToString("hh\\:mm")</li>
-                            <li><i class="col fa-regular fa-pen-to-square" style="color: #ffffff;"></i></li>
-                            <li><i class="col fa-solid fa-trash" style="color: #ffffff;"></i></li>
+                            <li><button class="col excluirSessao" type="button" data-bs-toggle="modal" data-bs-target="#excluirSessaoModal_@historicoItem.Id"><i class=" fa-solid fa-trash" style="color: #ffffff;"></i></button></li>
                         </ul>
+                    </div>
+
+                    <!-- Modal de Exclusão -->
+                    <div class="modal fade" id="excluirSessaoModal_@historicoItem.Id" tabindex="-1" aria-labelledby="excluirSessaoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="excluirSessaoModalLabel">EXCLUIR SESSÃO</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza de que deseja excluir a sessão de estudo "<strong>@historicoItem.TituloSessao</strong>"?</p>
+                                    <!-- Formulário de Exclusão -->
+                                    <form asp-action="Delete" method="post">
+                                        <input type="hidden" asp-for="Id" value="@historicoItem.Id" />
+                                        <button type="submit" class="btn btn-danger">Sim</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 }
             }
