@@ -11,9 +11,10 @@ body {
 
 
 aside{
-    flex: 1;
+    flex: auto;
     background-color: #ddd;
     text-align: -webkit-center;
+    padding-right: 15rem;
 }
 
 
@@ -39,7 +40,7 @@ section {
 }
 
 nav{
-    flex: 1;
+    flex: auto;
     background-color: #ddd;
     padding: 20px;
     background-color: #2B2E34
@@ -279,6 +280,8 @@ body {
 
 .container3 {
     background-color: #ddd;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .formBtn {
@@ -318,8 +321,8 @@ body {
     background-color: #2B2E34;
     border-radius: 5px;
     float: right;
-    margin-right: 10rem;
-    margin-top: 1rem;
+    margin-right: 185px;
+    margin-top: 10px;
 }
 
 .tituloproxevento{
@@ -331,6 +334,7 @@ body {
 
 .detalhesEvento {
     border: 20px solid #2B2E34;
+    border-radius: 25px;
     padding: 1px;
     background-color: white;
 }
