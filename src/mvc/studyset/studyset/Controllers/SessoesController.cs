@@ -46,7 +46,7 @@ namespace studyset.Controllers
                 DataSessao = DateTime.Today
             };
 
-            ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario");
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
 
             // Obtém o histórico de sessões
             var historico = _context.Sessoes.Include(c => c.Aluno).ToList();
@@ -88,7 +88,7 @@ namespace studyset.Controllers
                 return NotFound();
             }
 
-            ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", sessao.AlunoId);
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", sessao.AlunoId);
 
             return View(sessao);
         }
@@ -122,7 +122,7 @@ namespace studyset.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", sessao.AlunoId);
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", sessao.AlunoId);
 
             return View(sessao);
         }

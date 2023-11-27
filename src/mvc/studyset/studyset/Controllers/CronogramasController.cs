@@ -40,7 +40,7 @@ namespace studyset.Controllers
 
         public IActionResult Create()
         {
-            ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario");
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
             return View();
         }
 
@@ -70,7 +70,7 @@ namespace studyset.Controllers
                 return NotFound();
             }
 
-            ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", cronograma.AlunoId);
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", cronograma.AlunoId);
 
             return View(cronograma);
         }
@@ -104,7 +104,7 @@ namespace studyset.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["AlunoId"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", cronograma.AlunoId);
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", cronograma.AlunoId);
 
             return View(cronograma);
         }

@@ -32,7 +32,7 @@ namespace studyset.Models
         public TimeSpan DuracaoSessao => FimSessao - InicioSessao;
 
         [Display(Name = "Aluno")]
-        public int AlunoId { get; set; }
+        public string AlunoId { get; set; }
 
         [ForeignKey("AlunoId")]
         public Aluno Aluno { get; set; }
@@ -49,7 +49,7 @@ namespace studyset.Models
 
             if (existingSessao != null)
             {
-                var mensagemErro = "Já existe uma sessão de estudo cadastrada para neste horário.";
+                var mensagemErro = "Já existe uma sessão de estudo cadastrada para este horário.";
                 yield return new ValidationResult(mensagemErro, new[] { "InicioSessao", "FimSessao" });
             }
             else
