@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<Aluno> SignInManager
+@inject UserManager<Aluno> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))

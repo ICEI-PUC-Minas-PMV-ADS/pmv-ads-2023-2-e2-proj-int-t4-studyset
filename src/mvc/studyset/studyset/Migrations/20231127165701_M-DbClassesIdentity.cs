@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace studyset.Migrations.ApplicationDb
+namespace studyset.Migrations
 {
     /// <inheritdoc />
-    public partial class MIdentity : Migration
+    public partial class MDbClassesIdentity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,6 +30,9 @@ namespace studyset.Migrations.ApplicationDb
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    NomeUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TempoEstudo = table.Column<int>(type: "int", nullable: false),
+                    MetaEstudo = table.Column<int>(type: "int", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -69,6 +72,28 @@ namespace studyset.Migrations.ApplicationDb
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Agenda",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeEvento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataEvento = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Tipo = table.Column<int>(type: "int", nullable: false),
+                    Prioridade = table.Column<int>(type: "int", nullable: false),
+                    AlunoId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Agenda", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Agenda_AspNetUsers_AlunoId",
+                        column: x => x.AlunoId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -156,6 +181,53 @@ namespace studyset.Migrations.ApplicationDb
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Cronogramas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ConteudoEstudo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataEstudo = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AlunoId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Cronogramas", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Cronogramas_AspNetUsers_AlunoId",
+                        column: x => x.AlunoId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Sessoes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TituloSessao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataSessao = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    InicioSessao = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FimSessao = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AlunoId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Sessoes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Sessoes_AspNetUsers_AlunoId",
+                        column: x => x.AlunoId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Agenda_AlunoId",
+                table: "Agenda",
+                column: "AlunoId");
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -194,11 +266,24 @@ namespace studyset.Migrations.ApplicationDb
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Cronogramas_AlunoId",
+                table: "Cronogramas",
+                column: "AlunoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Sessoes_AlunoId",
+                table: "Sessoes",
+                column: "AlunoId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Agenda");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -213,6 +298,12 @@ namespace studyset.Migrations.ApplicationDb
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Cronogramas");
+
+            migrationBuilder.DropTable(
+                name: "Sessoes");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

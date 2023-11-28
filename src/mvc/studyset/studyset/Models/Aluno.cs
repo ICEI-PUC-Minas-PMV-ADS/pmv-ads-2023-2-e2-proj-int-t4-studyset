@@ -1,24 +1,18 @@
-﻿using System.Collections;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace studyset.Models
 {
-    [Table("Usuarios")]
-    public class Aluno
+    // Não é necessário declarar a tabela Usuarios, pois é usada a tabela padrão do Identity
+    public class Aluno : IdentityUser
     {
-        [Key]
-        public int Id { get; set; }
+        //Id, Email e Senha já são fornecidos automaticamente pelo IdentityUser
 
         [Required(ErrorMessage = "Obrigatório informar o nome")]
         [Display(Name = "Nome")]
         public string NomeUsuario { get; set; }
-
-        [Required(ErrorMessage = "Obrigatório informar o email")]
-        public string Email { get; set; }
-
-        [Required(ErrorMessage = "Obrigatório informar a senha")]
-        public string Senha { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o tempo disponível para estudos")]
         [Display(Name = "Tempo disponível de estudo")]
@@ -29,5 +23,9 @@ namespace studyset.Models
         public int MetaEstudo { get; set; }
 
         public ICollection<Evento> Agenda { get; set; }
+
+        public ICollection<Cronograma> Cronogramas { get; set; }
+
+        public ICollection<Sessao> Sessoes { get; set; }
     }
 }

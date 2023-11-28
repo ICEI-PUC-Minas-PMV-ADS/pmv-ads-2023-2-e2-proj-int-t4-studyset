@@ -26,7 +26,7 @@ namespace studyset.Models
         public PrioridadeEvento Prioridade { get; set; }
 
         [Display(Name = "Aluno")]
-        public int AlunoId { get; set; }
+        public string AlunoId { get; set; }
 
         [ForeignKey("AlunoId")]
         public Aluno Aluno { get; set; }

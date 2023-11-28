@@ -6,16 +6,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using studyset.Data;
 using studyset.Models;
 
 namespace studyset.Controllers
 {
-    public class loginController : Controller
+    public class LoginController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public loginController(ApplicationDbContext context)
+        public LoginController(AppDbContext context)
         {
             _context = context;
         }
@@ -24,20 +23,20 @@ namespace studyset.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Alunos.ToListAsync());
+              return View(await _context.Users.ToListAsync());
         }
        
 
         // GET: login/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string? id)
         {
-            if (id == null || _context.Alunos == null)
+            if (id == null || _context.Users == null)
             {
                 return NotFound();
             }
 
-            var aluno = await _context.Alunos
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var aluno = await _context.Users
+             .FirstOrDefaultAsync(m => m.Id == id);
             if (aluno == null)
             {
                 return NotFound();
@@ -69,14 +68,14 @@ namespace studyset.Controllers
         }
 
         // GET: login/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string? id)
         {
-            if (id == null || _context.Alunos == null)
+            if (id == null || _context.Users == null)
             {
                 return NotFound();
             }
 
-            var aluno = await _context.Alunos.FindAsync(id);
+            var aluno = await _context.Users.FindAsync(id);
             if (aluno == null)
             {
                 return NotFound();
@@ -89,7 +88,7 @@ namespace studyset.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeUsuario,Email,Senha,TempoEstudo,MetaEstudo")] Aluno aluno)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,NomeUsuario,Email,Senha,TempoEstudo,MetaEstudo")] Aluno aluno)
         {
             if (id != aluno.Id)
             {
@@ -120,14 +119,14 @@ namespace studyset.Controllers
         }
 
         // GET: login/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string? id)
         {
-            if (id == null || _context.Alunos == null)
+            if (id == null || _context.Users == null)
             {
                 return NotFound();
             }
 
-            var aluno = await _context.Alunos
+            var aluno = await _context.Users
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (aluno == null)
             {
@@ -140,25 +139,25 @@ namespace studyset.Controllers
         // POST: login/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            if (_context.Alunos == null)
+            if (_context.Users == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Alunos'  is null.");
+                return Problem("Entity set 'AppDbContext.Users'  is null.");
             }
-            var aluno = await _context.Alunos.FindAsync(id);
+            var aluno = await _context.Users.FindAsync(id);
             if (aluno != null)
             {
-                _context.Alunos.Remove(aluno);
+                _context.Users.Remove(aluno);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool AlunoExists(int id)
+        private bool AlunoExists(string id)
         {
-          return _context.Alunos.Any(e => e.Id == id);
+          return _context.Users.Any(e => e.Id == id);
         }
     }
 }
