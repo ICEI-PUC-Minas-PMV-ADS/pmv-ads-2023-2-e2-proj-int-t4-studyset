@@ -42,7 +42,7 @@ namespace studyset.Areas.Identity.Pages.Account
 
             if (user == null)
             {
-                return NotFound($"Não foi possível carregar o usuário com ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"Não foi possível carregar o perfil do usuário'{_userManager.GetUserId(User)}'.");
             }
 
             Input = new InputModel
@@ -51,7 +51,6 @@ namespace studyset.Areas.Identity.Pages.Account
                 NomeUsuario = user.NomeUsuario,
                 TempoEstudo = user.TempoEstudo,
                 MetaEstudo = user.MetaEstudo
-                // Adicione outras propriedades conforme necessário
             };
 
             return Page();
@@ -68,15 +67,15 @@ namespace studyset.Areas.Identity.Pages.Account
 
             if (user == null)
             {
-                return NotFound($"Não foi possível carregar o usuário com ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"Não foi possível carregar o perfil do usuário '{_userManager.GetUserId(User)}'.");
             }
 
-            // Atualize as propriedades do usuário com base nos valores fornecidos no formulário
+            // Atualiza as propriedades do usuário
             user.NomeUsuario = Input.NomeUsuario;
             user.TempoEstudo = Input.TempoEstudo;
             user.MetaEstudo = Input.MetaEstudo;
 
-            // Salve as alterações
+            // Salva as alterações
             var result = await _userManager.UpdateAsync(user);
 
             if (!result.Succeeded)
@@ -88,7 +87,7 @@ namespace studyset.Areas.Identity.Pages.Account
                 return Page();
             }
 
-            return RedirectToPage("/Index"); // Ou redirecione para onde desejar após a edição.
+            return RedirectToPage("/Account/Edit", new { area = "Identity" });
         }
     }
 }

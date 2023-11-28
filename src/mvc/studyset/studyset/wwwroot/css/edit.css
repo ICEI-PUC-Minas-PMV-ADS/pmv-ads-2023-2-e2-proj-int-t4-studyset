@@ -1,0 +1,88 @@
+﻿.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+.edit {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkColor);
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    border-radius: 3%;
+    color: white;
+    width: 400px;
+    margin-top: 3rem;
+}
+
+.edit h1 {
+    color: white;
+    font-weight: var(--mediumWeight);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.edit a {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.edit a:hover {
+    color: var(--lightColor);
+}
+
+.edit label {
+    font-size: var(--mediumFontSize);
+    margin-bottom: 0.5rem;
+}
+
+.edit input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    font-size: var(--smallFontSize);
+
+}
+
+.edit .submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 1rem;
+}
+
+.edit button, a.button {
+    background-color: var(--mediumColor);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: var(--mediumFontSize);
+    margin-left: 1rem;
+    padding: 1rem;
+    height: 3.5rem;
+    width: 6.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+a.button {
+    margin-bottom: 1rem;
+}
+
+.edit .button:hover {
+    background-color: #2471b9;
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rfb3IlMDrsPvt/56RLxiMtDZJY7urGwdMtHuj7yG7Vw=",
+  "Hash": "glwPbNsHq1DlcyN4P6c1biNXJkAgOVeVQgoFc1DRin4=",
   "Source": "studyset",
   "BasePath": "_content/studyset",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\studyset.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\edit.css",
+      "SourceId": "studyset",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\",
+      "BasePath": "_content/studyset",
+      "RelativePath": "css/edit.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\edit.css"
     },
     {
       "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\css\\index.css",

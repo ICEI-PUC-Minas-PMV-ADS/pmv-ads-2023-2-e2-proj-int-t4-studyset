@@ -1,7 +1,9 @@
 ﻿/*Páginas Cadastro e Login*/
-.main {
+.mainContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-transform: lowercase;
 }
 
@@ -15,6 +17,13 @@
     color: white;
     width: 400px;
     margin-top: 3rem;
+}
+
+.login h1 {
+    color: white;
+    font-weight: var(--mediumWeight);
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .login label {
