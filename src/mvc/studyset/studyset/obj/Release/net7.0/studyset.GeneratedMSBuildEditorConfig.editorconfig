@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -138,6 +142,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Jvbm9ncmFtYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -146,24 +154,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Login/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ3JlYXRlLmNzaHRtbA==
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Login/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGVsZXRlLmNzaHRtbA==
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Login/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGV0YWlscy5jc2h0bWw=
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Login/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRWRpdC5jc2h0bWw=
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Create.cshtml]

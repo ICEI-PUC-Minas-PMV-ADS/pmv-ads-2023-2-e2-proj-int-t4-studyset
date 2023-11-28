@@ -116,7 +116,7 @@ namespace studyset.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    return RedirectToPage("/Account/Edit", new { area = "Identity" });
                 }
                 if (result.RequiresTwoFactor)
                 {

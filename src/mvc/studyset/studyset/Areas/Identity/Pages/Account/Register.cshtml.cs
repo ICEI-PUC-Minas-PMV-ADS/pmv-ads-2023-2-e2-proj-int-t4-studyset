@@ -152,7 +152,7 @@ namespace studyset.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        return RedirectToPage("/Account/Edit", new { area = "Identity" });
                     }
                 }
                 foreach (var error in result.Errors)

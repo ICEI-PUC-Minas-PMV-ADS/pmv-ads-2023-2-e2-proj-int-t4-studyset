@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using studyset.Models;
+using System.Security.Claims;
 
 namespace studyset.Controllers
 {
@@ -48,8 +49,14 @@ namespace studyset.Controllers
 
             ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
 
-            // Obtém o histórico de sessões
-            var historico = _context.Sessoes.Include(c => c.Aluno).ToList();
+            // Obtém o ID do aluno logado
+            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Obtém o histórico de sessões apenas para o aluno logado
+            var historico = _context.Sessoes.Include(c => c.Aluno)
+                                .Where(s => s.AlunoId == alunoId)
+                                .ToList();
+
             ViewBag.Historico = historico;
 
             return View(novaSessao);
@@ -63,11 +70,19 @@ namespace studyset.Controllers
                 // Capitaliza a primeira letra do título
                 sessao.TituloSessao = CapitalizeFirstLetter(sessao.TituloSessao);
 
+                // Obtém o ID do aluno logado
+                string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                // Associa o ID do aluno à sessão
+                sessao.AlunoId = alunoId;
+
                 _context.Sessoes.Add(sessao);
                 await _context.SaveChangesAsync();
 
-                // Armazena o histórico para persistir entre solicitações
-                TempData["Historico"] = _context.Sessoes.Include(c => c.Aluno).ToList();
+                // Armazena o histórico apenas para o aluno logado
+                TempData["Historico"] = _context.Sessoes.Include(c => c.Aluno)
+                                               .Where(s => s.AlunoId == alunoId)
+                                               .ToList();
 
                 return View("Create", sessao);
             }
@@ -151,7 +166,12 @@ namespace studyset.Controllers
             var sessao = await _context.Sessoes.FindAsync(id);
             _context.Sessoes.Remove(sessao);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            // Obtenha o ID do aluno logado
+            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Redirecione para a página de sessão de estudo com o histórico atualizado
+            return RedirectToAction("Create", "Sessoes", new { area = "", id = alunoId });
         }
 
         private bool SessaoExists(int id)

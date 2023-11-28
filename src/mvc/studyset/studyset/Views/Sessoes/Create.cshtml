@@ -46,26 +46,18 @@
               class="icon fa-regular fa-calendar-days"
               style="color: #000000"
             ></i
-            >Agenda</a
-          >
+            >Agenda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/src/pages/sessaoEstudo.html"
-            ><i class="icon fa-regular fa-clock" style="color: #000000"></i
-            >Sessões</a
-          >
+          <a class="nav-link" asp-controller="Sessoes" asp-action="Create"><i class="icon fa-regular fa-clock" style="color: #000000"></i
+            >Sessões</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/src/pages/perfil.html"
-            ><i class="icon fa-solid fa-user-pen" style="color: #000000"></i
-            >Perfil</a
-          >
+          <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit" ><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/src/pages/dashboard.html"
-            ><i class="icon fa-solid fa-list-check" style="color: #000000"></i
-            >Relatórios</a
-          >
+          <a class="nav-link" href="/src/pages/dashboard.html"><i class="icon fa-solid fa-list-check" style="color: #000000"></i
+            >Relatórios</a>
         </li>
       </ul>
 
@@ -130,11 +122,11 @@
                 <input type="hidden" asp-for="InicioSessao" id="inicioSessao" />
                 <input type="hidden" asp-for="FimSessao" id="fimSessao" />
             </div>
-            <!-- Campo temporário, depois tornar oculto -->
+            <!-- Campo temporário, depois tornar oculto 
             <div class="form-group">
                 <label asp-for="AlunoId" class="control-label"></label>
                 <select asp-for="AlunoId" class="form-control" asp-items="ViewBag.AlunoId"></select>
-            </div>
+            </div> -->
         </form>
       </section>
 
