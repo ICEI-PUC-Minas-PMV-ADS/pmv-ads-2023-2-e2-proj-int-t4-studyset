@@ -1,7 +1,7 @@
 # Introdução
 <div align="justify">
  
-Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e disciplinas nas quais investimos tempo buscando adquirir conhecimento e aprimorar habilidades. A vasta quantidade de material e as limitações de tempo, no entanto, transformam em um verdadeiro desafio as tarefas de administrar todas as matérias, organizar a agenda e gerenciar o tempo de estudo diário. 
+Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e disciplinas nos quais investimos tempo buscando adquirir conhecimento e aprimorar habilidades. A vasta quantidade de material e as limitações de tempo, no entanto, transformam em um verdadeiro desafio as tarefas de administrar todas as matérias, organizar a agenda e gerenciar o tempo de estudo diário. 
 
 </div>
 
@@ -10,7 +10,7 @@ Durante nossa trajetória acadêmica, nos deparamos com diversos conteúdos e di
 <div align="justify">
  
 Este projeto tem como objetivo resolver o problema da dificuldade de gerenciar a rotina de estudos e organizar os conteúdos a serem estudados. 
-A dificuldade em administrar estas questões, muitas vezes, acabam por prejudicar o rendimento dos estudantes. Por mais que existam vários métodos para organização da rotina e das anotações, tanto analógicos (agendas de papel, cadernos, fichários) quanto digitais (aplicativos de agenda e blocos de notas, arquivos de texto etc.), seria pertinente a existência de um ambiente online interativo adequado, que pudesse convergir as necessidades de organização dos estudos. 
+A dificuldade em administrar estas questões, muitas vezes, acabam por prejudicar o rendimento dos estudantes. Por mais que existam vários métodos para organização da rotina, tanto analógicos (agendas de papel, cadernos, fichários) quanto digitais (aplicativos de agenda e blocos de notas, arquivos de texto etc.), seria pertinente a existência de um ambiente online interativo adequado, que pudesse convergir as necessidades de organização dos estudos. 
 
 </div>
  
@@ -23,7 +23,7 @@ Buscando resolver tal problema, este trabalho tem como objetivo geral implementa
 
 </div>
 
-- Gerenciamento de anotações; 
+- Gerenciamento de agenda; 
 
 - Criação de cronogramas;  
 
@@ -33,7 +33,7 @@ Buscando resolver tal problema, este trabalho tem como objetivo geral implementa
 
 <div align="justify">
  
-Na busca por uma melhor organização dos estudos, os estudantes recorrem a uma variedade de métodos. Por exemplo, utilizam aplicativos de agenda digital ou agendas de papel para criar cronogramas de estudo e registrar datas importantes, como provas e prazos de entrega de trabalhos acadêmicos. Quando se trata de gerenciar o conhecimento e relembrar informações previamente estudadas, é comum que os estudantes guardem resumos e anotações em cadernos ou arquivos de texto, muitas vezes organizados em pastas no computador.
+Na busca por uma melhor organização dos estudos, os estudantes recorrem a uma variedade de métodos. Por exemplo, utilizam aplicativos de agenda digital ou agendas de papel para criar cronogramas de estudo e registrar datas importantes, como provas e prazos de entrega de trabalhos acadêmicos.
 
 No entanto, essas abordagens podem levar à descentralização das informações, dificultando a tarefa de manter uma organização eficiente dos estudos. Portanto, surge a necessidade de uma aplicação interativa que possa unificar todas essas funcionalidades, oferecendo uma solução completa para a organização dos estudos.
 
