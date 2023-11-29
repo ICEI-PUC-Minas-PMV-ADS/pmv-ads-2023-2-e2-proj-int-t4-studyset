@@ -2,17 +2,21 @@
     background-color: var(--darkColor);
 }
 
-    #mainNavbar #logo {
-        width: 120px;
-        margin-left: 5px;
-    }
+#mainNavbar #logo {
+    width: 120px;
+    margin-left: 5px;
+}
 
-    #mainNavbar a.nav-link, button.nav-link {
-        color: white;
-        margin-left: 25px;
-        margin-right: 5px;
-    }
+#mainNavbar a.nav-link, button.nav-link {
+    color: white;
+    margin-left: 25px;
+    margin-right: 5px;
+}
 
-    #mainNavbar a.nav-link:hover, button.nav-link:hover  {
-        color: var(--lightColor);
-    }
+#mainNavbar a.nav-link:hover, button.nav-link:hover  {
+    color: var(--lightColor);
+}
+
+#mainNavbar .nav-link.welcome:hover {
+    color: white;
+}

@@ -15,6 +15,14 @@ namespace studyset.Controllers
 
         public IActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                // Direciona para a página sessão
+                return RedirectToAction("Create", "Sessoes");
+            }
+
+            // Para usuários não logados, direciona para a homepage
+
             return View();
         }
 

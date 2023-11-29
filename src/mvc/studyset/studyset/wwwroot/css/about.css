@@ -1,0 +1,25 @@
+﻿#sobreContent h1 {
+    color: var(--mediumColor);
+    margin-top: 2.5rem;
+}
+
+#sobreContent .container {
+    background-color: var(--lightColor);
+    margin-top: 1rem;
+    border-radius: 8px;
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+#sobreContent a.btn {
+    background-color: var(--mediumColor);
+    margin-top: 1.5rem;
+    width: 200px;
+    border: none;
+}
+
+#sobreContent a.btn:hover {
+    background-color: #2471b9;
+}

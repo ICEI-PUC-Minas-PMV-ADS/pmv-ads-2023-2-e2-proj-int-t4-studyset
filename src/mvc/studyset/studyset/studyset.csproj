@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <Content Remove="Areas\Identity\Pages\Account\Manage\EditPassword.cshtml" />
+    <Content Remove="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

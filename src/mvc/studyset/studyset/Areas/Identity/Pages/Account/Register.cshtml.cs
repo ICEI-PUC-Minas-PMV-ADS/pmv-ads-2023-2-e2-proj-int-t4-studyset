@@ -92,7 +92,7 @@ namespace studyset.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required(ErrorMessage = "Obrigatório informar a senha")]
-            [StringLength(100, ErrorMessage = "A {0} precisa ter no mínimo {2} e no máximo {1} caracteres.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "A {0} precisa ter no mínimo {2} caracteres.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Senha")]
             public string Password { get; set; }
@@ -107,11 +107,18 @@ namespace studyset.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
         }
 
-
-        public async Task OnGetAsync(string returnUrl = null)
+        public async Task<IActionResult> OnGet(string returnUrl = null)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                // Se o usuário está autenticado, redireciona para a página de Sessao
+                return Redirect("/Sessoes/Create");
+            }
+
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
+            return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
@@ -157,7 +164,30 @@ namespace studyset.Areas.Identity.Pages.Account
                 }
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    if (error.Code == "DuplicateUserName")
+                    {
+                        ModelState.AddModelError(string.Empty, "Este e-mail já está cadastrado");
+                    }
+                    else if (error.Code == "PasswordRequiresDigit")
+                    {
+                        ModelState.AddModelError(string.Empty, "A senha deve conter pelo menos seis dígitos");
+                    }
+                    else if (error.Code == "PasswordRequiresLower")
+                    {
+                        ModelState.AddModelError(string.Empty, "A senha deve conter pelo menos uma letra minúscula");
+                    }
+                    else if (error.Code == "PasswordRequiresNonAlphanumeric")
+                    {
+                        ModelState.AddModelError(string.Empty, "A senha deve conter pelo menos um caractere não alfanumérico");
+                    }
+                    else if (error.Code == "PasswordRequiresUpper")
+                    {
+                        ModelState.AddModelError(string.Empty, "A senha deve conter pelo menos uma letra maiúscula");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
                 }
             }
 
