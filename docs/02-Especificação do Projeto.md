@@ -1,10 +1,15 @@
 # Especificações do Projeto
 
 <span style="color:red">Pré-requisitos: <a href="01-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
+<div align="justify">
+  
 Nesta seção há a ideia de solução a partir da perspectiva do usuário, composta pelas personas, histórias de usuários, requisitos funcionais e não funcionais, além das restrições do projeto.
 
+</div>
+
 ## Personas
+
+<div align="justify">
 
 Gisele Lima tem 25 anos e é programadora. Além de trabalhar, está fazendo pós-graduação em Ciências de Dados, e precisa de planejamento para dar conta do conteúdo do curso. Apesar de usar aplicativos de agenda digital, sente que seu planejamento de estudos acaba se perdendo entre compromissos de trabalho e pessoais. 
 
@@ -14,6 +19,7 @@ Paulo Freitas tem 33 anos e está em processo de transição de carreira. Possui
 
 Raquel Soares tem 37 anos e é psicóloga. Buscando ser uma profissional atualizada, usa os horários livres entre seus atendimentos para ler e estudar sobre as novidades da área. Por ter pouco tempo e se interessar por muitos assuntos diferentes, acaba ficando sobrecarregada e se sentindo desmotivada frequentemente por ter dificuldade de se concentrar. 
 
+</div>
 
 ## Histórias de Usuários
 
