@@ -1,7 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+<span style="color:red">Pré-requisitos: <a href="02-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 A metodologia adotada para o desenvolvimento do StudySet será detalhada nesta seção, que contém abaixo a estrutura para gestão do código fonte, os processos, ferramentas e ambientes de trabalho utilizados pela equipe. 
 
