@@ -11368,19 +11368,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anabm\\.nuget\\packages\\": {}
+    "C:\\Users\\israe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset-main\\src\\mvc\\studyset\\studyset\\studyset.csproj",
+      "projectUniqueName": "C:\\Users\\israe\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\studyset.csproj",
       "projectName": "studyset",
-      "projectPath": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset-main\\src\\mvc\\studyset\\studyset\\studyset.csproj",
-      "packagesPath": "C:\\Users\\anabm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset-main\\src\\mvc\\studyset\\studyset\\obj\\",
+      "projectPath": "C:\\Users\\israe\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\studyset.csproj",
+      "packagesPath": "C:\\Users\\israe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\israe\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anabm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\israe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11455,5 +11455,49 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pacote 'runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0' da fonte 'C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\': O período de validade da assinatura principal do repositório expirou.",
+      "libraryId": "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pacote 'runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0' da fonte 'C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\': O período de validade da assinatura principal do repositório expirou.",
+      "libraryId": "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pacote 'runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0' da fonte 'C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\': O período de validade da assinatura principal do repositório expirou.",
+      "libraryId": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pacote 'runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0' da fonte 'C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\': O período de validade da assinatura principal do repositório expirou.",
+      "libraryId": "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pacote 'runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple 4.3.0' da fonte 'C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\': O período de validade da assinatura principal do repositório expirou.",
+      "libraryId": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple"
+    },
+    {
+      "code": "NU3037",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pacote 'runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl 4.3.0' da fonte 'C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\': O período de validade da assinatura principal do repositório expirou.",
+      "libraryId": "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl"
+    }
+  ]
 }

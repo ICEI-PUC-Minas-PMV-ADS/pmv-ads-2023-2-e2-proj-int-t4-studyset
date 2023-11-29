@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\mvc",
+    "\\src\\mvc\\studyset",
+    "\\src\\mvc\\studyset\\studyset",
+    "\\src\\mvc\\studyset\\studyset\\obj",
+    "\\src\\mvc\\studyset\\studyset\\obj\\Debug",
+    "\\src\\mvc\\studyset\\studyset\\obj\\Release",
+    "\\src\\mvc\\studyset\\studyset\\Properties",
+    "\\src\\mvc\\studyset\\studyset\\Views"
   ],
-  "SelectedNode": "\\src\\mvc",
+  "SelectedNode": "\\src\\mvc\\studyset\\studyset.sln",
   "PreviewInSolutionExplorer": false
 }
