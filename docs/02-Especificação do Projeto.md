@@ -37,7 +37,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----|
 |RF-001| O sistema deve permitir cadastro e login de usuário. | ALTA |
 |RF-002| O sistema deve permitir a edição dos dados cadastrais do usuário. | BAIXA |
-|RF-003| O sistema deve permitir a recuperação de senha através de e-mail. | BAIXA |
+|RF-003| O sistema deve permitir a recuperação de senha. | BAIXA |
 |RF-004| O sistema deve permitir o controle e a organização de datas no calendário (eventos). | ALTA |
 |RF-005| O sistema deve permitir a criação de cronograma semanal de estudos. | ALTA |
 |RF-006| O sistema deve adequar as atividades dos cronogramas ao número de horas de estudo estipulado pelo usuário. | MÉDIA |
