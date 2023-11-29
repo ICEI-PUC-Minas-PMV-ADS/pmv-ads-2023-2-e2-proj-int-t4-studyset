@@ -3,10 +3,15 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
+<div align="justify">
+  
 A metodologia adotada para o desenvolvimento do StudySet será detalhada nesta seção, que contém abaixo a estrutura para gestão do código fonte, os processos, ferramentas e ambientes de trabalho utilizados pela equipe. 
 
-## Controle de Versão
+</div>
 
+## Controle de Versão
+<div align="justify">
+  
 A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/) e a hospedagem do repositório feita no [Github](https://github.com).
 
@@ -31,14 +36,7 @@ etiquetas:
 - `enhancement`: melhorias em uma funcionalidade existente
 - `feature`: adição de novas funcionalidades
 
-<!--
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-!-->
+</div>
 
 ## Gerenciamento de Projeto
 O projeto adotará uma metodologia ágil, o Scrum.
@@ -59,6 +57,8 @@ O projeto adotará uma metodologia ágil, o Scrum.
 
 ### Processo
 
+<div align="justify">
+
 O trabalho da equipe será dividido em sprints semanais para a execução das atividades de cada etapa, previstas no Backlog do projeto. Às segundas-feiras será feita a entrega e revisão das atividades propostas, e em seguida haverá o planejamento das ações a serem desenvolvidas na próxima sprint. 
 
 O projeto será gerenciado através do Github Projects, utilizando um board Kanban organizado da seguinte forma:
@@ -68,13 +68,7 @@ O projeto será gerenciado através do Github Projects, utilizando um board Kanb
 - **In progress:** Tarefas em andamento da sprint atual; 
 - **Done:** Tarefas finalizadas. 
 
-<!--
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
-!-->
+</div>
 
 ### Ferramentas
 
