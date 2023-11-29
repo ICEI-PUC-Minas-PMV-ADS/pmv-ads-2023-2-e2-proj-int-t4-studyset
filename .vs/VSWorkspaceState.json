@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\img",
+    "\\src\\mvc",
+    "\\src\\mvc\\studyset",
+    "\\src\\mvc\\studyset\\studyset",
+    "\\src\\mvc\\studyset\\studyset\\Migrations",
+    "\\src\\mvc\\studyset\\studyset\\Models"
   ],
-  "SelectedNode": "\\studyset.sln",
+  "SelectedNode": "\\src\\mvc\\studyset\\studyset.sln",
   "PreviewInSolutionExplorer": false
 }
