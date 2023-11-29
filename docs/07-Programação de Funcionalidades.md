@@ -1,33 +1,30 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
+<span style="color:red">Pré-requisitos: <a href="02-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="03-Projeto de Interface.md"> Projeto de Interface</a>, <a href="04-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="05-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos com os artefatos criados (código fonte), deverão apresentadas as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+<div align="justify">
 
-Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
+Nesta seção é descrita a implementação do sistema por meio dos requisitos funcionais e/ou não funcionais, relacionando os requisitos atendidos com os artefatos criados e apresentadando as instruções para acesso e verificação da implementação funcional no ambiente de hospedagem.
+
+A tabela a seguir é ser preenchida com artefatos desenvolvidos. Cada artefato possui página (View) correspondente, que demonstra a funcionalidade implementada.
+
+</div>
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-------------------------|--------------------------|
-|RF-001| O sistema deve permitir login de usuário. | Views/Login.cshtml |
-|RF-002| O sistema deve permitir a recuperação de senha através de e-mail. |  |
-RF-003| O sistema deve permitir o controle e organização de datas no calendário |  |
-|RF-004| O sistema não deve permitir que os conteúdos escolhidas para o cronograma se sobreponham ao número de horas de estudo estipuladas pelo usuário. |  |
-|RF-005| O sistema deve permitir o cadastro de metas de estudo. |  |
-|RF-006| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. |  |
-|RF-007| O sistema deve gerar relatório mostrando a porcentagem para conclusão de metas de estudos e dados sobre o tempo estudado. |  |
+|RF-001| O sistema deve permitir cadastro e login de usuário. | Aluno.cs - Model; Register.cs e Login.cs - Controller/Identity |
+|RF-002| O sistema deve permitir a edição dos dados cadastrais do usuário. | Aluno.cs - Model; Edit.cs e EditPassword.cs - Controller/Identity 
+|RF-003| O sistema deve permitir a recuperação de senha. | |
+|RF-004| O sistema deve permitir o controle e a organização de datas no calendário (eventos). | Evento.cs - Model; AgendaController.cs |
+|RF-005| O sistema deve permitir a criação de cronograma semanal de estudos. | Cronograma.cs - Model; CronogramasController.cs |
+|RF-006| 	O sistema deve adequar as atividades dos cronogramas ao número de horas de estudo estipulado pelo usuário. | Aluno.cs e Evento.cs - Model; AgendaController.cs, Register.cs e Edit.cs - Controller/Identity |
+|RF-007| O sistema deve permitir o cadastro de metas de estudo. | Aluno.cs - Model; Register.cs e Login.cs - Controller/Identity |
+|RF-008| 	O sistema deve permitir ao usuário realizar sessões de estudo com base no método pomodoro. | Sessao.cs - Model; SessoesController.cs |
+|RF-009| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | Evento.cs - Model; AgendaController.cs |
+|RF-010| O sistema deve gerar relatório mostrando o andamento em relação às metas de estudo e dados sobre o tempo estudado. | |
 
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+A aplicação está disponível para acesso no link: https://studysetapp.azurewebsites.net/
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+O usuário pode fazer cadastro e login para testar a aplicação. Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
