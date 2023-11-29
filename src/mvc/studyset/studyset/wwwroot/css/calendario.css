@@ -1,0 +1,351 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.body-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside {
+    flex: auto;
+    background-color: #ddd;
+    text-align: -webkit-center;
+    padding-right: 15rem;
+}
+
+
+#mainNavbar #logo {
+    width: 120px;
+    margin-left: 5px;
+}
+
+#mainNavbar a.nav-link {
+    color: white;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+    #mainNavbar a.nav-link:hover {
+        color: #75BCFE;
+    }
+
+section {
+    padding-top: 10px;
+    background-color: #ddd;
+    padding-right: 10rem;
+}
+
+nav {
+    flex: auto;
+    background-color: #ddd;
+    padding: 20px;
+    background-color: #2B2E34
+}
+
+/* .container-fluid img {
+    justify-content: left;
+    background-color: red
+} */
+
+/*  CÓDIGO DO CALENDÁRIO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(189, 179, 179);
+}
+
+.wrapper {
+    width: 450px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+    .wrapper header {
+        display: flex;
+        align-items: center;
+        padding: 30px 15px 0px;
+        justify-content: space-between;
+        color: black;
+        font-weight: bolder;
+    }
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+header button {
+    height: 30px;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    color: gray;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+    header .icons span:hover {
+        background: #f2f2f2;
+    }
+
+    header .icons span:last-child {
+        margin-right: -10px;
+    }
+
+.calendar {
+    background-color: #267BCB;
+    border-radius: 20px;
+}
+
+    .calendar ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: #2B2E34;
+    }
+
+    .calendar .days {
+        margin-bottom: 20px;
+        color: white;
+        padding: 20px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .calendar .weeks li {
+        font-weight: 500;
+    }
+
+    .calendar .weeks {
+        background-color: #267BCB;
+        padding: 20px;
+        width: 430px;
+        border-radius: 20px;
+    }
+
+    .calendar ul li {
+        position: relative;
+        width: calc(100% / 7);
+    }
+
+    .calendar .days li {
+        z-index: 1;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before {
+    background: #a8a6a6;
+}
+
+.days li.active::before {
+    background: rgb(127, 105, 224);
+}
+
+/*button{
+    box-sizing: border-box;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;    
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cronograma começa aqui */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #2B2E34;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #2B2E34; /* Cor de fundo em azul */
+    padding: 10px; /* Preenchimento */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+    .day p {
+        margin-right: 10px;
+        min-width: 80px;
+        color: #fff; /* Cor do texto em azul */
+        background-color: #007bff; /* Cor de fundo em branco */
+        padding: 5px 10px; /* Preenchimento */
+        border-radius: 10px; /* Borda arredondada */
+    }
+
+.balloon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2B2E34;
+    color: #fff;
+}
+
+.note {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 5px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden; /* Adiciona rolagem se o conteúdo exceder a altura */
+}
+
+.btn {
+    cursor: pointer;
+    color: #007bff;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.titulosH2 {
+    margin-left: 15rem;
+    font-size: 26px;
+    font-family: sans-serif;
+    margin-top: -30px;
+}
+
+.formContainerGrande {
+    background-color: #333333;
+    color: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 15rem;
+}
+
+.container3 {
+    background-color: #ddd;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.formBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+}
+
+.btnArea {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.inputText {
+    border-radius: 5px;
+    display: block;
+    height: 4.5vh;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0.5px solid #d9d9d9;
+}
+
+.listaDetalhes {
+    width: 29%;
+    height: 36vh;
+    overflow: hidden scroll;
+    background-color: #2B2E34;
+    border-radius: 5px;
+    float: right;
+    margin-right: 185px;
+    margin-top: 10px;
+}
+
+.tituloproxevento {
+    margin-left: 75rem;
+    font-size: 26px;
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+
+.detalhesEvento {
+    border: 20px solid #2B2E34;
+    border-radius: 25px;
+    padding: 1px;
+    background-color: white;
+}
+
+    .detalhesEvento h3 {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-family: sans-serif;
+    }

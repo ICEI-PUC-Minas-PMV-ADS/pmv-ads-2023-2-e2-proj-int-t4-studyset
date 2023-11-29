@@ -9,12 +9,16 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = studyset
 build_property.RootNamespace = studyset
-build_property.ProjectDir = C:\Users\israe\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset\
+build_property.ProjectDir = C:\Users\israe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\israe\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset
+build_property.MSBuildProjectDirectory = C:\Users\israe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/israe/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/agenda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXGFnZW5kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/israe/source/repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
