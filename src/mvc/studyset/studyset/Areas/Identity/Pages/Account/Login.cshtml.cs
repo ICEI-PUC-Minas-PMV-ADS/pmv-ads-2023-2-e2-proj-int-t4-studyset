@@ -143,7 +143,7 @@ namespace studyset.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Login inválido, insira novamente e-mail e senha");
+                    ModelState.AddModelError(string.Empty, "Login inválido, insira novamente os dados");
                     return Page();
                 }
             }
