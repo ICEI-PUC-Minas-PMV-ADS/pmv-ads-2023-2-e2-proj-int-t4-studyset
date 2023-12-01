@@ -74,104 +74,168 @@
                 <section class="cronogramaSection">
                     <h1>Cronograma</h1>
                     <div class="cronogramaList">
-                    <div class="day">
-                        <h2>Dom</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Dom</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="day">
-                        <h2>Seg</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Seg</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="day">
-                        <h2>Ter</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Ter</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="day">
-                        <h2>Qua</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Qua</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="day">
-                        <h2>Qui</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Qui</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="day">
-                        <h2>Sex</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Sex</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="day">
-                        <h2>Sab</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                        <div class="day">
+                            <h2>Sab</h2>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </section>
             </div>
-            <section class="evento">
 
+            <div class="eventos">
+            <section class="novoEvento">
                 <div id="containerGrande">
                     <h1 class="titulosH2">Adicionar novo evento</h1>
-                    <form action="" id="eventos" class="formContainer formContainerGrande">
+                    <form asp-controller="Agenda" asp-action="Create" method="post" id="eventos" class="formContainer formContainerGrande">
 
                         <div id="campoTitulo">
-                            <label for="cargoTitulo">Título do evento:</label>
-                            <input type="text" name="cargoTitulo" id="Titulo" class="inputText inputData" />
+                            <label for="Titulo">Título do evento:</label>
+                            <input asp-for="NomeEvento" class="inputText inputData" />
+                            <span asp-validation-for="NomeEvento" class="text-danger"></span>
+                        </div>
+
+                        <div id="campoData">
+                            <label for="DataEvento">Data:</label>
+                            <input asp-for="DataEvento" type="datetime-local" class="inputText inputData"
+                                   value="@Model.DataEvento.ToString("yyyy-MM-ddTHH:mm")" />
+                            <span asp-validation-for="DataEvento" class="text-danger"></span>
                         </div>
 
                         <div id="campoTipo">
-                            <label for="Tipo" class="labelForm">Tipo:</label>
-                            <input type="text" name="areaTipo" id="areaTipo" class="inputText inputData" />
+                            <label for="Tipo" class="labelForm">Tipo de evento:</label>
+                            <select asp-for="Tipo" class="inputText inputData">
+                                @foreach (var tipo in Enum.GetValues(typeof(TipoEvento)))
+                                {
+                                    <option value="@tipo">@tipo</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Tipo" class="text-danger"></span>
                         </div>
 
                         <div id="campoRelevancia">
-                            <label for="relevancia" class="">Relevancia:</label>
-                            <input type="text" name="eventoRelevancia" id="eventoRelevancia" class="inputText inputData" />
+                            <label for="Prioridade">Prioridade:</label>
+                            <select asp-for="Prioridade" class="inputText inputData">
+                                @foreach (var prioridade in Enum.GetValues(typeof(PrioridadeEvento)))
+                                {
+                                    <option value="@prioridade">@prioridade</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Prioridade" class="text-danger"></span>
                         </div>
 
                         <div id="btnArea" class="btnArea">
-                            <button id="btnSalvarXp" class="formBtn">salvar</button>
-                            <button id="btnLimpar" type="reset" class="formBtn">limpar</button>
+                            <button type="submit" id="btnSalvarXp" class="formBtn">salvar</button>
+                            <!--<button type="reset" id="btnLimpar" class="formBtn">limpar</button>-->
                         </div>
                     </form>
                 </div>
-                <div class="listaEvento">
-                    <h1 class="tituloproxevento"> Eventos próximos</h1>
-                    <div class="listaDetalhes" id="listaDetalhes">
-                    </div>
+            </section>
+
+            <section class="listaEvento">
+                <h1 class="tituloproxevento">Eventos próximos</h1>
+                <div class="listaDetalhes" id="listaDetalhes">
+                        @if (ViewBag.Historico != null && ViewBag.Historico.Count > 0)
+                        {
+                            foreach (var evento in ViewBag.Historico)
+                            {
+                                <div class="conteudoEvento">
+                                    <h2>@evento.NomeEvento</h2>
+                                    <button class="excluirEventoBtn" type="button" data-bs-toggle="modal" data-bs-target="#excluirEventoModal_@evento.Id">
+                                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                                    </button>
+                                    <ul class="detalhesEvento">
+                                        <li>@evento.DataEvento.ToString("dd/MM/yyyy HH:mm")</li>
+                                        <li>@evento.Tipo</li>
+                                        <li>Prioridade: @evento.Prioridade</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Modal de Exclusão -->
+                                <div class="modal fade" id="excluirEventoModal_@evento.Id" tabindex="-1" aria-labelledby="excluirEventoModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="excluirEventoModalLabel">EXCLUIR EVENTO</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Tem certeza de que deseja excluir o evento "<strong>@evento.NomeEvento</strong>"?</p>
+                                                <!-- Formulário de Exclusão -->
+                                                <form asp-controller="Agenda" asp-action="Delete" method="post">
+                                                    <input type="hidden" asp-for="Id" value="@evento.Id" />
+                                                    <button type="submit" class="btn btn-danger">Sim</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <p>Não há eventos cadastrados.</p>
+                        }
                 </div>
             </section>
+            </div>
         </div>
     </main>
     <script src="https://kit.fontawesome.com/331a34d5ed.js"

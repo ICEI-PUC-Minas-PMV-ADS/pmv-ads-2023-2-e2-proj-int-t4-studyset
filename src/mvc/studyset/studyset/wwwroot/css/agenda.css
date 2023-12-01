@@ -227,7 +227,15 @@
     outline: none;
 }*/
 
-.evento {
+/* ESSA CLASSE ENCAPSULA TODA A PARTE DE EVENTOS */
+.eventos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--darkColor);
+}
+
+.novoEvento {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -241,7 +249,7 @@
 .formContainerGrande {
     display: flex;
     flex-direction: column;
-    background-color: #333333;
+    
     color: #ffffff;
     width: 400px;
     border-radius: 10px;
