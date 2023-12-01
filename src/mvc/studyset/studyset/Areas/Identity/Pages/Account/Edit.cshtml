@@ -26,9 +26,7 @@
     <main>
         <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active"
-                   aria-current="page"
-                   href="/src/pages/agenda.html">
+                <a class="nav-link" asp-controller="Agenda" asp-action="Create">
                     <i class="icon fa-regular fa-calendar-days"
                        style="color: #000000"></i>Agenda
                 </a>
@@ -64,15 +62,15 @@
                 </div>
 
                 <div class="form-group">
-                     <label asp-for="Input.TempoEstudo">Tempo disponível (horas)</label>
-                     <input asp-for="Input.TempoEstudo" class="form-control" />
-                     <span asp-validation-for="Input.TempoEstudo" class="text-danger"></span>
+                    <label asp-for="Input.TempoEstudo">Tempo disponível (horas)</label>
+                    <input asp-for="Input.TempoEstudo" class="form-control" />
+                    <span asp-validation-for="Input.TempoEstudo" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">
-                     <label asp-for="Input.MetaEstudo">Meta de Estudo (horas)</label>
-                     <input asp-for="Input.MetaEstudo" class="form-control" />
-                     <span asp-validation-for="Input.MetaEstudo" class="text-danger"></span>
+                    <label asp-for="Input.MetaEstudo">Meta de Estudo (horas)</label>
+                    <input asp-for="Input.MetaEstudo" class="form-control" />
+                    <span asp-validation-for="Input.MetaEstudo" class="text-danger"></span>
                 </div>
 
                 <div class="form-group submit">
@@ -80,8 +78,8 @@
                 </div>
             </form>
 
-            </div>
-        
+        </div>
+
 
         <script src="https://kit.fontawesome.com/331a34d5ed.js"
                 crossorigin="anonymous"></script>

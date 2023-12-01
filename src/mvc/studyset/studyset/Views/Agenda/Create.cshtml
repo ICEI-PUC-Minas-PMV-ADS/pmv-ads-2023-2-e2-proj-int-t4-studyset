@@ -23,7 +23,7 @@
     <script src="/js/agenda.js" defer></script>
 </head>
 <body>
-        <main>
+    <main>
         <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" asp-controller="Agenda" asp-action="Create">
@@ -46,16 +46,16 @@
             </li>
         </ul>
 
-            <div class="body-container">
+        <div class="mainContainer">
+            <div class="containerAgenda">
                 <aside>
-                    <div class="wrapper">
-                        <div class="titulo">
-                            <p class="current-date">Setembro</p>
-                            <div class="icons">
-                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
-                                <span id="next" class="material-symbols-rounded">chevron_right</span>
-                            </div>
+                    <div class="wrapperCalendario">
+                        <div class="icons">
+                            <span id="prev"><i class="fa-solid fa-chevron-left" style="color: #303030;"></i></span>
+                            <h1 class="current-date">Setembro</h1>
+                            <span id="next"><i class="fa-solid fa-chevron-right" style="color: #303030;"></i></span>
                         </div>
+
                         <div class="calendar">
                             <ul class="weeks">
                                 <li>Dom</li>
@@ -69,78 +69,80 @@
                             <ul class="days"></ul>
                         </div>
                     </div>
-
                 </aside>
+
                 <section class="cronogramaSection">
-                    <h4 class="cronograma"> Cronograma</h4>
-                        <div class="day">
-                            <p>Domingo</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <h1>Cronograma</h1>
+                    <div class="cronogramaList">
+                    <div class="day">
+                        <h2>Dom</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
 
-                        <div class="day">
-                            <p>Segunda</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <div class="day">
+                        <h2>Seg</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
 
-                        <div class="day">
-                            <p>Terça</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <div class="day">
+                        <h2>Ter</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
 
-                        <div class="day">
-                            <p>Quarta</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <div class="day">
+                        <h2>Qua</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
 
-                        <div class="day">
-                            <p>Quinta</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <div class="day">
+                        <h2>Qui</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
 
-                        <div class="day">
-                            <p>Sexta</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <div class="day">
+                        <h2>Sex</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
 
-                        <div class="day">
-                            <p>Sábado</p>
-                            <div class="balloon">
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                            </div>
+                    <div class="day">
+                        <h2>Sab</h2>
+                        <div class="balloon">
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
+                            <div class="note" contenteditable="true" data-max-words="200"></div>
                         </div>
+                    </div>
+                    </div>
                 </section>
             </div>
-        <section class="evento">
+            <section class="evento">
 
                 <div id="containerGrande">
-                <h2 class="titulosH2">Adicionar novo evento</h2>
+                    <h1 class="titulosH2">Adicionar novo evento</h1>
                     <form action="" id="eventos" class="formContainer formContainerGrande">
 
                         <div id="campoTitulo">
@@ -164,13 +166,14 @@
                         </div>
                     </form>
                 </div>
-            <div class="listaEvento">
-                    <h2 class="tituloproxevento"> Eventos próximos</h2>
-                <div class="listaDetalhes" id="listaDetalhes">
+                <div class="listaEvento">
+                    <h1 class="tituloproxevento"> Eventos próximos</h1>
+                    <div class="listaDetalhes" id="listaDetalhes">
+                    </div>
                 </div>
-            </div>                   
-        </section>
-      </main>
+            </section>
+        </div>
+    </main>
     <script src="https://kit.fontawesome.com/331a34d5ed.js"
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -183,5 +186,7 @@
 </html>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

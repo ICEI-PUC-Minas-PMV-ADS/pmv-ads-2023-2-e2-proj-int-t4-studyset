@@ -13,217 +13,206 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/root.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sessaoEstudo.css" />
     <script src="/js/pomodoro.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <main>
-      <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            aria-current="page"
-            href="/src/pages/agenda.html"
-            ><i
-              class="icon fa-regular fa-calendar-days"
-              style="color: #000000"
-            ></i
-            >Agenda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" asp-controller="Sessoes" asp-action="Create"><i class="icon fa-regular fa-clock" style="color: #000000"></i
-            >Sessões</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit" ><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/src/pages/dashboard.html"><i class="icon fa-solid fa-list-check" style="color: #000000"></i
-            >Relatórios</a>
-        </li>
-      </ul>
+        <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Agenda" asp-action="Create">
+                    <i class="icon fa-regular fa-calendar-days"
+                       style="color: #000000"></i>Agenda
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
+                    <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/src/pages/dashboard.html">
+                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Relatórios
+                </a>
+            </li>
+        </ul>
 
-      <section class="novaSessao container">
-        <h1>sessão de estudo</h1>
-        <div class="circulo progressoSegundos">
-          <div class="progressoTotal">
-            <div class="meioCirculo">
-              <div id="timer">
-                <div id="timerTitulo"></div>
-                <span class="hidden" id="horas"></span>
-                <span id="minutos"></span>
-                <span id="segundos"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="config">
-          <div class="configSessao">
-            <h2 class="configTitulo">tempo de estudo</h2>
-            <div class="configTime">
-              <button class="config-btn-mais" id="estudoMais" type="button">
-                +
-              </button>
-              <h3 id="tempoEstudo"></h3>
-              <button class="config-btn-menos" id="estudoMenos" type="button">
-                -
-              </button>
-            </div>
-          </div>
-          <div class="configDescanso">
-            <h2 class="configTitulo">tempo de descanso</h2>
-            <div class="configTime">
-              <button class="config-btn-mais" id="descansoMais" type="button">
-                +
-              </button>
-              <h3 id="tempoDescanso"></h3>
-              <button class="config-btn-menos" id="descansoMenos" type="button">
-                -
-              </button>
-            </div>
-          </div>
-        </div>
-        <form asp-action="Create" id="sessionForm" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group tituloSessao">
-                <input asp-for="TituloSessao" class="form-control" id="tituloSessaoInput" type="text" placeholder="título da sessão..." />
-                <span asp-validation-for="TituloSessao" class="text-danger"></span>
-            </div>
-            <div class="acoes">
-              <button type="button" class="acoes-btn" id="start">iniciar</button>
-              <!-- <button type="button" class="acoes-btn" id="pause">pausar</button> -->
-              <button type="button" class="acoes-btn" id="stop">parar</button>
-            </div>
-            <!-- Campos ocultos para armazenar a data e os horários -->
-            <div class="form-group">
-                <input asp-for="DataSessao" type="hidden" class="form-control" readonly />
-                <span asp-validation-for="DataSessao" class="text-danger"></span>
-            </div>
-            <div class="form-group">              
-                <input type="hidden" asp-for="InicioSessao" id="inicioSessao" />
-                <input type="hidden" asp-for="FimSessao" id="fimSessao" />
-            </div>
-            <!-- Campo temporário, depois tornar oculto 
-            <div class="form-group">
-                <label asp-for="AlunoId" class="control-label"></label>
-                <select asp-for="AlunoId" class="form-control" asp-items="ViewBag.AlunoId"></select>
-            </div> -->
-        </form>
-      </section>
-
-      <section class="historico container">
-        <h2>histórico</h2>
-        <div class="historicoSection">
-            @if (ViewBag.Historico != null) {
-                @foreach (var historicoItem in ViewBag.Historico) {
-                    <div class="conteudoHistorico">
-                        <ul class="listaHistorico">
-                            <li class="col data">@historicoItem.DataSessao.ToShortDateString()</li>
-                            <li class="col tituloSessaoHistorico">@historicoItem.TituloSessao</li>
-                            <li class="col duracaoSessao">@historicoItem.DuracaoSessao.ToString("hh\\:mm")</li>
-                            <li><button class="col excluirSessao" type="button" data-bs-toggle="modal" data-bs-target="#excluirSessaoModal_@historicoItem.Id"><i class=" fa-solid fa-trash" style="color: #ffffff;"></i></button></li>
-                        </ul>
+        <section class="novaSessao container">
+            <h1>sessão de estudo</h1>
+            <div class="circulo progressoSegundos">
+                <div class="progressoTotal">
+                    <div class="meioCirculo">
+                        <div id="timer">
+                            <div id="timerTitulo"></div>
+                            <span class="hidden" id="horas"></span>
+                            <span id="minutos"></span>
+                            <span id="segundos"></span>
+                        </div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Modal de Exclusão -->
-                    <div class="modal fade" id="excluirSessaoModal_@historicoItem.Id" tabindex="-1" aria-labelledby="excluirSessaoModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="excluirSessaoModalLabel">EXCLUIR SESSÃO</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Tem certeza de que deseja excluir a sessão de estudo "<strong>@historicoItem.TituloSessao</strong>"?</p>
-                                    <!-- Formulário de Exclusão -->
-                                    <form asp-action="Delete" method="post">
-                                        <input type="hidden" asp-for="Id" value="@historicoItem.Id" />
-                                        <button type="submit" class="btn btn-danger">Sim</button>
-                                    </form>
+            <div class="config">
+                <div class="configSessao">
+                    <h2 class="configTitulo">tempo de estudo</h2>
+                    <div class="configTime">
+                        <button class="config-btn-mais" id="estudoMais" type="button">
+                            +
+                        </button>
+                        <h3 id="tempoEstudo"></h3>
+                        <button class="config-btn-menos" id="estudoMenos" type="button">
+                            -
+                        </button>
+                    </div>
+                </div>
+                <div class="configDescanso">
+                    <h2 class="configTitulo">tempo de descanso</h2>
+                    <div class="configTime">
+                        <button class="config-btn-mais" id="descansoMais" type="button">
+                            +
+                        </button>
+                        <h3 id="tempoDescanso"></h3>
+                        <button class="config-btn-menos" id="descansoMenos" type="button">
+                            -
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <form asp-action="Create" id="sessionForm" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group tituloSessao">
+                    <input asp-for="TituloSessao" class="form-control" id="tituloSessaoInput" type="text" placeholder="título da sessão..." />
+                    <span asp-validation-for="TituloSessao" class="text-danger"></span>
+                </div>
+                <div class="acoes">
+                    <button type="button" class="acoes-btn" id="start">iniciar</button>
+                    <!-- <button type="button" class="acoes-btn" id="pause">pausar</button> -->
+                    <button type="button" class="acoes-btn" id="stop">parar</button>
+                </div>
+                <!-- Campos ocultos para armazenar a data e os horários -->
+                <div class="form-group">
+                    <input asp-for="DataSessao" type="hidden" class="form-control" readonly />
+                    <span asp-validation-for="DataSessao" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="InicioSessao" id="inicioSessao" />
+                    <input type="hidden" asp-for="FimSessao" id="fimSessao" />
+                </div>
+                <!-- Campo temporário, depois tornar oculto
+                <div class="form-group">
+                    <label asp-for="AlunoId" class="control-label"></label>
+                    <select asp-for="AlunoId" class="form-control" asp-items="ViewBag.AlunoId"></select>
+                </div> -->
+            </form>
+        </section>
+
+        <section class="historico container">
+            <h2>histórico</h2>
+            <div class="historicoSection">
+                @if (ViewBag.Historico != null)
+                {
+                    @foreach (var historicoItem in ViewBag.Historico)
+                    {
+                        <div class="conteudoHistorico">
+                            <ul class="listaHistorico">
+                                <li class="col data">@historicoItem.DataSessao.ToShortDateString()</li>
+                                <li class="col tituloSessaoHistorico">@historicoItem.TituloSessao</li>
+                                <li class="col duracaoSessao">@historicoItem.DuracaoSessao.ToString("hh\\:mm")</li>
+                                <li><button class="col excluirSessao" type="button" data-bs-toggle="modal" data-bs-target="#excluirSessaoModal_@historicoItem.Id"><i class=" fa-solid fa-trash" style="color: #ffffff;"></i></button></li>
+                            </ul>
+                        </div>
+
+                        <!-- Modal de Exclusão -->
+                        <div class="modal fade" id="excluirSessaoModal_@historicoItem.Id" tabindex="-1" aria-labelledby="excluirSessaoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="excluirSessaoModalLabel">EXCLUIR SESSÃO</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Tem certeza de que deseja excluir a sessão de estudo "<strong>@historicoItem.TituloSessao</strong>"?</p>
+                                        <!-- Formulário de Exclusão -->
+                                        <form asp-action="Delete" method="post">
+                                            <input type="hidden" asp-for="Id" value="@historicoItem.Id" />
+                                            <button type="submit" class="btn btn-danger">Sim</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
                 }
-            }
-        </div>
-      </section>
+            </div>
+        </section>
     </main>
 
-    <script
-      src="https://kit.fontawesome.com/331a34d5ed.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/331a34d5ed.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var startBtn = document.querySelector("#start");
-        var stopBtn = document.querySelector("#stop");
-        var inicioSessaoInput = document.querySelector("#inicioSessao");
-        var fimSessaoInput = document.querySelector("#fimSessao");
-        var tituloSessaoInput = document.querySelector("#tituloSessaoInput");
+        document.addEventListener("DOMContentLoaded", function () {
+            var startBtn = document.querySelector("#start");
+            var stopBtn = document.querySelector("#stop");
+            var inicioSessaoInput = document.querySelector("#inicioSessao");
+            var fimSessaoInput = document.querySelector("#fimSessao");
+            var tituloSessaoInput = document.querySelector("#tituloSessaoInput");
 
-        var startTime, endTime;
+            var startTime, endTime;
 
-        startBtn.addEventListener("click", function () {
-            // Verificar se o título da sessão foi fornecido antes de iniciar
-            if (!tituloSessaoInput.value) {
-                alert("Informe um título e dê início a uma nova sessão de estudo.");
-            } else {
-                startTime = new Date();
-                inicioSessaoInput.value = startTime.toISOString();
-            }
+            startBtn.addEventListener("click", function () {
+                // Verificar se o título da sessão foi fornecido antes de iniciar
+                if (!tituloSessaoInput.value) {
+                    alert("Informe um título e dê início a uma nova sessão de estudo.");
+                } else {
+                    startTime = new Date();
+                    inicioSessaoInput.value = startTime.toISOString();
+                }
+            });
+
+            stopBtn.addEventListener("click", function () {
+                if (startTime) {
+                    endTime = new Date();
+                    fimSessaoInput.value = endTime.toISOString();
+                    // Salvar automaticamente o formulário ao pressionar "Parar"
+                    document.querySelector("#sessionForm").submit();
+                }
+            });
+
+            // Verificar se o formulário está pronto antes de enviar
+            document.querySelector("#sessionForm").addEventListener("submit", function () {
+                // Validar se os campos necessários estão preenchidos
+                if (!tituloSessaoInput.value || !inicioSessaoInput.value || !fimSessaoInput.value) {
+                    alert("Por favor, preencha todos os campos.");
+                    return false; // Isso impedirá o envio do formulário
+                }
+            });
         });
-
-        stopBtn.addEventListener("click", function () {
-            if (startTime) {
-                endTime = new Date();
-                fimSessaoInput.value = endTime.toISOString();
-                // Salvar automaticamente o formulário ao pressionar "Parar"
-                document.querySelector("#sessionForm").submit();
-            }
-        });
-
-        // Verificar se o formulário está pronto antes de enviar
-        document.querySelector("#sessionForm").addEventListener("submit", function () {
-            // Validar se os campos necessários estão preenchidos
-            if (!tituloSessaoInput.value || !inicioSessaoInput.value || !fimSessaoInput.value) {
-                alert("Por favor, preencha todos os campos.");
-                return false; // Isso impedirá o envio do formulário
-            }
-        });
-    });
-</script>
-  </body>
+    </script>
+</body>
 </html>
 
 @section Scripts {
