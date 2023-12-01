@@ -1,48 +1,186 @@
 ﻿@model studyset.Models.Evento
 
 @{
-    ViewData["Title"] = "Adicionar evento";
+    ViewData["Title"] = "Agenda";
 }
 
-<h1>Adicionar evento</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/agenda.css">
+    <script src="/js/agenda.js" defer></script>
+</head>
+<body>
+        <main>
+        <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Agenda" asp-action="Create">
+                    <i class="icon fa-regular fa-calendar-days"
+                       style="color: #000000"></i>Agenda
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
+                    <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/src/pages/dashboard.html">
+                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Relatórios
+                </a>
+            </li>
+        </ul>
 
-<h4>Evento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NomeEvento" class="control-label"></label>
-                <input asp-for="NomeEvento" class="form-control" />
-                <span asp-validation-for="NomeEvento" class="text-danger"></span>
+            <div class="body-container">
+                <aside>
+                    <div class="wrapper">
+                        <div class="titulo">
+                            <p class="current-date">Setembro</p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li>Dom</li>
+                                <li>Seg</li>
+                                <li>Ter</li>
+                                <li>Qua</li>
+                                <li>Qui</li>
+                                <li>Sex</li>
+                                <li>Sáb</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                    </div>
+
+                </aside>
+                <section class="cronogramaSection">
+                    <h4 class="cronograma"> Cronograma</h4>
+                        <div class="day">
+                            <p>Domingo</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+
+                        <div class="day">
+                            <p>Segunda</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+
+                        <div class="day">
+                            <p>Terça</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+
+                        <div class="day">
+                            <p>Quarta</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+
+                        <div class="day">
+                            <p>Quinta</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+
+                        <div class="day">
+                            <p>Sexta</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+
+                        <div class="day">
+                            <p>Sábado</p>
+                            <div class="balloon">
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                            </div>
+                        </div>
+                </section>
             </div>
-            <div class="form-group">
-                <label asp-for="DataEvento" class="control-label"></label>
-                <input asp-for="DataEvento" class="form-control" />
-                <span asp-validation-for="DataEvento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tipo" class="control-label"></label>
-                <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoEvento>()"></select>
-                <span asp-validation-for="Tipo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Prioridade" class="control-label"></label>
-                <select asp-for="Prioridade" class="form-control" asp-items="Html.GetEnumSelectList<PrioridadeEvento>()"></select>
-                <span asp-validation-for="Prioridade" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="AlunoId" class="control-label"></label>
-                <select asp-for="AlunoId" class ="form-control" asp-items="ViewBag.AlunoId"></select>
-            </div>
-            <div class="form-group">
-                <a asp-action="Index" class="btn btn-info">Voltar</a>
-                <input type="submit" value="Salvar" class="btn btn-success" />
-            </div>
-        </form>
-    </div>
-</div>
+        <section class="evento">
+
+                <div id="containerGrande">
+                <h2 class="titulosH2">Adicionar novo evento</h2>
+                    <form action="" id="eventos" class="formContainer formContainerGrande">
+
+                        <div id="campoTitulo">
+                            <label for="cargoTitulo">Título do evento:</label>
+                            <input type="text" name="cargoTitulo" id="Titulo" class="inputText inputData" />
+                        </div>
+
+                        <div id="campoTipo">
+                            <label for="Tipo" class="labelForm">Tipo:</label>
+                            <input type="text" name="areaTipo" id="areaTipo" class="inputText inputData" />
+                        </div>
+
+                        <div id="campoRelevancia">
+                            <label for="relevancia" class="">Relevancia:</label>
+                            <input type="text" name="eventoRelevancia" id="eventoRelevancia" class="inputText inputData" />
+                        </div>
+
+                        <div id="btnArea" class="btnArea">
+                            <button id="btnSalvarXp" class="formBtn">salvar</button>
+                            <button id="btnLimpar" type="reset" class="formBtn">limpar</button>
+                        </div>
+                    </form>
+                </div>
+            <div class="listaEvento">
+                    <h2 class="tituloproxevento"> Eventos próximos</h2>
+                <div class="listaDetalhes" id="listaDetalhes">
+                </div>
+            </div>                   
+        </section>
+      </main>
+    <script src="https://kit.fontawesome.com/331a34d5ed.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+</html>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

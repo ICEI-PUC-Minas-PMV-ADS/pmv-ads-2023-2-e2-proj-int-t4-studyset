@@ -1,0 +1,284 @@
+﻿.body-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside {
+    flex: auto;
+    text-align: center;
+    padding-right: 5rem;
+}
+
+
+
+/* .container-fluid img {
+    justify-content: left;
+    background-color: red
+} */
+
+/*  CÓDIGO DO CALENDÁRIO*/
+
+.wrapper {
+    width: 450px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+    .wrapper .titulo {
+        display: flex;
+        align-items: center;
+        padding: 30px 15px 0px;
+        justify-content: space-between;
+        color: black;
+        font-weight: bolder;
+    }
+
+.titulo .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.titulo button {
+    height: 30px;
+}
+
+.titulo .icons span {
+    height: 38px;
+    width: 38px;
+    color: gray;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+    .titulo .icons span:hover {         /*hover das setinhas de cima do calendario*/
+        background: #f2f2f2;
+    }
+
+    .titulo .icons span:last-child {
+        margin-right: -10px;
+    }
+
+.calendar {
+    background-color: var(--mediumColor);
+    border-radius: 20px;
+}
+
+    .calendar ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: var(--darkColor);
+    }
+
+    .calendar .days {
+        margin-bottom: 20px;
+        color: white;
+        padding: 20px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .calendar .weeks li {
+        font-weight: 500;
+    }
+
+    .calendar .weeks {
+        background-color: var(--mediumColor);
+        padding: 20px;
+        width: 430px;
+        border-radius: 20px;
+    }
+
+    .calendar ul li {
+        position: relative;
+        width: calc(100% / 7);
+    }
+
+    .calendar .days li {
+        z-index: 1;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before {
+    background: #a8a6a6;
+}
+
+.days li.active::before {
+    background: rgb(127, 105, 224);
+}
+
+/*button{
+    box-sizing: border-box;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;    
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+*/
+
+/* Cronograma começa aqui */
+
+
+.cronogramaSection {
+    margin-top: 3rem;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #2B2E34; /* Cor de fundo em azul */
+    padding: 10px; /* Preenchimento */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+    .day p {
+        margin-right: 10px;
+        min-width: 80px;
+        color: #fff; /* Cor do texto em azul */
+        background-color: #007bff; /* Cor de fundo em branco */
+        padding: 5px 10px; /* Preenchimento */
+        border-radius: 10px; /* Borda arredondada */
+    }
+
+.balloon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2B2E34;
+    color: #fff;
+}
+
+.note {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 5px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden; /* Adiciona rolagem se o conteúdo exceder a altura */
+}
+
+/*.btn {
+    cursor: pointer;
+    color: #007bff;
+    border: none;
+    background: none;
+    outline: none;
+}*/
+.evento {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.titulosH2 {
+    font-size: 26px;
+    font-family: sans-serif;
+}
+
+.formContainerGrande {
+    display:flex;
+    flex-direction:column;
+    background-color: #333333;
+    color: #ffffff;
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+.formBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+}
+
+.btnArea {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.inputText {
+    border-radius: 5px;
+    display: block;
+    height: 4.5vh;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0.5px solid #d9d9d9;
+}
+
+.listaEvento {
+    display: flex;
+    flex-direction: column;
+}
+
+.listaDetalhes {
+    width: 900px;
+    height: 36vh;
+    overflow: hidden scroll;
+    background-color: #2B2E34;
+    border-radius: 5px;  
+}
+
+.tituloproxevento {
+    font-size: 26px;
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+
+.detalhesEvento {
+    border: 20px solid #2B2E34;
+    border-radius: 25px;
+    padding: 1px;
+    background-color: white;
+}
+
+    .detalhesEvento h3 {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
