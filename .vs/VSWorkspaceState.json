@@ -4,15 +4,14 @@
     "\\src",
     "\\src\\mvc",
     "\\src\\mvc\\studyset",
+    "\\src\\mvc\\studyset\\studyset",
     "\\src\\mvc\\studyset\\studyset\\Areas",
     "\\src\\mvc\\studyset\\studyset\\Areas\\Identity",
     "\\src\\mvc\\studyset\\studyset\\Areas\\Identity\\Pages",
     "\\src\\mvc\\studyset\\studyset\\Areas\\Identity\\Pages\\Account",
     "\\src\\mvc\\studyset\\studyset\\Views",
-    "\\src\\mvc\\studyset\\studyset\\Views\\Agenda",
-    "\\src\\mvc\\studyset\\studyset\\Views\\Sessoes",
-    "\\src\\mvc\\studyset\\studyset\\Views\\Shared"
+    "\\src\\mvc\\studyset\\studyset\\Views\\Sessoes"
   ],
-  "SelectedNode": "\\src\\mvc\\studyset\\studyset.sln",
+  "SelectedNode": "\\src\\mvc\\studyset\\studyset\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }
