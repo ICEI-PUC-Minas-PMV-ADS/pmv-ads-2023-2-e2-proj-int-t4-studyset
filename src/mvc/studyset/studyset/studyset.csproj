@@ -18,6 +18,8 @@
   <ItemGroup>
     <Compile Remove="Areas\Identity\Pages\Account\EditPassword.cs" />
     <Compile Remove="Areas\Identity\Pages\Account\Manage\EditPassword.cshtml.cs" />
+    <Compile Remove="Migrations\20231202154506_M-CronogramaTempo.cs" />
+    <Compile Remove="Migrations\20231202154506_M-CronogramaTempo.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

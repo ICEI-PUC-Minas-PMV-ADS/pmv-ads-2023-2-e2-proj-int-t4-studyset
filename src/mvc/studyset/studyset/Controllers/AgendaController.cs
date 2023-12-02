@@ -78,7 +78,7 @@ namespace studyset.Controllers
                 // Valida se a data do evento é futura e no formato correto
                 if (evento.DataEvento.Date < DateTime.Now.Date)
                 {
-                    ModelState.AddModelError("DataEvento", "Escolha uma data futura válida.");
+                    ModelState.AddModelError("DataEvento", "Escolha uma data válida");
                     ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
                     ViewBag.Historico = _context.Agenda.Include(c => c.Aluno)
                                           .Where(s => s.AlunoId == alunoId)

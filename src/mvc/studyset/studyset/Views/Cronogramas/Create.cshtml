@@ -18,9 +18,14 @@
                 <span asp-validation-for="ConteudoEstudo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DataEstudo" class="control-label"></label>
-                <input asp-for="DataEstudo" class="form-control" />
-                <span asp-validation-for="DataEstudo" class="text-danger"></span>
+                <label asp-for="DiaEstudo" class="control-label"></label>
+                <select asp-for="DiaEstudo" class="form-control">
+                    @foreach (var value in Enum.GetValues(typeof(DiaEstudo)))
+                    {
+                        <option value="@value">@value</option>
+                    }
+                </select>
+                <span asp-validation-for="DiaEstudo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="AlunoId" class="control-label"></label>

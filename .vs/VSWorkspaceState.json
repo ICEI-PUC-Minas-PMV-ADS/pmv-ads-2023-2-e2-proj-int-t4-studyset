@@ -4,12 +4,14 @@
     "\\src",
     "\\src\\mvc",
     "\\src\\mvc\\studyset",
-    "\\src\\mvc\\studyset\\studyset",
-    "\\src\\mvc\\studyset\\studyset\\obj",
-    "\\src\\mvc\\studyset\\studyset\\obj\\Debug",
-    "\\src\\mvc\\studyset\\studyset\\obj\\Release",
-    "\\src\\mvc\\studyset\\studyset\\Properties",
-    "\\src\\mvc\\studyset\\studyset\\Views"
+    "\\src\\mvc\\studyset\\studyset\\Areas",
+    "\\src\\mvc\\studyset\\studyset\\Areas\\Identity",
+    "\\src\\mvc\\studyset\\studyset\\Areas\\Identity\\Pages",
+    "\\src\\mvc\\studyset\\studyset\\Areas\\Identity\\Pages\\Account",
+    "\\src\\mvc\\studyset\\studyset\\Views",
+    "\\src\\mvc\\studyset\\studyset\\Views\\Agenda",
+    "\\src\\mvc\\studyset\\studyset\\Views\\Sessoes",
+    "\\src\\mvc\\studyset\\studyset\\Views\\Shared"
   ],
   "SelectedNode": "\\src\\mvc\\studyset\\studyset.sln",
   "PreviewInSolutionExplorer": false

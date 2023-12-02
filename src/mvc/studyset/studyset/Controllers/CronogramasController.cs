@@ -49,11 +49,33 @@ namespace studyset.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Cronogramas.Add(cronograma);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                var aluno = await _context.Users.FindAsync(cronograma.AlunoId);
+                if (aluno == null)
+                {
+                    return NotFound();
+                }
+
+                // Verifica se o cronograma não excede o tempo disponível de estudo do aluno
+                var totalHorasDia = _context.Cronogramas
+                    .Where(c => c.AlunoId == aluno.Id && c.DiaEstudo == cronograma.DiaEstudo)
+                    .ToList()  // Força a avaliação no lado do cliente
+                    .Sum(c => c.TempoEstudoPadrao); // Propriedade que representa o tempo padrão do cronograma
+
+                if (totalHorasDia + cronograma.TempoEstudoPadrao <= aluno.TempoEstudo)
+                {
+                    // Se o número total de horas for menor ou igual ao tempo disponível, pode adicionar
+                    _context.Cronogramas.Add(cronograma);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Não há mais horas disponíveis, atualize seu perfil se precisar");
+                }
             }
 
+            // Se houver erros de validação, retorne à view
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", cronograma.AlunoId);
             return View();
         }
 
