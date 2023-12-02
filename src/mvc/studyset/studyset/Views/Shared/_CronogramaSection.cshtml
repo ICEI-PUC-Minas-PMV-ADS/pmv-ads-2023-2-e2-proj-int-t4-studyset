@@ -1,0 +1,25 @@
+﻿<div class="cronogramaList">
+    <div class="day">
+        <form id="createCronogramaForm" asp-controller="Cronogramas" asp-action="Create" method="post" class="cronogramaForm">
+
+            <div class="form-group">
+                <label for="ConteudoEstudo" class="control-label">Conteúdo de Estudo</label>
+                <input name="ConteudoEstudo" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="DiaEstudo" class="control-label">Dia de Estudo</label>
+                <select name="DiaEstudo" class="form-control">
+                    @foreach (DiaEstudo dia in Enum.GetValues(typeof(DiaEstudo)))
+                    {
+                        <option value="@dia">@dia</option>
+                    }
+                </select>
+                <span class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+    </div>
+</div>

@@ -41,7 +41,7 @@ namespace studyset.Controllers
         public IActionResult Create()
         {
             ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
-            return View();
+            return View("~/Views/Agenda/Create.cshtml");
         }
 
         [HttpPost]
@@ -55,28 +55,28 @@ namespace studyset.Controllers
                     return NotFound();
                 }
 
-                // Verifica se o cronograma não excede o tempo disponível de estudo do aluno
                 var totalHorasDia = _context.Cronogramas
                     .Where(c => c.AlunoId == aluno.Id && c.DiaEstudo == cronograma.DiaEstudo)
-                    .ToList()  // Força a avaliação no lado do cliente
-                    .Sum(c => c.TempoEstudoPadrao); // Propriedade que representa o tempo padrão do cronograma
+                    .ToList()
+                    .Sum(c => c.TempoEstudoPadrao);
 
                 if (totalHorasDia + cronograma.TempoEstudoPadrao <= aluno.TempoEstudo)
                 {
-                    // Se o número total de horas for menor ou igual ao tempo disponível, pode adicionar
                     _context.Cronogramas.Add(cronograma);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("Index");
+
+                    // Adicione uma mensagem de sucesso, se desejar
+                    ViewData["SuccessMessage"] = "Cronograma adicionado com sucesso.";
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Não há mais horas disponíveis, atualize seu perfil se precisar");
+                    ModelState.AddModelError(string.Empty, "O cronograma excede o tempo disponível de estudo do aluno para este dia");
                 }
             }
 
-            // Se houver erros de validação, retorne à view
-            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", cronograma.AlunoId);
-            return View();
+            // Se houver erros de validação ou se o cronograma não puder ser salvo, retorne à mesma página
+            ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
+            return View("~/Views/Agenda/Create.cshtml", cronograma);
         }
 
         public async Task<IActionResult> Edit(int? id)
