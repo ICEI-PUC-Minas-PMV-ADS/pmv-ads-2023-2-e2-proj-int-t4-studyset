@@ -9,211 +9,209 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = studyset
 build_property.RootNamespace = studyset
-build_property.ProjectDir = C:\Users\anabm\Documents\Universidade\Análise e Desenvolvimento de Sistemas\2º Eixo\Projeto\codigo\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\israe\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\anabm\Documents\Universidade\Análise e Desenvolvimento de Sistemas\2º Eixo\Projeto\codigo\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset
+build_property.MSBuildProjectDirectory = C:\Users\israe\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2023-2-e2-proj-int-t4-studyset\src\mvc\studyset\studyset
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Edit.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/EditPassword.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/EditPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFZGl0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Create.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Delete.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Details.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Edit.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Index.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Agenda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Create.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Jvbm9ncmFtYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Delete.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Jvbm9ncmFtYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Details.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Jvbm9ncmFtYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Edit.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Jvbm9ncmFtYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Index.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Cronogramas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3Jvbm9ncmFtYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/About.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/Index.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/Privacy.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Create.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Delete.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Details.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Edit.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Index.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Create.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Delete.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Details.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Edit.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Index.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Sessoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vzc29lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Shared/Error.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/_ViewImports.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/_ViewStart.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/anabm/Documents/Universidade/Análise e Desenvolvimento de Sistemas/2º Eixo/Projeto/codigo/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Shared/_Layout.cshtml]
+[C:/Users/israe/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/src/mvc/studyset/studyset/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-u4x1d10luw

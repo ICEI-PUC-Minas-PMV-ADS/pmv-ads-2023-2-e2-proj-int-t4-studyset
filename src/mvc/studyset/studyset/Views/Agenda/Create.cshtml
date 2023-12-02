@@ -78,8 +78,8 @@
                             <h2>Dom</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
+                                
                             </div>
                         </div>
 
@@ -87,8 +87,7 @@
                             <h2>Seg</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
                             </div>
                         </div>
 
@@ -96,8 +95,7 @@
                             <h2>Ter</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
                             </div>
                         </div>
 
@@ -105,8 +103,7 @@
                             <h2>Qua</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
                             </div>
                         </div>
 
@@ -114,8 +111,7 @@
                             <h2>Qui</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
                             </div>
                         </div>
 
@@ -123,8 +119,7 @@
                             <h2>Sex</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
                             </div>
                         </div>
 
@@ -132,8 +127,7 @@
                             <h2>Sab</h2>
                             <div class="balloon">
                                 <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
-                                <div class="note" contenteditable="true" data-max-words="200"></div>
+                                <span><button> <i class="fa-solid fa-plus"></i></button></span>
                             </div>
                         </div>
                     </div>
@@ -143,7 +137,7 @@
             <div class="eventos">
             <section class="novoEvento">
                 <div id="containerGrande">
-                    <h1 class="titulosH2">Adicionar novo evento</h1>
+                    <h1 class="tituloSection">Adicionar novo evento</h1>
                     <form asp-controller="Agenda" asp-action="Create" method="post" id="eventos" class="formContainer formContainerGrande">
 
                         <div id="campoTitulo">
@@ -190,7 +184,7 @@
             </section>
 
             <section class="listaEvento">
-                <h1 class="tituloproxevento">Eventos próximos</h1>
+                <h1 class="tituloSection">Eventos próximos</h1>
                 <div class="listaDetalhes" id="listaDetalhes">
                         @if (ViewBag.Historico != null && ViewBag.Historico.Count > 0)
                         {

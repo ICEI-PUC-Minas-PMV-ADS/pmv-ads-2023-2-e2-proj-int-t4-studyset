@@ -114,7 +114,7 @@
 .wrapperCalendario .calendar .weeks {
     background-color: var(--mediumColor);
     padding: 20px;
-    width: 430px;
+    /*/width: 430px;*/
     border-radius: 20px;
 }
 
@@ -185,7 +185,7 @@
     padding: 0.3rem; /* Preenchimento */
     background-color: var(--darkColor);
     border-radius: 10px;
-    max-width: 200vh;
+    max-width: 400px;
     overflow-x: hidden scroll;
 }
 
@@ -231,8 +231,11 @@
 .eventos {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     background-color: var(--darkColor);
+    border-radius:10px;
+   
+    
 }
 
 .novoEvento {
@@ -241,15 +244,19 @@
     align-items: center;
 }
 
-.titulosH2 {
+.tituloSection {
     font-size: 26px;
     font-family: sans-serif;
+    background-color:var(--bgColor);
+
+
 }
 
 .formContainerGrande {
     display: flex;
     flex-direction: column;
-    
+    padding-top:0;
+    padding:1rem;
     color: #ffffff;
     width: 400px;
     border-radius: 10px;
@@ -284,32 +291,41 @@
     width: 100%;
     margin-bottom: 20px;
     border: 0.5px solid #d9d9d9;
+    background-color:white;
 }
 
 .listaEvento {
     display: flex;
     flex-direction: column;
+    width:100%;
 }
 
 .listaDetalhes {
-    width: 500px;
+   
     height: 36vh;
     overflow: hidden scroll;
-    background-color: #2B2E34;
+    color:#fff;
     border-radius: 5px;
+    list-style-type:none;
+    margin-left:30px;
+    margin-right:30px;
+  
+    
+}
+.listaEvento ul {
+    list-style: none;
 }
 
-.tituloproxevento {
-    font-size: 26px;
-    font-family: sans-serif;
-    padding-top: 30px;
+.listaEvento h1{
+    padding-left:30px;
 }
+
 
 .detalhesEvento {
-    border: 20px solid #2B2E34;
-    border-radius: 25px;
-    padding: 1px;
+    border-radius: 15px;
+    padding: 10px;
     background-color: white;
+    color: black;
 }
 
     .detalhesEvento h3 {
