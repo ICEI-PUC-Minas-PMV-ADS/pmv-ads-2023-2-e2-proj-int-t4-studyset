@@ -131,3 +131,15 @@
 .modal-title {
     text-transform: uppercase;
 }
+
+@media (max-width: 992px) {
+    .cronogramaSection .formSection .cronogramaForm .form-content {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .cronogramaSection .formSection .cronogramaForm .form-group {
+        margin-bottom: 1.5rem;
+    }
+}
