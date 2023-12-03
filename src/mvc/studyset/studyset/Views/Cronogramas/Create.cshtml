@@ -1,7 +1,14 @@
 ﻿@model studyset.Models.Cronograma
 
 @{
-    ViewData["Title"] = "Adicionar novo item";
+    ViewData["Title"] = "Cronograma";
+
+    // Verifica se TempData["Historico"] não é nulo e preenche a ViewBag.Historico
+    if (TempData["Historico"] != null)
+    {
+        var historico = TempData["Historico"] as List<Cronograma>;
+        ViewBag.Historico = historico;
+    }
 }
 
 <!DOCTYPE html>
@@ -18,8 +25,9 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
           crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/agenda.css">
+    <link rel="stylesheet" href="/css/cronograma.css">
 </head>
 <body>
     <main>
@@ -31,6 +39,11 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" asp-controller="Cronogramas" asp-action="Create">
+                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Cronograma
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
                     <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
                 </a>
@@ -38,102 +51,65 @@
             <li class="nav-item">
                 <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/src/pages/dashboard.html">
-                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Relatórios
-                </a>
-            </li>
         </ul>
 
         <div class="mainContainer">
 
             <section class="cronogramaSection">
-                <h1>Cronograma</h1>
+                <div class="formSection">
+                    <h1>Cronograma</h1>
 
-                <form asp-action="Create" class="cronograma-form">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <form asp-controller="Cronogramas" asp-action="Create" method="post" class="cronogramaForm">
 
-                    <!-- Adicione os campos para cada dia da semana -->
-                    <div class="form-group">
-                        <label asp-for="ConteudoEstudo" class="control-label"></label>
-                        <textarea asp-for="ConteudoEstudo" class="form-control" rows="3"></textarea>
-                        <span asp-validation-for="ConteudoEstudo" class="text-danger"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label asp-for="DiaEstudo" class="control-label"></label>
-                        <select asp-for="DiaEstudo" class="form-control">
-                            @foreach (var value in Enum.GetValues(typeof(DiaEstudo)))
+                        <div class="error-message">
+                            @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
                             {
-                                <option value="@value">@value</option>
+                                <span class="text-danger">@ViewData["ErrorMessage"]</span>
                             }
-                        </select>
-                        <span asp-validation-for="DiaEstudo" class="text-danger"></span>
-                    </div>
+                        </div>
 
-                    <div class="form-group">
-                        <a asp-action="Index" class="btn btn-info">Voltar</a>
-                        <input type="submit" value="Salvar" class="btn btn-success" />
-                    </div>
-                </form>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-content">
+                        <div class="form-group">
+                            <input asp-for="ConteudoEstudo" class="form-control" type="text" placeholder="conteúdo de estudo" />
+                            <span asp-validation-for="ConteudoEstudo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <select asp-for="DiaEstudo" class="form-control">
+                                @foreach (var value in Enum.GetValues(typeof(DiaEstudo)))
+                                {
+                                    <option value="@value">@value</option>
+                                }
+                            </select>
+                            <span asp-validation-for="DiaEstudo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn">adicionar</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
 
                 <div class="cronogramaList">
-                    <div class="day">
-                        <h2>Dom</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-
+                    @foreach (var diaObject in Enum.GetValues(typeof(DiaEstudo)))
+                    {
+                        var dia = (DiaEstudo)diaObject;
+                        <div class="dia">
+                            <h2>@dia</h2>
+                            <ul class="list">
+                                @if (ViewBag.Historico != null)
+                                {
+                                    @foreach (var item in ((IEnumerable<Cronograma>)ViewBag.Historico).Where(c => c.DiaEstudo == dia))
+                                    {
+                                        <li class="conteudoEstudo">@item.ConteudoEstudo<span><button class="excluirItem" type="button" data-bs-toggle="modal" data-bs-target=""><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button></span></li>
+                                    }
+                                }
+                            </ul>
                         </div>
-                    </div>
-
-                    <div class="day">
-                        <h2>Seg</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <h2>Ter</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <h2>Qua</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <h2>Qui</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <h2>Sex</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-                        </div>
-                    </div>
-
-                    <div class="day">
-                        <h2>Sab</h2>
-                        <div class="balloon">
-                            <div class="note" contenteditable="true" data-max-words="200"></div>
-                            <span><button> <i class="fa-solid fa-plus"></i></button></span>
-                        </div>
-                    </div>
+                    }
                 </div>
             </section>
 

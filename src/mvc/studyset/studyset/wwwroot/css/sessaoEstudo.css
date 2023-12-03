@@ -1,5 +1,5 @@
 ﻿.novaSessao {
-    margin-top: 30px;
+    margin-top: 2rem;
     background-color: var(--darkColor);
     border-radius: 8px;
     width: 60%;
@@ -150,12 +150,6 @@ h1 {
     font-size: var(--smallFontSize);
 }
 
-#tituloSessaoInput:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
-
 .acoes .acoes-btn {
     background-color: var(--mediumColor);
     border-radius: 10px;
@@ -167,10 +161,10 @@ h1 {
     width: 6rem;
 }
 
-    .acoes .acoes-btn:hover {
-        background-color: #2471b9;
-        cursor: pointer;
-    }
+.acoes .acoes-btn:hover {
+    background-color: #2471b9;
+    cursor: pointer;
+}
 
 /* HISTÓRICO */
 
