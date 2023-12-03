@@ -161,6 +161,7 @@
     margin-top: 0.5rem;
     background-color: var(--darkColor);
     border-radius: 10px;
+    width: 60%;
 }
 
 .tituloSection {
@@ -178,6 +179,10 @@
     padding:1rem;
     color: white;
     border-radius: 10px;
+}
+
+.eventoForm select {
+    text-transform: lowercase;
 }
 
 
@@ -220,7 +225,7 @@
 .listaEvento {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
 }
 
 .listaDetalhes {
@@ -255,7 +260,11 @@
 }
 
 .modal-content {
-    background-color: var(--mediumColor);
+    color: black;
+}
+
+.modal-content .modal-title {
+    text-transform: uppercase;
 }
 
 .conteudoEvento button {

@@ -127,8 +127,8 @@
                             {
                                 <div class="conteudoEvento">
                                     <ul class="detalhesEvento">
-                                        <h2> Título: @evento.NomeEvento</h2>
-                                        <li> Data: @evento.DataEvento.ToString("dd/MM/yyyy - HH:mm")</li>
+                                        <h2>@evento.NomeEvento</h2>
+                                        <li>@evento.DataEvento.ToString("dd/MM/yyyy - HH:mm")</li>
                                         <li>Tipo de Evento: @evento.Tipo</li>
                                         <li>Prioridade: @evento.Prioridade</li>
                                         <button class="excluirEventoBtn" type="button" data-bs-toggle="modal" data-bs-target="#excluirEventoModal_@evento.Id">
