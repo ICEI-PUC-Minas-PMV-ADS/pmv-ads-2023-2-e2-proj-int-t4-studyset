@@ -88,16 +88,24 @@ namespace studyset.Controllers
                     await _context.SaveChangesAsync();
 
                     // Atualiza o histórico para o aluno logado
-                    TempData["Historico"] = _context.Cronogramas
-                                            .Include(c => c.Aluno)
-                                            .Where(c => c.AlunoId == alunoId)
-                                            .ToList();
+                    ViewBag.Historico = _context.Cronogramas
+                                .Include(c => c.Aluno)
+                                .Where(c => c.AlunoId == alunoId)
+                                .ToList();
+
 
                     return View("Create", cronograma);
                 }
                 else
                 {
                     ViewData["ErrorMessage"] = "Não há mais horas disponíveis, atualize seu perfil se precisar";
+
+                    // Atualiza o histórico para o aluno logado
+                    ViewBag.Historico = _context.Cronogramas
+                                .Include(c => c.Aluno)
+                                .Where(c => c.AlunoId == alunoId)
+                                .ToList();
+
                     return View("Create", cronograma);
                 }
             }
@@ -183,7 +191,12 @@ namespace studyset.Controllers
             var cronograma = await _context.Cronogramas.FindAsync(id);
             _context.Cronogramas.Remove(cronograma);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            // Obtenha o ID do aluno logado
+            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Redirecione para a página de cronogramas com o histórico atualizado
+            return RedirectToAction("Create", "Cronogramas", new { area = "", id = alunoId });
         }
 
         private bool CronogramaExists(int id)

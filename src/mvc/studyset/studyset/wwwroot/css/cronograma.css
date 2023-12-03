@@ -42,10 +42,6 @@
     margin-bottom: 1.5rem;
 }
 
-.cronogramaSection .formSection .cronogramaForm .form-content .form-group span.text-danger {
-    
-}
-
 .cronogramaSection .formSection .cronogramaForm .form-control {
     text-transform: lowercase;
 }
@@ -103,11 +99,10 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: scroll;
     list-style: none;
-    height: 3rem;
+    height: 3.94rem;
     padding-left: 0.5rem;
-
 }
 
 .cronogramaSection .cronogramaList .dia .list .conteudoEstudo {
@@ -120,10 +115,19 @@
     margin-right: 0.5rem;
     height: 2rem;
     border-radius: 10px; /* Borda arredondada */
+    white-space: nowrap;
 }
 
 .excluirItem {
     margin-left: 0.5rem;
     background: none;
     border: none;
+}
+
+.modal {
+    color: black;
+}
+
+.modal-title {
+    text-transform: uppercase;
 }

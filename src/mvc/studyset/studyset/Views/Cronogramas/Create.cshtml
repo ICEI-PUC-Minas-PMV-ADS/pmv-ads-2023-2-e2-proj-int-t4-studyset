@@ -104,7 +104,33 @@
                                 {
                                     @foreach (var item in ((IEnumerable<Cronograma>)ViewBag.Historico).Where(c => c.DiaEstudo == dia))
                                     {
-                                        <li class="conteudoEstudo">@item.ConteudoEstudo<span><button class="excluirItem" type="button" data-bs-toggle="modal" data-bs-target=""><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button></span></li>
+                                        <li class="conteudoEstudo">
+                                            @item.ConteudoEstudo<span>
+                                                <button class="excluirItem" type="button" data-bs-toggle="modal" data-bs-target="#excluirCronogramaModal_@item.Id">
+                                                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                                                </button>
+                                            </span>
+                                        </li>
+
+                                        <!-- Modal de Exclusão -->
+                                        <div class="modal fade" id="excluirCronogramaModal_@item.Id" tabindex="-1" aria-labelledby="excluirCronogramaModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="excluirCronogramaModalLabel">EXCLUIR CRONOGRAMA</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Tem certeza de que deseja excluir "<strong>@item.ConteudoEstudo</strong>" do cronograma?</p>
+                                                        <!-- Formulário de Exclusão -->
+                                                        <form asp-controller="Cronogramas" asp-action="Delete" method="post">
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                            <button type="submit" class="btn btn-danger">Sim</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     }
                                 }
                             </ul>
