@@ -191,14 +191,14 @@
                             foreach (var evento in ViewBag.Historico)
                             {
                                 <div class="conteudoEvento">
-                                    <h2>@evento.NomeEvento</h2>
-                                    <button class="excluirEventoBtn" type="button" data-bs-toggle="modal" data-bs-target="#excluirEventoModal_@evento.Id">
-                                        <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
-                                    </button>
                                     <ul class="detalhesEvento">
-                                        <li>@evento.DataEvento.ToString("dd/MM/yyyy HH:mm")</li>
-                                        <li>@evento.Tipo</li>
+                                        <h2> Título: @evento.NomeEvento</h2>
+                                        <li> Data: @evento.DataEvento.ToString("dd/MM/yyyy - HH:mm")</li>
+                                        <li>Tipo de Evento: @evento.Tipo</li>
                                         <li>Prioridade: @evento.Prioridade</li>
+                                        <button class="excluirEventoBtn" type="button" data-bs-toggle="modal" data-bs-target="#excluirEventoModal_@evento.Id">
+                                            <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                                        </button>
                                     </ul>
                                 </div>
 
