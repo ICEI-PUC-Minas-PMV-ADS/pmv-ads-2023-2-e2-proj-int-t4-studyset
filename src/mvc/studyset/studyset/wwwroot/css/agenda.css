@@ -1,6 +1,7 @@
 ﻿.mainContainer {
    display: flex;
    flex-direction: column;
+   align-items: center;
    justify-content: space-between;
    text-transform: lowercase;
 }
@@ -15,16 +16,11 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 3rem;
+    width: 60%;
+    margin-bottom: 3rem;
 }
 
 /*  CÓDIGO DO CALENDÁRIO*/
-
-.aside {
-    width: 50%;
-    /*flex: auto;
-    text-align: center;
-    padding-right: 5rem;*/
-}
 
 
 /*.wrapperCalendario {
@@ -155,91 +151,16 @@
     background: rgb(127, 105, 224);
 }
 
-/* Cronograma começa aqui */
-
-/*.cronogramaSection {
-    margin-left: 0.5rem;
-}
-
-.cronogramaSection h1 {
-    margin-bottom: 1rem;
-}
-
-.cronogramaSection .cronogramaList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-    min-height: 485px;
-}
-
-.cronogramaSection .day {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-    padding: 0.3rem;*/ /* Preenchimento */
-/*background-color: var(--darkColor);
-    border-radius: 10px;
-    max-width: 400px;
-    overflow-x: hidden scroll;
-}
-
-.cronogramaSection .day h2 {
-    font-weight: var(--mediumWeight);
-    text-align: start;
-    min-width: 60px;
-    min-height: 2rem;
-    margin-right: 0.5rem;
-    padding: 0.3rem 0.5rem;
-    color: var(--darkColor);*/ /* Cor do texto em cinza escuro */
-/*background-color: var(--mediumColor);*/ /* Cor de fundo em azul */
-/*border-radius: 10px;
-}*/
-
-/*.cronogramaSection .balloon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #2B2E34;
-    color: #fff;
-}*/
-
-/*.btn {
-    cursor: pointer;
-    color: #007bff;
-    border: none;
-    background: none;
-    outline: none;
-}*/
 
 /* ESSA CLASSE ENCAPSULA TODA A PARTE DE EVENTOS */
-
-
-.cronogramaSection .note {
-    border: 1px solid #ccc;
-    padding: 5px;
-    margin-right: 2px;
-    width: 150px;
-    height: 2rem;
-    border-radius: 10px; /* Borda arredondada */
-    overflow: hidden; /* Adiciona rolagem se o conteúdo exceder a altura */
-}
 
 .eventos {
     display: flex;
     flex-direction: row;
     align-items: start;
+    margin-top: 0.5rem;
     background-color: var(--darkColor);
-    border-radius:10px;
-}
-
-.novoEvento {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    border-radius: 10px;
 }
 
 .tituloSection {
@@ -250,13 +171,12 @@
     justify-content: space-evenly;
 }
 
-.formContainerGrande {
+.eventoForm {
     display: flex;
     flex-direction: column;
     padding-top:0;
     padding:1rem;
-    color: #ffffff;
-    width: 400px;
+    color: white;
     border-radius: 10px;
 }
 
@@ -350,12 +270,17 @@
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .containerAgenda {
         flex-direction: column;
     }
 
-    .historico {
-        width: 90%;
+    .eventos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .novoEvento {
+        margin-bottom: 1rem;
     }
 }
