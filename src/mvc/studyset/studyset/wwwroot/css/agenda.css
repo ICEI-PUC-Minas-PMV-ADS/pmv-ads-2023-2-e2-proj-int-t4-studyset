@@ -13,9 +13,10 @@
 .containerAgenda {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-left: 250px;
 }
 
 /*  CÓDIGO DO CALENDÁRIO*/
@@ -159,7 +160,7 @@
 
 /* Cronograma começa aqui */
 
-.cronogramaSection {
+/*.cronogramaSection {
     margin-left: 0.5rem;
 }
 
@@ -182,8 +183,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
-    padding: 0.3rem; /* Preenchimento */
-    background-color: var(--darkColor);
+    padding: 0.3rem;*/ /* Preenchimento */
+/*background-color: var(--darkColor);
     border-radius: 10px;
     max-width: 400px;
     overflow-x: hidden scroll;
@@ -196,18 +197,29 @@
     min-height: 2rem;
     margin-right: 0.5rem;
     padding: 0.3rem 0.5rem;
-    color: var(--darkColor); /* Cor do texto em cinza escuro */
-    background-color: var(--mediumColor); /* Cor de fundo em azul */
-    border-radius: 10px; /* Borda arredondada */
-}
+    color: var(--darkColor);*/ /* Cor do texto em cinza escuro */
+/*background-color: var(--mediumColor);*/ /* Cor de fundo em azul */
+/*border-radius: 10px;
+}*/
 
-.cronogramaSection .balloon {
+/*.cronogramaSection .balloon {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #2B2E34;
     color: #fff;
-}
+}*/
+
+/*.btn {
+    cursor: pointer;
+    color: #007bff;
+    border: none;
+    background: none;
+    outline: none;
+}*/
+
+/* ESSA CLASSE ENCAPSULA TODA A PARTE DE EVENTOS */
+
 
 .cronogramaSection .note {
     border: 1px solid #ccc;
@@ -219,23 +231,12 @@
     overflow: hidden; /* Adiciona rolagem se o conteúdo exceder a altura */
 }
 
-/*.btn {
-    cursor: pointer;
-    color: #007bff;
-    border: none;
-    background: none;
-    outline: none;
-}*/
-
-/* ESSA CLASSE ENCAPSULA TODA A PARTE DE EVENTOS */
 .eventos {
     display: flex;
     flex-direction: row;
     align-items: start;
     background-color: var(--darkColor);
     border-radius:10px;
-   
-    
 }
 
 .novoEvento {
@@ -248,8 +249,7 @@
     font-size: 26px;
     font-family: sans-serif;
     background-color:var(--bgColor);
-
-
+    padding-left: 5rem;
 }
 
 .formContainerGrande {
@@ -307,17 +307,15 @@
     color:#fff;
     border-radius: 5px;
     list-style-type:none;
-    margin-left:30px;
-    margin-right:30px;
-  
-    
+    margin-left:40px;
+    margin-right: 30px;
 }
 .listaEvento ul {
     list-style: none;
 }
 
 .listaEvento h1{
-    padding-left:30px;
+    padding-left: 10rem;
 }
 
 
@@ -334,8 +332,15 @@
         font-family: sans-serif;
     }
 
-/* RESPONSIVIDADE */
+.modal-content {
+    background-color: var(--mediumColor);
+}
 
+.botaoDeExcluir {
+    background-color: red;
+}
+
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .containerAgenda {
         flex-direction: column;
