@@ -1,0 +1,133 @@
+﻿.cronogramaSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-transform: lowercase;    
+}
+
+.cronogramaSection .formSection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkColor);
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 200px;
+    width: 60%;
+}
+
+.cronogramaSection .formSection h1 {
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: var(--mediumWeight);
+    text-align: center;
+}
+
+.cronogramaSection .formSection .cronogramaForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.cronogramaSection .formSection .cronogramaForm .error-message {
+    margin-bottom: 0.4rem;
+}
+
+.cronogramaSection .formSection .cronogramaForm .form-content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.cronogramaSection .formSection .cronogramaForm .form-control {
+    text-transform: lowercase;
+}
+
+.cronogramaSection .formSection .cronogramaForm button {
+    background-color: var(--mediumColor);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    align-items: center;
+    width: 6rem;
+}
+
+.cronogramaSection .cronogramaList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 60%;
+}
+
+.cronogramaSection .cronogramaList .dia {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.cronogramaSection .cronogramaList .dia h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: var(--mediumWeight);
+    text-align: center;
+    color: var(--darkColor);
+    font-weight: var(--boldWeight);
+    background-color: var(--mediumColor);
+    /* Bordas arredondadas apenas do lado esquerdo */
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    margin-bottom: 0;
+    padding: 0.5rem;
+    height: 3rem;
+    width: 6rem;
+}
+
+.cronogramaSection .cronogramaList .dia .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: var(--darkColor);
+    /* Bordas arredondadas apenas do lado direito */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    overflow-x: scroll;
+    list-style: none;
+    height: 3.94rem;
+    padding-left: 0.5rem;
+}
+
+.cronogramaSection .cronogramaList .dia .list .conteudoEstudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    height: 2rem;
+    border-radius: 10px; /* Borda arredondada */
+    white-space: nowrap;
+}
+
+.excluirItem {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+}
+
+.modal {
+    color: black;
+}
+
+.modal-title {
+    text-transform: uppercase;
+}

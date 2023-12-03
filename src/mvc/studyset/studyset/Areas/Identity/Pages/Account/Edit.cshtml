@@ -32,17 +32,17 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" asp-controller="Cronogramas" asp-action="Create">
+                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Cronograma
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
                     <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/src/pages/dashboard.html">
-                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Relatórios
-                </a>
             </li>
         </ul>
 
@@ -57,7 +57,7 @@
 
                 <div class="form-group">
                     <label asp-for="Input.NomeUsuario">Nome</label>
-                    <input asp-for="Input.NomeUsuario" class="form-control" aria-required="true" placeholder="nome" />
+                    <input asp-for="Input.NomeUsuario" class="form-control editInput" aria-required="true" placeholder="nome" />
                     <span asp-validation-for="Input.NomeUsuario" class="text-danger"></span>
                 </div>
 

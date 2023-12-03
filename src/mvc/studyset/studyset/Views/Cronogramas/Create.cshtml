@@ -1,44 +1,159 @@
 ﻿@model studyset.Models.Cronograma
 
 @{
-    ViewData["Title"] = "Adicionar novo item";
+    ViewData["Title"] = "Cronograma";
+
+    // Verifica se TempData["Historico"] não é nulo e preenche a ViewBag.Historico
+    if (TempData["Historico"] != null)
+    {
+        var historico = TempData["Historico"] as List<Cronograma>;
+        ViewBag.Historico = historico;
+    }
 }
 
-<h1>Adicionar novo item</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/cronograma.css">
+</head>
+<body>
+    <main>
+        <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Agenda" asp-action="Create">
+                    <i class="icon fa-regular fa-calendar-days"
+                       style="color: #000000"></i>Agenda
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Cronogramas" asp-action="Create">
+                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Cronograma
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
+                    <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
+            </li>
+        </ul>
 
-<h4>Cronograma</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="ConteudoEstudo" class="control-label"></label>
-                <input asp-for="ConteudoEstudo" class="form-control" />
-                <span asp-validation-for="ConteudoEstudo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DiaEstudo" class="control-label"></label>
-                <select asp-for="DiaEstudo" class="form-control">
-                    @foreach (var value in Enum.GetValues(typeof(DiaEstudo)))
+        <div class="mainContainer">
+
+            <section class="cronogramaSection">
+                <div class="formSection">
+                    <h1>Cronograma</h1>
+
+                    <form asp-controller="Cronogramas" asp-action="Create" method="post" class="cronogramaForm">
+
+                        <div class="error-message">
+                            @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+                            {
+                                <span class="text-danger">@ViewData["ErrorMessage"]</span>
+                            }
+                        </div>
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-content">
+                        <div class="form-group">
+                            <input asp-for="ConteudoEstudo" class="form-control" type="text" placeholder="conteúdo de estudo" />
+                            <span asp-validation-for="ConteudoEstudo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <select asp-for="DiaEstudo" class="form-control">
+                                @foreach (var value in Enum.GetValues(typeof(DiaEstudo)))
+                                {
+                                    <option value="@value">@value</option>
+                                }
+                            </select>
+                            <span asp-validation-for="DiaEstudo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn">adicionar</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="cronogramaList">
+                    @foreach (var diaObject in Enum.GetValues(typeof(DiaEstudo)))
                     {
-                        <option value="@value">@value</option>
+                        var dia = (DiaEstudo)diaObject;
+                        <div class="dia">
+                            <h2>@dia</h2>
+                            <ul class="list">
+                                @if (ViewBag.Historico != null)
+                                {
+                                    @foreach (var item in ((IEnumerable<Cronograma>)ViewBag.Historico).Where(c => c.DiaEstudo == dia))
+                                    {
+                                        <li class="conteudoEstudo">
+                                            @item.ConteudoEstudo<span>
+                                                <button class="excluirItem" type="button" data-bs-toggle="modal" data-bs-target="#excluirCronogramaModal_@item.Id">
+                                                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                                                </button>
+                                            </span>
+                                        </li>
+
+                                        <!-- Modal de Exclusão -->
+                                        <div class="modal fade" id="excluirCronogramaModal_@item.Id" tabindex="-1" aria-labelledby="excluirCronogramaModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="excluirCronogramaModalLabel">EXCLUIR CRONOGRAMA</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Tem certeza de que deseja excluir "<strong>@item.ConteudoEstudo</strong>" do cronograma?</p>
+                                                        <!-- Formulário de Exclusão -->
+                                                        <form asp-controller="Cronogramas" asp-action="Delete" method="post">
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                            <button type="submit" class="btn btn-danger">Sim</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </ul>
+                        </div>
                     }
-                </select>
-                <span asp-validation-for="DiaEstudo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="AlunoId" class="control-label"></label>
-                <select asp-for="AlunoId" class ="form-control" asp-items="ViewBag.AlunoId"></select>
-            </div>
-            <div class="form-group">
-                <a asp-action="Index" class="btn btn-info">Voltar</a>
-                <input type="submit" value="Salvar" class="btn btn-success" />
-            </div>
-        </form>
-    </div>
-</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/331a34d5ed.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+</html>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

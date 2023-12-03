@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using studyset.Models;
+using System.Security.Claims;
 
 namespace studyset.Controllers
 {
@@ -41,6 +42,18 @@ namespace studyset.Controllers
         public IActionResult Create()
         {
             ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
+
+            // Obtém o ID do aluno logado
+            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Obtém o histórico de cronogramas apenas para o aluno logado
+            var historico = _context.Cronogramas
+                                .Include(c => c.Aluno)
+                                .Where(c => c.AlunoId == alunoId)
+                                .ToList();
+
+            ViewBag.Historico = historico;
+
             return View();
         }
 
@@ -49,34 +62,57 @@ namespace studyset.Controllers
         {
             if (ModelState.IsValid)
             {
-                var aluno = await _context.Users.FindAsync(cronograma.AlunoId);
-                if (aluno == null)
-                {
-                    return NotFound();
-                }
+                // Capitaliza a primeira letra do título
+                cronograma.ConteudoEstudo = CapitalizeFirstLetter(cronograma.ConteudoEstudo);
 
-                // Verifica se o cronograma não excede o tempo disponível de estudo do aluno
-                var totalHorasDia = _context.Cronogramas
-                    .Where(c => c.AlunoId == aluno.Id && c.DiaEstudo == cronograma.DiaEstudo)
-                    .ToList()  // Força a avaliação no lado do cliente
-                    .Sum(c => c.TempoEstudoPadrao); // Propriedade que representa o tempo padrão do cronograma
+                // Obtém o ID do aluno logado
+                string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                // Obtém o aluno correspondente ao ID
+                var aluno = await _context.Users.FindAsync(alunoId);
+
+                // Associa o ID do aluno ao cronograma
+                cronograma.AlunoId = alunoId;
+
+                // Verificar se o cronograma não excede o tempo disponível de estudo do aluno
+                var cronogramasDia = _context.Cronogramas
+                    .Where(c => c.AlunoId == alunoId && c.DiaEstudo == cronograma.DiaEstudo)
+                    .ToList(); // Avaliação no lado do cliente
+
+                var totalHorasDia = cronogramasDia.Sum(c => c.TempoEstudoPadrao);
 
                 if (totalHorasDia + cronograma.TempoEstudoPadrao <= aluno.TempoEstudo)
                 {
                     // Se o número total de horas for menor ou igual ao tempo disponível, pode adicionar
                     _context.Cronogramas.Add(cronograma);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("Index");
+
+                    // Atualiza o histórico para o aluno logado
+                    ViewBag.Historico = _context.Cronogramas
+                                .Include(c => c.Aluno)
+                                .Where(c => c.AlunoId == alunoId)
+                                .ToList();
+
+
+                    return View("Create", cronograma);
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Não há mais horas disponíveis, atualize seu perfil se precisar");
+                    ViewData["ErrorMessage"] = "Não há mais horas disponíveis, atualize seu perfil se precisar";
+
+                    // Atualiza o histórico para o aluno logado
+                    ViewBag.Historico = _context.Cronogramas
+                                .Include(c => c.Aluno)
+                                .Where(c => c.AlunoId == alunoId)
+                                .ToList();
+
+                    return View("Create", cronograma);
                 }
             }
 
-            // Se houver erros de validação, retorne à view
+            // Se houver erros de validação, preencha novamente o dropdown e retorne à view
             ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario", cronograma.AlunoId);
-            return View();
+            return View(cronograma);
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -155,12 +191,28 @@ namespace studyset.Controllers
             var cronograma = await _context.Cronogramas.FindAsync(id);
             _context.Cronogramas.Remove(cronograma);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            // Obtenha o ID do aluno logado
+            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Redirecione para a página de cronogramas com o histórico atualizado
+            return RedirectToAction("Create", "Cronogramas", new { area = "", id = alunoId });
         }
 
         private bool CronogramaExists(int id)
         {
             return _context.Cronogramas.Any(e => e.Id == id);
+        }
+
+        // Método para capitalizar a primeira letra de string
+        private string CapitalizeFirstLetter(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            return char.ToUpper(input[0]) + input.Substring(1);
         }
     }
 }
