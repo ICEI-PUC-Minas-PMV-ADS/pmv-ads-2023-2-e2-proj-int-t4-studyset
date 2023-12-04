@@ -24,8 +24,8 @@
           rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
           crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/root.css" />
-    <link rel="stylesheet" href="/css/sessaoEstudo.css" />
+    <link rel="stylesheet" href="/css/root.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/sessaoEstudo.css" asp-append-version="true" />
     <script src="/js/pomodoro.js"></script>
 </head>
 <body>
@@ -95,7 +95,7 @@
     </section>
 
     <section class="relatorioMeta">
-        <p>Você estudou por <strong>@((ViewBag.TotalTempoEstudo != null) ? ViewBag.TotalTempoEstudo.ToString("hh\\:mm") : "0:00")</strong> hoje</p>
+        <p>você estudou por <strong>@((ViewBag.TotalTempoEstudo != null) ? ViewBag.TotalTempoEstudo.ToString("hh\\:mm") : "0:00")</strong> hoje</p>
     </section>
 
     <section class="historico container">

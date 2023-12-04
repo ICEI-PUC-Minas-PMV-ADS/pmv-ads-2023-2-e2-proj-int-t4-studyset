@@ -168,7 +168,7 @@ h1 {
 
 /* RELATORIO */
 
-.relatorioMeta {
+section.relatorioMeta {
     width: 50%;
     background-color: var(--darkColor);
     color: white;
@@ -196,6 +196,7 @@ h1 {
     max-height: 150px;
     overflow: hidden;
     overflow-y: scroll;
+    text-transform: lowercase;
 }
 
 .conteudoHistorico {
