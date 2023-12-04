@@ -4,7 +4,7 @@
 }
 
 #sobreContent .container {
-    background-color: var(--lightColor);
+    background-color: none;
     margin-top: 1rem;
     border-radius: 8px;
     height: 100%;

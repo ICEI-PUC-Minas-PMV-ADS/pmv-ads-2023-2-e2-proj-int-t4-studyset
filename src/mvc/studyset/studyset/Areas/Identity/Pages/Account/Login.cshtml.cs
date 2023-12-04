@@ -89,8 +89,8 @@ namespace studyset.Areas.Identity.Pages.Account
         {
             if (User.Identity.IsAuthenticated)
             {
-                // Se o usuário está autenticado, redireciona para a página de Sessao
-                return Redirect("/Sessoes/Create");
+                // Se o usuário está autenticado, redireciona para a página de Agenda
+                return Redirect("/Agenda/Create");
             }
 
             if (!string.IsNullOrEmpty(ErrorMessage))
@@ -114,8 +114,8 @@ namespace studyset.Areas.Identity.Pages.Account
         {
             if (User.Identity.IsAuthenticated)
             {
-                // Se o usuário já está autenticado, redireciona para a página de Sessao
-                return Redirect("/Sessoes/Create");
+                // Se o usuário já está autenticado, redireciona para a página de Agenda
+                return Redirect("/Agenda/Create");
             }
 
             returnUrl ??= Url.Content("~/");
@@ -130,7 +130,7 @@ namespace studyset.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return RedirectToPage("/Account/Edit", new { area = "Identity" });
+                    return Redirect("/Agenda/Create");
                 }
                 if (result.RequiresTwoFactor)
                 {

@@ -2,7 +2,7 @@
     margin-top: 2rem;
     background-color: var(--darkColor);
     border-radius: 8px;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,11 +166,26 @@ h1 {
     cursor: pointer;
 }
 
+/* RELATORIO */
+
+.relatorioMeta {
+    width: 50%;
+    background-color: var(--darkColor);
+    color: white;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 1rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+    align-self: center;
+}
+
 /* HISTÓRICO */
 
 .historico {
     margin-top: 30px;
-    width: 62%;
+    width: 52%;
 }
 
 .historico h2 {

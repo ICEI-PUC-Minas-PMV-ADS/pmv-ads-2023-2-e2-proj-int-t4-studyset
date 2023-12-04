@@ -111,8 +111,8 @@ namespace studyset.Areas.Identity.Pages.Account
         {
             if (User.Identity.IsAuthenticated)
             {
-                // Se o usuário está autenticado, redireciona para a página de Sessao
-                return Redirect("/Sessoes/Create");
+                // Se o usuário está autenticado, redireciona para a página de Agenda
+                return Redirect("/Agenda/Create");
             }
 
             ReturnUrl = returnUrl;

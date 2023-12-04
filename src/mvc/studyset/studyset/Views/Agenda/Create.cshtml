@@ -18,35 +18,11 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
           crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/agenda.css">
     <script src="/js/agenda.js" defer></script>
 </head>
 <body>
-    <main>
-        <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Agenda" asp-action="Create">
-                    <i class="icon fa-regular fa-calendar-days"
-                       style="color: #000000"></i>Agenda
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Cronogramas" asp-action="Create">
-                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Cronograma
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
-                    <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
-            </li>
-        </ul>
-
-        <div class="mainContainer">
+        <div class="mainContainer">      
             <div class="containerAgenda">
                     <div class="wrapperCalendario">
                         <div class="icons">
@@ -166,7 +142,7 @@
             </section>
             </div>
         </div>
-    </main>
+
     <script src="https://kit.fontawesome.com/331a34d5ed.js"
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"

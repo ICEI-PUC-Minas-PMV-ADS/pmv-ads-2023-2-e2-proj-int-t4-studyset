@@ -18,7 +18,7 @@ namespace studyset.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 // Direciona para a página sessão
-                return RedirectToAction("Create", "Sessoes");
+                return RedirectToAction("Create", "Agenda");
             }
 
             // Para usuários não logados, direciona para a homepage

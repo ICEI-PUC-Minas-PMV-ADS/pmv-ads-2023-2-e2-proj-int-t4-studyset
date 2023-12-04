@@ -14,7 +14,7 @@
     border-radius: 8px;
     padding: 1rem;
     min-height: 200px;
-    width: 60%;
+    width: 50%;
 }
 
 .cronogramaSection .formSection h1 {
@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    width: 60%;
+    width: 50%;
 }
 
 .cronogramaSection .cronogramaList .dia {
@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 992px) {
+    .cronogramaSection .formSection {
+        width: 80%;
+    }
+
     .cronogramaSection .formSection .cronogramaForm .form-content {
         flex-direction: column;
         align-items: center;
@@ -141,5 +145,9 @@
 
     .cronogramaSection .formSection .cronogramaForm .form-group {
         margin-bottom: 1.5rem;
+    }
+
+    .cronogramaSection .cronogramaList {
+        width: 80%;
     }
 }

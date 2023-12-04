@@ -1,7 +1,10 @@
-﻿main {
+﻿.mainLog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--bgColor);
     border-radius: 8px;
-    margin: 30px;
+    margin: 50px;
 }
 
 #secondNavbar a.nav-link {
@@ -12,4 +15,46 @@
 
 #secondNavbar .icon {
     margin-right: 0.3rem;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--darkColor);
+    width: 60%;
+    border-radius: 8px;
+}
+
+.relatorio, .sessao {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.relatorio .meta {
+    margin-left: 0.8rem;
+}
+
+.sessao a {
+    color: var(--mediumColor);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .relatorio, .sessao {
+        flex-direction: column;
+    }
+
+    .relatorio .meta {
+    margin-left: 0;
+    }
+
+    .sessao {
+       margin-top: 0.5rem;
+    }
 }

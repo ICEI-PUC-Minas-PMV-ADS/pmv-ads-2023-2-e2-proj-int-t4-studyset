@@ -59,6 +59,14 @@ namespace studyset.Controllers
 
             ViewBag.Historico = historico;
 
+            // Calcula a soma do tempo das sessões de estudo do dia atual em minutos
+            var totalTempoEstudoMinutes = historico
+                .Where(s => s.DataSessao == DateTime.Today)
+                .Sum(s => s.DuracaoSessao.TotalMinutes);
+
+            // Define a ViewBag para o total do tempo de estudo
+            ViewBag.TotalTempoEstudo = TimeSpan.FromMinutes(totalTempoEstudoMinutes);
+
             return View(novaSessao);
         }
 
@@ -69,6 +77,29 @@ namespace studyset.Controllers
             {
                 // Capitaliza a primeira letra do título
                 sessao.TituloSessao = CapitalizeFirstLetter(sessao.TituloSessao);
+
+                if (sessao.DuracaoSessao.TotalMinutes < 1)
+                {
+                    ModelState.AddModelError("DuracaoSessao", "A sessão deve ter pelo menos 1 minuto de duração.");
+
+                    // Recarrega os dados necessários e retorna a visão com os erros de modelo
+                    string alunoIdCreate = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    var historicoCreate = _context.Sessoes.Include(c => c.Aluno)
+                                                    .Where(s => s.AlunoId == alunoIdCreate)
+                                                    .ToList();
+
+                    ViewBag.Historico = historicoCreate;
+
+                    var totalTempoEstudoMinutesCreate = historicoCreate
+                        .Where(s => s.DataSessao == DateTime.Today)
+                        .Sum(s => s.DuracaoSessao.TotalMinutes);
+
+                    ViewBag.TotalTempoEstudo = TimeSpan.FromMinutes(totalTempoEstudoMinutesCreate);
+
+                    ViewData["AlunoId"] = new SelectList(_context.Users, "Id", "NomeUsuario");
+
+                    return View(sessao);
+                }
 
                 // Obtém o ID do aluno logado
                 string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -83,6 +114,12 @@ namespace studyset.Controllers
                 TempData["Historico"] = _context.Sessoes.Include(c => c.Aluno)
                                                .Where(s => s.AlunoId == alunoId)
                                                .ToList();
+
+                // Atualiza a ViewBag para o total do tempo de estudo
+                var historico = TempData["Historico"] as List<Sessao>;
+                ViewBag.TotalTempoEstudo = TimeSpan.FromMinutes(historico
+                    .Where(s => s.DataSessao == DateTime.Today)
+                    .Sum(s => s.DuracaoSessao.TotalMinutes));
 
                 return View("Create", sessao);
             }

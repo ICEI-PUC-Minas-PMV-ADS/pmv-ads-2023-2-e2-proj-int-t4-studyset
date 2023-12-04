@@ -25,144 +25,118 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
           crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/root.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sessaoEstudo.css" />
     <script src="/js/pomodoro.js"></script>
 </head>
 <body>
-    <main>
-        <ul id="secondNavbar" class="nav justify-content-md-end justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Agenda" asp-action="Create">
-                    <i class="icon fa-regular fa-calendar-days"
-                       style="color: #000000"></i>Agenda
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Cronogramas" asp-action="Create">
-                    <i class="icon fa-solid fa-list-check" style="color: #000000"></i>Cronograma
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="Sessoes" asp-action="Create">
-                    <i class="icon fa-regular fa-clock" style="color: #000000"></i>Sessões
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Identity" asp-page="/Account/Edit"><i class="icon fa-solid fa-user-pen" style="color: #000000"></i>Perfil</a>
-            </li>
-        </ul>
-
-        <section class="novaSessao container">
-            <h1>sessão de estudo</h1>
-            <div class="circulo progressoSegundos">
-                <div class="progressoTotal">
-                    <div class="meioCirculo">
-                        <div id="timer">
-                            <div id="timerTitulo"></div>
-                            <span class="hidden" id="horas"></span>
-                            <span id="minutos"></span>
-                            <span id="segundos"></span>
-                        </div>
+    <section class="novaSessao container">
+        <h1>sessão de estudo</h1>
+        <div class="circulo progressoSegundos">
+            <div class="progressoTotal">
+                <div class="meioCirculo">
+                    <div id="timer">
+                        <div id="timerTitulo"></div>
+                        <span class="hidden" id="horas"></span>
+                        <span id="minutos"></span>
+                        <span id="segundos"></span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="config">
-                <div class="configSessao">
-                    <h2 class="configTitulo">tempo de estudo</h2>
-                    <div class="configTime">
-                        <button class="config-btn-mais" id="estudoMais" type="button">
-                            +
-                        </button>
-                        <h3 id="tempoEstudo"></h3>
-                        <button class="config-btn-menos" id="estudoMenos" type="button">
-                            -
-                        </button>
-                    </div>
-                </div>
-                <div class="configDescanso">
-                    <h2 class="configTitulo">tempo de descanso</h2>
-                    <div class="configTime">
-                        <button class="config-btn-mais" id="descansoMais" type="button">
-                            +
-                        </button>
-                        <h3 id="tempoDescanso"></h3>
-                        <button class="config-btn-menos" id="descansoMenos" type="button">
-                            -
-                        </button>
-                    </div>
+        <div class="config">
+            <div class="configSessao">
+                <h2 class="configTitulo">tempo de estudo</h2>
+                <div class="configTime">
+                    <button class="config-btn-mais" id="estudoMais" type="button">
+                        +
+                    </button>
+                    <h3 id="tempoEstudo"></h3>
+                    <button class="config-btn-menos" id="estudoMenos" type="button">
+                        -
+                    </button>
                 </div>
             </div>
-            <form asp-action="Create" id="sessionForm" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group tituloSessao">
-                    <input asp-for="TituloSessao" class="form-control" id="tituloSessaoInput" type="text" placeholder="título da sessão..." />
-                    <span asp-validation-for="TituloSessao" class="text-danger"></span>
+            <div class="configDescanso">
+                <h2 class="configTitulo">tempo de descanso</h2>
+                <div class="configTime">
+                    <button class="config-btn-mais" id="descansoMais" type="button">
+                        +
+                    </button>
+                    <h3 id="tempoDescanso"></h3>
+                    <button class="config-btn-menos" id="descansoMenos" type="button">
+                        -
+                    </button>
                 </div>
-                <div class="acoes">
-                    <button type="button" class="acoes-btn" id="start">iniciar</button>
-                    <!-- <button type="button" class="acoes-btn" id="pause">pausar</button> -->
-                    <button type="button" class="acoes-btn" id="stop">parar</button>
-                </div>
-                <!-- Campos ocultos para armazenar a data e os horários -->
-                <div class="form-group">
-                    <input asp-for="DataSessao" type="hidden" class="form-control" readonly />
-                    <span asp-validation-for="DataSessao" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <input type="hidden" asp-for="InicioSessao" id="inicioSessao" />
-                    <input type="hidden" asp-for="FimSessao" id="fimSessao" />
-                </div>
-                <!-- Campo temporário, depois tornar oculto
-                <div class="form-group">
-                    <label asp-for="AlunoId" class="control-label"></label>
-                    <select asp-for="AlunoId" class="form-control" asp-items="ViewBag.AlunoId"></select>
-                </div> -->
-            </form>
-        </section>
+            </div>
+        </div>
+        <form asp-action="Create" id="sessionForm" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <section class="historico container">
-            <h2>histórico</h2>
-            <div class="historicoSection">
-                @if (ViewBag.Historico != null)
+            <div class="form-group tituloSessao">
+                <input asp-for="TituloSessao" class="form-control" id="tituloSessaoInput" type="text" placeholder="título da sessão..." />
+                <span asp-validation-for="TituloSessao" class="text-danger"></span>
+            </div>
+            <div class="acoes">
+                <button type="button" class="acoes-btn" id="start">iniciar</button>
+                <!-- <button type="button" class="acoes-btn" id="pause">pausar</button> -->
+                <button type="button" class="acoes-btn" id="stop">parar</button>
+            </div>
+            <!-- Campos ocultos para armazenar a data e os horários -->
+            <div class="form-group">
+                <input asp-for="DataSessao" type="hidden" class="form-control" readonly />
+                <span asp-validation-for="DataSessao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" asp-for="InicioSessao" id="inicioSessao" />
+                <input type="hidden" asp-for="FimSessao" id="fimSessao" />
+            </div>
+        </form>
+    </section>
+
+    <section class="relatorioMeta">
+        <p>Você estudou por <strong>@((ViewBag.TotalTempoEstudo != null) ? ViewBag.TotalTempoEstudo.ToString("hh\\:mm") : "0:00")</strong> hoje</p>
+    </section>
+
+    <section class="historico container">
+        <h2>histórico</h2>
+        <div class="historicoSection">
+            @if (ViewBag.Historico != null)
+            {
+                @foreach (var historicoItem in ViewBag.Historico)
                 {
-                    @foreach (var historicoItem in ViewBag.Historico)
-                    {
-                        <div class="conteudoHistorico">
-                            <ul class="listaHistorico">
-                                <li class="col data">@historicoItem.DataSessao.ToShortDateString()</li>
-                                <li class="col tituloSessaoHistorico">@historicoItem.TituloSessao</li>
-                                <li class="col duracaoSessao">@historicoItem.DuracaoSessao.ToString("hh\\:mm")</li>
-                                <li><button class="col excluirSessao" type="button" data-bs-toggle="modal" data-bs-target="#excluirSessaoModal_@historicoItem.Id"><i class=" fa-solid fa-trash" style="color: #ffffff;"></i></button></li>
-                            </ul>
-                        </div>
+                    <div class="conteudoHistorico">
+                        <ul class="listaHistorico">
+                            <li class="col data">@historicoItem.DataSessao.ToShortDateString()</li>
+                            <li class="col tituloSessaoHistorico">@historicoItem.TituloSessao</li>
+                            <li class="col duracaoSessao">@historicoItem.DuracaoSessao.ToString("hh\\:mm")</li>
+                            <li><button class="col excluirSessao" type="button" data-bs-toggle="modal" data-bs-target="#excluirSessaoModal_@historicoItem.Id"><i class=" fa-solid fa-trash" style="color: #ffffff;"></i></button></li>
+                        </ul>
+                    </div>
 
-                        <!-- Modal de Exclusão -->
-                        <div class="modal fade" id="excluirSessaoModal_@historicoItem.Id" tabindex="-1" aria-labelledby="excluirSessaoModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="excluirSessaoModalLabel">EXCLUIR SESSÃO</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Tem certeza de que deseja excluir a sessão de estudo "<strong>@historicoItem.TituloSessao</strong>"?</p>
-                                        <!-- Formulário de Exclusão -->
-                                        <form asp-action="Delete" method="post">
-                                            <input type="hidden" asp-for="Id" value="@historicoItem.Id" />
-                                            <button type="submit" class="btn btn-danger">Sim</button>
-                                        </form>
-                                    </div>
+                    <!-- Modal de Exclusão -->
+                    <div class="modal fade" id="excluirSessaoModal_@historicoItem.Id" tabindex="-1" aria-labelledby="excluirSessaoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="excluirSessaoModalLabel">EXCLUIR SESSÃO</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza de que deseja excluir a sessão de estudo "<strong>@historicoItem.TituloSessao</strong>"?</p>
+                                    <!-- Formulário de Exclusão -->
+                                    <form asp-action="Delete" method="post">
+                                        <input type="hidden" asp-for="Id" value="@historicoItem.Id" />
+                                        <button type="submit" class="btn btn-danger">Sim</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    }
+                    </div>
                 }
-            </div>
-        </section>
-    </main>
+            }
+        </div>
+    </section>
 
     <script src="https://kit.fontawesome.com/331a34d5ed.js"
             crossorigin="anonymous"></script>

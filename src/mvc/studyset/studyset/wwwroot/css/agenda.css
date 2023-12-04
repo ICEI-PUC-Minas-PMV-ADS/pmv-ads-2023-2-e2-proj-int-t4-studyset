@@ -15,21 +15,19 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 3rem;
-    width: 60%;
+    padding-top: 1.5rem;
+    width: 100%;
     margin-bottom: 3rem;
 }
 
 /*  CÓDIGO DO CALENDÁRIO*/
 
 
-/*.wrapperCalendario {
-    /*width: 450px;
-    border-radius: 10px;
-    margin-bottom: 0px;
-    color: white;
+.wrapperCalendario {
+    width: 50%;
 }
 
+/*
 .wrapperCalendario .titulo {
     display: flex;
     flex-direction: row;
@@ -40,7 +38,7 @@
     font-weight: bolder;
 }*/
 
-.wrapperCalendario .icons {
+    .wrapperCalendario .icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,7 +159,7 @@
     margin-top: 0.5rem;
     background-color: var(--darkColor);
     border-radius: 10px;
-    width: 60%;
+    width: 50%;
 }
 
 .tituloSection {
@@ -280,13 +278,14 @@
 
 /* RESPONSIVIDADE */
 @media (max-width: 992px) {
-    .containerAgenda {
-        flex-direction: column;
+    .wrapperCalendario {
+        width: 80%;
     }
 
     .eventos {
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
 
     .novoEvento {
