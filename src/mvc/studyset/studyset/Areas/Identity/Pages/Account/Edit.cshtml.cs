@@ -70,6 +70,13 @@ namespace studyset.Areas.Identity.Pages.Account
                 return NotFound($"Não foi possível carregar o perfil do usuário '{_userManager.GetUserId(User)}'.");
             }
 
+            // Verifica se a MetaEstudo é maior que o TempoEstudo
+            if (Input.MetaEstudo > Input.TempoEstudo)
+            {
+                ModelState.AddModelError(string.Empty, "A meta não pode ser maior que o seu tempo disponível.");
+                return Page();
+            }
+
             // Atualiza as propriedades do usuário
             user.NomeUsuario = Input.NomeUsuario;
             user.TempoEstudo = Input.TempoEstudo;

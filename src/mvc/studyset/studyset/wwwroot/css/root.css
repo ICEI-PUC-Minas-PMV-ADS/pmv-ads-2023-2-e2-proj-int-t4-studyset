@@ -32,6 +32,10 @@ body {
     list-style-type: none;
 }
 
+header {
+    margin-bottom: 6.5rem;
+}
+
 h1 {
     font-size: var(--biggerFontSize);
     font-weight: var(--boldWeight);
