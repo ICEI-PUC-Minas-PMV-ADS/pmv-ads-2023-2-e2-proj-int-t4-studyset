@@ -17,12 +17,14 @@ namespace studyset.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "Admin")] // Impedir que a página seja acessada
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Cronogramas.Include(c => c.Aluno);
             return View(await applicationDbContext.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")] // Impedir que a página seja acessada
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -117,6 +119,7 @@ namespace studyset.Controllers
             return View(cronograma);
         }
 
+        [Authorize(Roles = "Admin")] // Impedir que a página seja acessada
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -135,6 +138,7 @@ namespace studyset.Controllers
             return View(cronograma);
         }
 
+        [Authorize(Roles = "Admin")] // Impedir que a página seja acessada
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Cronograma cronograma)
         {
