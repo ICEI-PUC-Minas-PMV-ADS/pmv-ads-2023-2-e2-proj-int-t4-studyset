@@ -10,29 +10,25 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | CT a serem avaliados: |
 | :---	|
-| CT-001: Cadastro de acesso do usuário |
-| CT-002: Login e recuperação de senha	|
-| CT-003: Gerenciamento de datas |
-| CT-004: Restrição no cadastro de cronograma |
-| CT-005:  Cadastro de metas |
-| CT-006:  Notificações de metas |
-| CT-007:  Visualização de progresso |
+| CT-001: Cadastro e acesso de usuário |
+| CT-002: Edição dos dados cadastrais do usuário	|
+| CT-003: Recuperação de senha |
+| CT-004: Gerenciamento de datas na agenda |
+| CT-005:  Criação de cronograma semanal |
+| CT-006:  Adequação do tempo de estudo no cronograma |
+| CT-007:  Cadastro de meta de estudo |
+| CT-008:  Realização de sessão de estudo |
+| CT-009:  Notificação de eventos |
+| CT-0010:  Visualização de progresso |
 
-
-As abordagens escolhidas serão:
-| :---	|
-CT-001: Funcional
-CT-002: Funcional
-CT-003: Caso de uso
-
-| **Caso de Teste**| **CT-001: Cadastro de acesso do usuário** |
+| **Caso de Teste**| **CT-001: Cadastro e acesso de usuário** |
 | :--- | :---: |
-| Pré-condições | Estar na tela Homepage |
-| Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro |
-| Dados de entrada | Inserir nome: Leo, e-mail: Leonardojunio@gmail.com (Email já foi cadastrado) e senha: 1234|
-| Resultado esperado | Aviso de erro: "Este email já foi cadastrado" |
-| Avaliação (pegou/ não pegou erro) | O programa foi capaz de identificar o erro |
-| Evidência (print screen) | ![Erro de cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/130614485/b58e6014-73c8-4ee5-a70d-9d4516364ace) <br> ![usuarios cadastrados ](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/130614485/32bf34f1-f669-4adf-8d6c-031d8b036473) |
+| Pré-condições | Estar na  homepage |
+| Procedimentos (passo à passo) | 1. Acessar a página de cadastro a partir da homepage do site <br> 2. Preencher os dados do formulário seguindo as respectivas validações <br> 3. Submeter o cadastro <br> 4. Deslogar após o cadastro <br> 5. Realizar o login com os dados cadastrados nas etapas anteriores |
+| Dados de entrada | Inserir - Nome: Maria da Silva; E-mail: mariadasilva@gmail.com; Senha: S3nh@daMaria |
+| Resultado esperado | Validação de dados; Cadastro e login bem sucedidos |
+| Avaliação | O sistema validou os dados tanto no cadastro quanto login. Quando corretos, os dados permitiram cadastro e login bem sucedidos |
+| Evidência | |
 
 | **Caso de Teste** | **CT-002: Login e recuperação de senha** |
 | :--- | :---: |
