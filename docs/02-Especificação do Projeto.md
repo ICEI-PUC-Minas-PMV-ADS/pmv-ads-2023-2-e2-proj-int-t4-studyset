@@ -59,14 +59,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-001| O sistema deve ser responsivo em diferentes dispositivos e tamanhos de telas. | ALTA |
 |RNF-002| A aplicação deve ser compatível com os principais navegadores do mercado. | ALTA |
 |RNF-003| O sistema deve permitir a leitura imersiva (acessibilidade). | MÉDIA |
-|RNF-004| O sistema deve permitir destacar/ocultar o conteúdo escolhido pelo usuário. | BAIXA | 
-|RNF-005| O sistema deve permitir o salvamento automático. | MÉDIA |
-|RNF-006| O sistema deve permitir verificação em duas etapas, recuperação/alteração de senha. | BAIXA |
-|RNF-007| O sistema deve permitir o acesso aos dados e relatórios apenas ao respectivo usuário. | ALTA |
-|RNF-008| O tempo de resposta do sistema não deve ultrapassar os 8 segundos. | ALTA |
-|RNF-009| O back-end deverá ser desenvolvido na linguagem C#. | ALTA | 
-|RNF-010| O projeto deverá ser entregue até o final do semestre. | ALTA |
-|RNF-011| O projeto deverá ser executado apenas pelos alunos que compõe o grupo, sem contratação de profissionais. | ALTA |
+|RNF-004| O sistema deve permitir verificação em duas etapas, recuperação/alteração de senha. | BAIXA |
+|RNF-005| O sistema deve permitir o acesso aos dados e relatórios apenas ao respectivo usuário. | ALTA |
+|RNF-006| O tempo de resposta do sistema não deve ultrapassar os 8 segundos. | ALTA |
+|RNF-007| O back-end deverá ser desenvolvido na linguagem C#. | ALTA | 
+|RNF-008| O projeto deverá ser entregue até o final do semestre. | ALTA |
+|RNF-009| O projeto deverá ser executado apenas pelos alunos que compõe o grupo, sem contratação de profissionais. | ALTA |
 
 ## Restrições
 
