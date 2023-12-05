@@ -30,30 +30,83 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | Avaliação | O sistema validou os dados tanto no cadastro quanto login. Quando corretos, os dados permitiram cadastro e login bem sucedidos |
 | Evidência | |
 
-| **Caso de Teste** | **CT-002: Login e recuperação de senha** |
+| **Caso de Teste** | **CT-002: Edição dos dados cadastrais do usuário** |
 | :--- | :---: |
-| Pré-condições | Estar na tela de Homepage |
-| Procedimentos (passo à passo) | 1. Acessar a Homepage e procurar botão de login <br> 2. Inserir e-mail e senha do usuário|
-| Dados de entrada | E-mail: Leonardojunio@gmail.com, senha: 1234 (senha verdadeira: 1235) |
-| Resultado esperado | Aviso de erro: Usuário ou senha inválido |
-| Avaliação (pegou/ não pegou erro) | EM PROCESSO|
+| Pré-condições | Acessar a página de perfil do usuário |
+| Procedimentos (passo à passo) | 1. Acessar a página de perfil do usuário <br> 2. Editar os dados de perfil (nome, tempo disponível e/ou meta de estudo) <br> 3. Acessar a página de edição de dados <br> 4. Editar e-mail e/ou senha do usuário |
+| Resultado esperado |- O formulário de edição de perfil deve validar os dados inseridos <br> - Os dados alterados devem ser salvos com êxito no perfil do usuário <br> - O formulário de edição de dados deve exigir confirmação de senha para alteração de e-mail e senha <br> - Os dados editados devem ser salvos com êxito |
+|  	|  	|
+| Avaliação |O sistema validou os dados inseridos e não permitiu alteração de e-mail e senha sem a confirmação correta das credenciais. Após cadastro correto, os dados foram salvos |
 | Evidência (print screen) | |
 
-| **Caso de Teste**| **CT-003: Gerenciamento de datas** |
+| **Caso de Teste**| **CT-003:Recuperação de senha** |
 | :--- | :---: |
-| Pré-condições| Acessar tela Agenda|
-| Procedimentos (passo à passo) | 1. Acessar Homepage <br> 2. Inserir e-mail e senha do usuário <br> 3. Na aba perfil selecionar "Agenda" <br> 4. Clicar no botão "Adicionar novo evento"|
-| Resultado esperado | EM PROCESSO|
+| Pré-condições| Acessar a página de login|
+| Procedimentos (passo à passo) |1. Acessar a página de login <br> 2. Clicar em recuperar senha <br> 3. Inserir e-mail do usuário <br> 4. Verificar o recebimento do protocolo |
+| Avaliação | |
+| Resultado esperado |- O usuário deve receber o protocolo de recuperação de senha <br> - A senha deve ser recuperada com êxito | |
+
 | Evidência (print screen) |  |
 
-| **Caso de Teste**| **CT-006: Sessões de estudo** |
+| **Caso de Teste** | **CT-004:  Gerenciamento de datas na agenda** |
 | :--- | :---: |
-| Pré-condições | Estar na tela de Sessão de estudo |
-| Procedimentos (passo à passo) | 1. Acessar a página de sessões <br> 2. Ajustar os tempos de estudo/descanso da dessão <br> 3. Iniciar e parar a sessão de estudo <br> 4. Verificar se a sessão foi cadastrada no histórico |
-| Dados de entrada | Tempo padrão (25-5 minutos); Inserir título: Sessão teste |
-| Resultado esperado | "Sessão teste" aparece no histórico de sessões |
-| Avaliação | O sistema foi capaz de executar a sessão de estudo e cadastrá-la no banco de dados |
-| Evidência (print screen) | ![Realização da sessão](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129805332/72d21986-4285-48b1-8d4e-4117f991ec08) <br> ![Sessão cadastrada](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129805332/8148b204-4c11-4b56-a67c-1b20dfdc4ce6) |
+| Pré-condições |  Acessar a página de agenda do usuário  |
+| Procedimentos (passo à passo) |1. Acessar a página de agenda do usuário <br> 2. Adicionar novo evento <br> 3. Verificar a inclusão do evento na lista <br> 4. Verificar a marcação das datas de eventos no calendário <br> 5. Deletar um evento cadastrado |
+| Resultado esperado |- O formulário de cadastro de eventos deve validar os dados inseridos <br> - O evento cadastrado deve aparecer na lista de eventos do usuário <br> - As datas com eventos devem aparecer em destaque no calendário <br> - O usuário deve conseguir deletar os eventos cadastrados. |
+|  	|  	|
+| Avaliação |O sistema validou os dados e cadastrou corretamente o evento. O evento apareceu na lista e sua data foi marcada no calendário. Após confirmação, foi possível deletar o evento. |
+| Evidência (print screen) | |
+
+| **Caso de Teste** | **CT-005:  Criação de cronograma semanal** |
+| :--- | :---: |
+| Pré-condições | Acessar a página de cronograma do usuário  |
+| Procedimentos (passo à passo) | 1. Acessar a página de cronograma do usuário <br> 2. Cadastrar itens ao cronograma <br> 3. Verificar a inclusão dos itens no dia da semana correspondente <br> 4. Deletar um item de cronograma cadastrado |
+| Resultado esperado | - O item cadastrado deve aparecer no cronograma do dia da semana correspondente <br> - O usuário deve conseguir excluir os itens cadastrados. |
+|  	|  	|
+| Avaliação |Os itens foram cadastrados no dia da semana correto. Após confirmação, foi possível apagar o item do cronograma.|
+| Evidência (print screen) | |
+
+| **Caso de Teste**| **CT-006:  Adequação do tempo de estudo no cronograma** |
+| :--- | :---: |
+| Pré-condições | Verificar se o tempo disponível está cadastrado no perfil do usuário  |
+| Procedimentos (passo à passo) | 1. Verificar se o tempo disponível está cadastrado no perfil do usuário <br> 2. Acessar a página de cronograma do usuário <br> 3. Cadastrar itens de cronograma <br> 4. Verificar se a aplicação impede o cadastro de cronograma que se sobreponha ao tempo disponível para estudo |
+| Dados de entrada | Tempo disponivel 4 horas |
+| Resultado esperado | O sistema deve impedir o cadastro de cronograma inadequado |
+| Avaliação |O sistema não permitiu cadastrar mais itens quando o cronograma estava maior que o tempo disponível do usuário. |
+| Evidência (print screen) | |
+
+| **Caso de Teste**| **CT-007: Cadastro de meta de estudo** |
+| :--- | :---: |
+| Pré-condições | Acessar a página de perfil do usuário  |
+| Procedimentos (passo à passo) | 1. Acessar a página de perfil do usuário <br> 2. Inserir a meta de estudo |
+| Resultado esperado | - O sistema deve permitir o cadastro de meta de estudo <br> - O sistema deve impedir o cadastro de meta maior que o tempo disponível do usuário |
+| Avaliação |O sistema validou a meta de acordo com o tempo disponível do usuário. Quando adequada, a meta foi cadastrada corretamente. |
+| Evidência (print screen) | |
+
+| **Caso de Teste**| **CT-008: Realização de sessão de estudo** |
+| :--- | :---: |
+| Pré-condições | Acessar a página de perfil do usuário  |
+| Procedimentos (passo à passo) |  1. Acessar a página de sessão de estudo do usuário <br> 2.  Ajustar o tempo de estudo e descanso no timer <br> 3. Inserir o título da sessão <br> 4. Iniciar a sessão <br> 5. Pausar a sessão <br> 6. Verificar se a sessão aparece no histórico |
+| Resultado esperado | - O usuário deve realizar sessão de estudos com o tempo escolhido <br> - A sessão realizada deve constar no histórico de sessões |
+| Avaliação |A sessão de estudos foi realizada com o tempo escolhido e, ao encerrada, foi cadastrada e apareceu no histórico de sessões. No entanto, após apagar a sessão, não foi mais possível cadastrar novas. |
+| Evidência (print screen) | |
+
+| **Caso de Teste**| **CT-009:  Notificação de eventos** |
+| :--- | :---: |
+| Pré-condições | Acessar a página de agenda do usuário  |
+| Procedimentos (passo à passo) |  1. Acessar a página de agenda do usuário <br> 2. Verificar se as datas de eventos aparecem marcadas no calendário <br> 3. Verificar se os eventos são exibidos em lista com marcação do tipo e prioridade do evento |
+| Resultado esperado | - As datas com eventos cadastrados devem estar marcadas no calendário <br> - Os eventos devem ser exibidos na lista com marcação do tipo e prioridade |
+| Avaliação | As datas dos eventos cadastrados apareceram em destaque no calendário e, na lista, foi destacada em cores a prioridade de cada evento. |
+| Evidência (print screen) | |
+
+| **Caso de Teste**| **CT-010:   Visualização de progresso** |
+| :--- | :---: |
+| Pré-condições | Acessar qualquer página do usuário  |
+| Procedimentos (passo à passo) | 1. Acessar qualquer página do usuário <br> 2. Verificar se são mostrados os dados em relação ao tempo disponível e meta de estudo em lugar acessível <br> 3. Acessar a página de sessão de estudo do usuário <br> 4. Verificar se é mostrado junto ao histórico geral a quantidade de tempo estudado no dia |
+| Resultado esperado |- Os dados devem aparecer em local visível ao usuário em todas as páginas <br> - O tempo estudado no dia deve ser calculado com base nas sessões realizadas e mostrado junto ao histórico |
+| Avaliação | Os dados referentes ao tempo e meta de estudos do usuário foram mostrados no topo de todas as páginas. Na página de sessão, foi possível ver o tempo estudado no dia. |
+| Evidência (print screen) | |
+
 
 
 ## Avaliação
