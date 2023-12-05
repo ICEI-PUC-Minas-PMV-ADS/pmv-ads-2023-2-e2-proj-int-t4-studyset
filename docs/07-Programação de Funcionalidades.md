@@ -21,10 +21,10 @@ A tabela a seguir é ser preenchida com artefatos desenvolvidos. Cada artefato p
 |RF-007| O sistema deve permitir o cadastro de metas de estudo. | Aluno.cs - Model; Register.cs e Login.cs - Controller/Identity |
 |RF-008| 	O sistema deve permitir ao usuário realizar sessões de estudo com base no método pomodoro. | Sessao.cs - Model; SessoesController.cs |
 |RF-009| O sistema deve gerar notificações das datas importantes e metas a serem cumpridas. | Evento.cs - Model; AgendaController.cs |
-|RF-010| O sistema deve gerar relatório mostrando o andamento em relação às metas de estudo e dados sobre o tempo estudado. | |
+|RF-010| O sistema deve gerar relatório mostrando o andamento em relação às metas de estudo e dados sobre o tempo estudado. | Aluno.cs - Model; Edit.cshtml - Página e Controller/Identity; Sessao.cs - Model; SessoesController.cs; Layout.cshtml - Shared View |
 
 # Instruções de acesso
 
 A aplicação está disponível para acesso no link: https://studysetapp.azurewebsites.net/
 
-O usuário pode fazer cadastro e login para testar a aplicação. Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+O usuário deve fazer um cadastro para testar a aplicação. Após inserir os dados principais e realizar o cadastro, deve preencher na página "Meu Perfil" seu tempo disponível para estudo e sua meta de estudo, em horas. Por fim, pode utilizar as demais funcionalidades do site.
