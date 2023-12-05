@@ -4,7 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using studyset.Models;
+using System.Diagnostics;
 using System.Security.Claims;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace studyset.Controllers
 {
@@ -105,6 +108,22 @@ namespace studyset.Controllers
                                   .Where(s => s.AlunoId == alunoId)
                                   .ToList();
             return View(evento);
+        }
+
+        public class EventoDTO
+        {
+            public DateTime DataEvento { get; set; }
+        }
+
+        public IActionResult GetHistorico()
+        {
+            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var historico = _context.Agenda
+                                    .Where(s => s.AlunoId == alunoId)
+                                    .Select(e => new EventoDTO { DataEvento = e.DataEvento })
+                                    .ToList();
+
+            return Json(historico);
         }
 
         public async Task<IActionResult> Edit(int? id) 

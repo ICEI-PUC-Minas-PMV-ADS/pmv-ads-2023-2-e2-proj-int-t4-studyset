@@ -4,50 +4,59 @@
     ViewData["Title"] = "Agenda";
 }
 
+@functions {
+    string GetPrioridadeClass(string prioridade)
+    {
+        switch (prioridade?.ToLower())
+        {
+            case "baixa":
+                return "prioridade-baixa";
+            case "média":
+                return "prioridade-media";
+            case "alta":
+                return "prioridade-alta";
+            default:
+                return string.Empty;
+        }
+    }
+}
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
-          rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/root.css" asp-append-version="true">
     <link rel="stylesheet" href="/css/agenda.css" asp-append-version="true">
-    <script src="/js/agenda.js" defer></script>
+    <script type="module"  src="/js/agenda.js" defer></script>
 </head>
 <body>
-        <div class="mainContainer">      
-            <div class="containerAgenda">
-                    <div class="wrapperCalendario">
-                        <div class="icons">
-                            <span id="prev"><i class="fa-solid fa-chevron-left" style="color: #303030;"></i></span>
-                            <h1 class="current-date">Setembro</h1>
-                            <span id="next"><i class="fa-solid fa-chevron-right" style="color: #303030;"></i></span>
-                        </div>
+    <div class="mainContainer">
+        <div class="containerAgenda">
+            <div class="wrapperCalendario">
+                <div class="icons">
+                    <span id="prev"><i class="fa-solid fa-chevron-left" style="color: #303030;"></i></span>
+                    <h1 class="current-date"></h1>
+                    <span id="next"><i class="fa-solid fa-chevron-right" style="color: #303030;"></i></span>
+                </div>
 
-                        <div class="calendar">
-                            <ul class="weeks">
-                                <li>Dom</li>
-                                <li>Seg</li>
-                                <li>Ter</li>
-                                <li>Qua</li>
-                                <li>Qui</li>
-                                <li>Sex</li>
-                                <li>Sáb</li>
-                            </ul>
-                            <ul class="days"></ul>
-                        </div>
-                    </div>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Dom</li>
+                        <li>Seg</li>
+                        <li>Ter</li>
+                        <li>Qua</li>
+                        <li>Qui</li>
+                        <li>Sex</li>
+                        <li>Sáb</li>
+                    </ul>
+                    <ul class="days"></ul>
+                </div>
             </div>
+        </div>
 
-            <h1>Meus Eventos</h1>
-            <div class="eventos">
+        <h1>Meus Eventos</h1>
+        <div class="eventos">
             <section class="novoEvento">
                 <div id="containerGrande">
                     <form asp-controller="Agenda" asp-action="Create" method="post" id="eventos" class="eventoForm">
@@ -97,60 +106,55 @@
 
             <section class="listaEvento">
                 <div class="listaDetalhes" id="listaDetalhes">
-                        @if (ViewBag.Historico != null && ViewBag.Historico.Count > 0)
+                    @if (ViewBag.Historico != null && ViewBag.Historico.Count > 0)
+                    {
+                        foreach (var evento in ViewBag.Historico)
                         {
-                            foreach (var evento in ViewBag.Historico)
-                            {
-                                <div class="conteudoEvento">
-                                    <ul class="detalhesEvento">
-                                        <h2>@evento.NomeEvento</h2>
-                                        <li>@evento.DataEvento.ToString("dd/MM/yyyy - HH:mm")</li>
-                                        <li>Tipo de Evento: @evento.Tipo</li>
-                                        <li>Prioridade: @evento.Prioridade</li>
-                                        <button class="excluirEventoBtn" type="button" data-bs-toggle="modal" data-bs-target="#excluirEventoModal_@evento.Id">
-                                            <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
-                                        </button>
-                                    </ul>
-                                </div>
+                            <div class="conteudoEvento">
+                                <ul class="detalhesEvento">
+                                    <li class="tituloEvento">
+                                        <h2>@evento.NomeEvento</h2><span>
+                                            <button class="excluirEventoBtn" type="button" data-bs-toggle="modal" data-bs-target="#excluirEventoModal_@evento.Id">
+                                                <i class="fa-solid fa-trash" style="color: #303030;"></i>
+                                            </button>
+                                        </span>
+                                    </li>
+                                    <li>@evento.DataEvento.ToString("dd/MM/yyyy - HH:mm")</li>
+                                    <li>Tipo de Evento: @evento.Tipo</li>
+                                    <li class="@GetPrioridadeClass(evento.Prioridade?.ToString())">Prioridade: @evento.Prioridade</li>
+                                </ul>
+                            </div>
 
-                                <!-- Modal de Exclusão -->
-                                <div class="modal fade" id="excluirEventoModal_@evento.Id" tabindex="-1" aria-labelledby="excluirEventoModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="excluirEventoModalLabel">EXCLUIR EVENTO</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>Tem certeza de que deseja excluir o evento "<strong>@evento.NomeEvento</strong>"?</p>
-                                                <!-- Formulário de Exclusão -->
-                                                <form asp-controller="Agenda" asp-action="Delete" method="post">
-                                                    <input type="hidden" asp-for="Id" value="@evento.Id" />
-                                                    <button type="submit" class="btn btn-danger">Sim</button>
-                                                </form>
-                                            </div>
+                            <!-- Modal de Exclusão -->
+                            <div class="modal fade" id="excluirEventoModal_@evento.Id" tabindex="-1" aria-labelledby="excluirEventoModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="excluirEventoModalLabel">EXCLUIR EVENTO</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Tem certeza de que deseja excluir o evento "<strong>@evento.NomeEvento</strong>"?</p>
+                                            <!-- Formulário de Exclusão -->
+                                            <form asp-controller="Agenda" asp-action="Delete" method="post">
+                                                <input type="hidden" asp-for="Id" value="@evento.Id" />
+                                                <button type="submit" class="btn btn-danger">Sim</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                            }
+                            </div>
                         }
-                        else
-                        {
-                            <p>Não há eventos cadastrados.</p>
-                        }
+                    }
+                    else
+                    {
+                        <p>Não há eventos cadastrados.</p>
+                    }
                 </div>
             </section>
-            </div>
         </div>
+    </div>
 
-    <script src="https://kit.fontawesome.com/331a34d5ed.js"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
 </body>
 </html>
 

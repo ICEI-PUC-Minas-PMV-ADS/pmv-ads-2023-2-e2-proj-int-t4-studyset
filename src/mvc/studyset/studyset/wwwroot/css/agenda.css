@@ -146,9 +146,16 @@
 }
 
 .wrapperCalendario .days li.active::before {
-    background: rgb(127, 105, 224);
+    background: var(--mediumColor);
 }
 
+.wrapperCalendario .days li.event {
+    color: var(--mediumColor);
+}
+
+.wrapperCalendario .days li.event::before {
+    
+}
 
 /* ESSA CLASSE ENCAPSULA TODA A PARTE DE EVENTOS */
 
@@ -215,11 +222,6 @@
     background-color:white;
 }
 
-.conteudoEvento {
-    padding-top: 20px;
-    padding-right: 25px;
-}
-
 .listaEvento {
     display: flex;
     flex-direction: column;
@@ -244,6 +246,22 @@
     justify-content: space-evenly;
 }
 
+.conteudoEvento {
+    padding-top: 20px;
+    padding-right: 25px;
+}
+
+.tituloEvento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tituloEvento button {
+    border: none;
+    background: none;
+}
+
 .detalhesEvento {
     border-radius: 15px;
     padding: 10px;
@@ -257,6 +275,18 @@
     font-family: sans-serif;
 }
 
+.prioridade-baixa {
+    color: var(--mediumColor);
+}
+
+.prioridade-media {
+    color: green;
+}
+
+.prioridade-alta {
+    color: red;
+}
+
 .modal-content {
     color: black;
 }
@@ -265,16 +295,7 @@
     text-transform: uppercase;
 }
 
-.conteudoEvento button {
-    background-color: var(--mediumColor);
-    border-radius: 10px;
-    height: 30px;
-    width: 35px;
-    border: none;
-    padding-top: 1px;
-    flex-direction: row;
-    justify-content: flex-end;
-}
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 992px) {

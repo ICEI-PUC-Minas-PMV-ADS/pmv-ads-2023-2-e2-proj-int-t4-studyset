@@ -1,76 +1,110 @@
+// Importa a função getHistoricoData do arquivo historicoEventos.js
+import { getHistoricoData } from './historicoEventos.js';
+
 const currentDate = document.querySelector(".current-date"),
     daysTag = document.querySelector(".days"),
-    prevNextIcon = document.querySelectorAll(".icons span")
+    prevNextIcon = document.querySelectorAll(".icons span");
 
-// getting new date, current year and month
+// Função para obter o último dia do mês
+const getLastDayOfMonth = (year, month) => new Date(year, month + 1, 0).getDate();
+
+// Captura a data, mês e ano
 let date = new Date(),
     currYear = date.getFullYear(),
     currMonth = date.getMonth();
 
-const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+const months = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+];
 
+const renderCalendar = (eventDates) => {
+    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),
+        lastDateofMonth = getLastDayOfMonth(currYear, currMonth),
+        liTag = "";
 
-const renderCalendar = () => {
-    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting fist day of month 
-        lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
-        lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), //getting last day of month
-        lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
-    let liTag = "";
+    let isEventDate;  // Declare a variável aqui
 
-    for (let i = firstDayofMonth; i > 0; i--) {  // creating li of previous month last days
-        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+    for (let i = firstDayofMonth; i > 0; i--) {
+        liTag += `<li class="inactive">${getLastDayOfMonth(currYear, currMonth - 1) - i + 1}</li>`;
     }
 
-    for (let i = 1; i <= lastDateofMonth; i++) {  // creating li of all days of current month
-        // adding active class to li if current day, month, and year matched
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear ? "active" : "";
+    for (let i = 1; i <= lastDateofMonth; i++) {
+        let liClass = "";
 
-        liTag += `<li class ="${isToday}">${i}</li>`;
-    }
+        const currentDate = new Date(currYear, currMonth, i);
+        const currentDateISO = currentDate.toISOString().split('T')[0];
 
-    for (let i = lastDateofMonth; i < 6; i++) {  // creating li of next month firt days
-        liTag.innerHTML = liTag;
+        console.log('Current Date ISO:', currentDateISO);
+
+        if (eventDates) {
+            const eventDatesArray = Array.isArray(eventDates) ? eventDates : [];
+
+            console.log('Event Dates:', eventDatesArray);
+            console.log('Is Array:', Array.isArray(eventDatesArray));
+
+            // Verifica se a data está presente nos eventos
+            isEventDate = eventDatesArray.some((event) => {
+                // Utiliza um método diferente para criar uma data do evento
+                const eventDate = new Date(event.dataEvento);
+                const eventDateISO = eventDate.toISOString().split('T')[0];
+                return eventDateISO === currentDateISO;
+            });
+
+            console.log('Is Event Date:', isEventDate);
+        } else {
+            console.log('No Event Dates provided');
+        }
+
+        if (isEventDate) {
+            liClass += " event";
+        }
+
+        if (currMonth === date.getMonth() && currYear === date.getFullYear() && i === date.getDate()) {
+            liClass += " active";
+        }
+
+        liTag += `<li class="${liClass}">${i}</li>`;
     }
 
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
     daysTag.innerHTML = liTag;
-}
-renderCalendar();
+};
 
-prevNextIcon.forEach(icon => {
-    icon.addEventListener("click", () => { //adding click event on both icons
-        // if clicked icon is previous icon then decrement current month by 1 else increment it by
+const updateCalendar = async () => {
+    console.log('Atualizando o calendário...');
+    try {
+        const eventDates = await getHistoricoData();
+        console.log('Dados do histórico recebidos:', eventDates);
+        renderCalendar(eventDates);
+    } catch (error) {
+        console.error('Erro ao atualizar o calendário:', error);
+    }
+};
+
+updateCalendar();
+
+prevNextIcon.forEach((icon) => {
+    icon.addEventListener("click", () => {
         currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
 
-        if (currMonth < 0 || currMonth > 11) {  // if current month is less than 0 or greater than 11
-            // creating a new date of current year & month and pass it as date value
+        if (currMonth < 0 || currMonth > 11) {
             date = new Date(currYear, currMonth);
-            currYear = date.getFullYear(); // updating current year with new date year
-            currMonth = date.getMonth(); // upadating current month with new date month
-        } else { //else pass new Date as date value
-            date = new Date();
+            currYear = date.getFullYear();
+            currMonth = date.getMonth();
+        } else {
+            date = new Date(currYear, currMonth);
         }
-        renderCalendar();
+        updateCalendar();
     });
 });
-
-// Cronograma
-const notes = document.querySelectorAll('.note');
-
-notes.forEach(note => {
-    note.addEventListener('input', function () {
-        const maxWords = parseInt(this.getAttribute('data-max-words'), 10);
-        const words = this.innerText.split(/\s+/).filter(word => word !== '');
-        if (words.length > maxWords) {
-            this.innerText = words.slice(0, maxWords).join(' ');
-        }
-    });
-});
-
-//   Final do Calendario
-
-
-
-
-
-
