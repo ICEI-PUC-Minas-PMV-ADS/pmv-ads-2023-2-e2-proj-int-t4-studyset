@@ -198,11 +198,8 @@ namespace studyset.Controllers
             _context.Cronogramas.Remove(cronograma);
             await _context.SaveChangesAsync();
 
-            // Obtenha o ID do aluno logado
-            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            // Redirecione para a página de cronogramas com o histórico atualizado
-            return RedirectToAction("Create", "Cronogramas", new { area = "", id = alunoId });
+            // Redireciona para a página de cronogramas
+            return RedirectToAction("Create", "Cronogramas");
         }
 
         private bool CronogramaExists(int id)

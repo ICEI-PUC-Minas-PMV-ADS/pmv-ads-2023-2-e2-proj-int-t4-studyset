@@ -210,11 +210,8 @@ namespace studyset.Controllers
             _context.Sessoes.Remove(sessao);
             await _context.SaveChangesAsync();
 
-            // Obtenha o ID do aluno logado
-            string alunoId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            // Redirecione para a página de sessão de estudo com o histórico atualizado
-            return RedirectToAction("Create", "Sessoes", new { area = "", id = alunoId });
+            // Redireciona para a página de sessão
+            return RedirectToAction("Create", "Sessoes");
         }
 
         private bool SessaoExists(int id)

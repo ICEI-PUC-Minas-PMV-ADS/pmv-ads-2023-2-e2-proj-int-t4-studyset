@@ -146,7 +146,11 @@
 }
 
 .wrapperCalendario .days li.active::before {
-    background: var(--mediumColor);
+    background: var(--lightColor);
+}
+
+.wrapperCalendario .days li.active {
+    color: var(--darkColor);
 }
 
 .wrapperCalendario .days li.event {

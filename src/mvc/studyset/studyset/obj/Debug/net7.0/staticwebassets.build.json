@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sO0jDVzboa2NKP9euZCMV/bYzsNGcttZl1frWsyzq/E=",
+  "Hash": "9YjJAr3Fz4fF5fmFS9LTZ90Fx1IucQSpD5gMdK6+mro=",
   "Source": "studyset",
   "BasePath": "_content/studyset",
   "Mode": "Default",
@@ -1516,6 +1516,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\agenda.js"
+    },
+    {
+      "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\historicoEventos.js",
+      "SourceId": "studyset",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\",
+      "BasePath": "_content/studyset",
+      "RelativePath": "js/historicoEventos.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\historicoEventos.js"
     },
     {
       "Identity": "C:\\Users\\anabm\\Documents\\Universidade\\Análise e Desenvolvimento de Sistemas\\2º Eixo\\Projeto\\codigo\\pmv-ads-2023-2-e2-proj-int-t4-studyset\\src\\mvc\\studyset\\studyset\\wwwroot\\js\\pomodoro.js",

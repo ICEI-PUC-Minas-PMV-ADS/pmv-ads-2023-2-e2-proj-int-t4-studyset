@@ -9,9 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\audio\**" />
     <Compile Remove="wwwroot\NovaPasta\**" />
+    <Content Remove="wwwroot\audio\**" />
     <Content Remove="wwwroot\NovaPasta\**" />
+    <EmbeddedResource Remove="wwwroot\audio\**" />
     <EmbeddedResource Remove="wwwroot\NovaPasta\**" />
+    <None Remove="wwwroot\audio\**" />
     <None Remove="wwwroot\NovaPasta\**" />
   </ItemGroup>
 
@@ -24,6 +28,10 @@
 
   <ItemGroup>
     <Content Remove="Areas\Identity\Pages\Account\Manage\EditPassword.cshtml" />
+    <Content Remove="Views\Agenda\Delete.cshtml" />
+    <Content Remove="Views\Agenda\Details.cshtml" />
+    <Content Remove="Views\Agenda\Edit.cshtml" />
+    <Content Remove="Views\Agenda\Index.cshtml" />
     <Content Remove="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
 
