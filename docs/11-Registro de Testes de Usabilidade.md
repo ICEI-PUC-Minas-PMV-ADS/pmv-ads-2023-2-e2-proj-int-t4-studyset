@@ -29,7 +29,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 01|CTU-001: Visibilidade |01| Mantém os usuários informados sobre o que está acontecendo na tela|Exito|
-|Usuário 01|CTU-002: Falha calendário |02| Calendário falhando em marcar com cor as datas específicas quando adicionadas |Falha|
+|Usuário 01|CTU-002: Falha calendário |03| Calendário falhando em marcar com cor as datas específicas quando adicionadas |Falha|
 |Usuário 01|CTU-003: Falha de preenchimento |03| Em "adicionar eventos" não preenche o campo "Prioridade" |Falha| 
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
@@ -39,17 +39,17 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 03|CTU-001: Representação através de iconografia |01| Ícones para caledário, lixeira (apagar), agenda (anotações), adicionar (+) |Exito|
-|Usuário 03|CTU-002: Sistema intuitivo e funcional |02| Pomodoro, calendário, cronograma, login/logout |Exito|
+|Usuário 03|CTU-002: Sistema intuitivo e funcional |01| Pomodoro, calendário, cronograma, login/logout |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 04|CTU-001: Menu |01| Navegação simplificada e ágil com acesso livre a todas as abas da aplicação |Exito|
-|Usuário 04|CTU-002: Páginas de retorno |02| Todas as abas tem retorno simplificado |Exito|
+|Usuário 04|CTU-002: Páginas de retorno |01| Todas as abas tem retorno simplificado |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 05|CTU-001: Login/Logout |01| Falha em fazer login |Falha|
-|Usuário 05|CTU-002: Funcionalidades|02| O usuário consegue utilizar a aplicação de forma independente e como desejar |Exito|
+|Usuário 05|CTU-001: Login/Logout |04| Falha em fazer login |Falha|
+|Usuário 05|CTU-002: Funcionalidades|01| O usuário consegue utilizar a aplicação de forma independente e como desejar |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
@@ -57,7 +57,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 07|CTU-001: Mensagens e alertas |01| Login não respeita o formato de e-mail e senha padrão (ex: ...@gmail.com) |Falha|
+|Usuário 07|CTU-001: Mensagens e alertas |03| Login não respeita o formato de e-mail e senha padrão (ex: ...@gmail.com) |Falha|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
@@ -69,5 +69,5 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 10|CTU-001: Tamanho em diferentes telas |01| Falha em telas de smartphone, tablets e monitores com resolução abaixo de 480p |Falha|
-|Usuário 10|CTU-002: Responsividade|02| O sistema atua em perfeita sincronização com cronograma, calendário e eventos |Exito|
+|Usuário 10|CTU-001: Tamanho em diferentes telas |02| Falha em telas de smartphone, tablets e monitores com resolução abaixo de 480p |Falha|
+|Usuário 10|CTU-002: Responsividade|01| O sistema atua em perfeita sincronização com cronograma, calendário e eventos |Exito|
