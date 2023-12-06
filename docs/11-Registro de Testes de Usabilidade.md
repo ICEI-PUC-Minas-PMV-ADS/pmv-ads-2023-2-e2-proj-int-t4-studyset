@@ -19,6 +19,8 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |04|Identificamos problemas com prioridade média/alta para correção.|
 |05|Enfrentamos problemas que exigem correção imediata, impactando a entrega da funcionalidade.|
 
+<h4>Registro de Testes</h4>
+
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 01|CTU-001:  Visibilidade do conteúdo das páginas |01| - Todo o conteúdo do site deve ser visível e legível |Exito|
