@@ -28,7 +28,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 01|CTU-001  O sistema mantém os usuários informados sobre o que está acontecendo na tela |01| |Exito|
+|Usuário 01|CTU-001   |01| O sistema mantém os usuários informados sobre o que está acontecendo na tela|Exito|
 |Usuário 01|CTU-002: |03| Calendário falhando em marcar com cor as datas específicas adicionadas pelo usuário |Falha|
 |Usuário 01|CTU-003: Falha de preenchimento |01|Fui notificado sempre que iria excluir algum dado |Exito| 
 
