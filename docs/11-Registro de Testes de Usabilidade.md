@@ -64,8 +64,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 02|CTU-008: Restrição de acesso às páginas |01| O usuário não deve conseguir visitar as páginas inadequadas ao seu tipo de acesso |Exito|
-|Usuário 01|CTU-008: Restrição de acesso às páginas |01| - 
-O acesso do usuário deve ser limitado às páginas apropriadas para seu perfil, impedindo a visualização de conteúdo impróprio |Exito|
+|Usuário 01|CTU-008: Restrição de acesso às páginas |01| O acesso do usuário deve ser limitado às páginas apropriadas para seu perfil, impedindo a visualização de conteúdo impróprio |Exito|
 
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
