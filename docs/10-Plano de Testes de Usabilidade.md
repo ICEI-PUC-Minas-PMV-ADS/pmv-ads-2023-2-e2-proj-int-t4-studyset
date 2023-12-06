@@ -45,7 +45,7 @@ Nesta seção são apresentados os casos de testes de usabilidade, que permitem 
 | Caso de Teste | **CT-008: Restrição de acesso às páginas**	|
 | Objetivo do Teste | Verificar se as páginas possuem restrição de acesso quando necessário |
 | Passos | 1. Acessar o site <br> 2. Tentar acessar as páginas de funcionalidade sem login de usuário <br> 3. Realizar login de usuário <br> 4. Verificar se a homepage é trocada para a página de agenda de usuário <br> 5. Tentar acessar as páginas de funcionalidades de usuários não logados (cadastro e login) |
-| Critério de Êxito | - O usuário não deve conseguir visitar as páginas inequadas ao seu tipo de acesso (com ou sem login) |
+| Critério de Êxito | - O usuário não deve conseguir visitar as páginas inadequadas ao seu tipo de acesso (com ou sem login) |
 |  	|  	|
 | Caso de Teste | **CT-009: Acesso aos dados**	|
 | Objetivo do Teste | Verificar se o usuário possui acesso correto aos seus próprios dados |
