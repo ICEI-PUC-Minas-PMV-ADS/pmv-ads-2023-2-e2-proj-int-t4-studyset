@@ -53,7 +53,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 06|CTU-001: Prevenção de erros|01| O sistema notificou as minhas ações |Exito| 
+|Usuário 06|CTU-001: Prevenção de erros |01| O sistema notificou as minhas ações |Exito| 
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
