@@ -28,46 +28,52 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 01|CTU-001: Visibilidade |01| Mantém os usuários informados sobre o que está acontecendo na tela|Exito|
-|Usuário 01|CTU-002: Falha calendário |03| Calendário falhando em marcar com cor as datas específicas quando adicionadas |Falha|
-|Usuário 01|CTU-003: Falha de preenchimento |03| Em "adicionar eventos" não preenche o campo "Prioridade" |Falha| 
+|Usuário 01|CTU-001:  Visibilidade do conteúdo das páginas |01| - Todo o conteúdo do site deve ser visível e legível |Exito|
+|Usuário 01|CTU-001:  Visibilidade do conteúdo das páginas |02| o design do site permite completa visibilidade do conteúdo das páginas, com tamanho de fonte legível e alto contrate entre cores |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 02|CTU-001: Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação e os links levam para as páginas corretas |Exito|
+|Usuário 02|CTU-002: Consistência e padronização (navbar) |01| Mantem-se padronizado todas as telas da aplicação e os links levam para as páginas corretas |Exito|
+|Usuário 01|CTU-002: Consistência e padronização (navbar) |01| - Para usuários logados, o botão "login" deve ser substituído por "logout" e a mensagem de boas vindas deve conter o nome correto do usuário |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 03|CTU-001: Representação através de iconografia |01| Ícones para caledário, lixeira (apagar), agenda (anotações), adicionar (+) |Exito|
-|Usuário 03|CTU-002: Sistema intuitivo e funcional |01| Pomodoro, calendário, cronograma, login/logout |Exito|
+|Usuário 01|CTU-003: Correspondência e reconhecimento de ações |01|A iconografia utilizada na aplicação deve ser adequada às ações correspondentes (ex: para adicionar itens, botão "adicionar" ou ícone de "+"; para excluir, ícone de lixo ou "x") |Exito|
+|Usuário 02|CTU-003: Correspondência e reconhecimento de ações |01|- Os links na navbar devem seguir o padrão de aplicações web |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 04|CTU-001: Menu |01| Navegação simplificada e ágil com acesso livre a todas as abas da aplicação |Exito|
-|Usuário 04|CTU-002: Páginas de retorno |01| Todas as abas tem retorno simplificado |Exito|
+|Usuário 01|CTU-004:Fluxo claro e facilitado entre as páginas|01|Todas as páginas devem possuir retorno e/ou caminho para outras páginas |Exito|
+|Usuário 02|CTU-004: Fluxo claro e facilitado entre as páginas |01|  Para usuários logados, o menu interno deve estar sempre disponível, fornecendo links para todas as funcionalidades |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 05|CTU-001: Login/Logout |04| Falha em fazer login |Falha|
-|Usuário 05|CTU-002: Funcionalidades|01| O usuário consegue utilizar a aplicação de forma independente e como desejar |Exito|
+|Usuário 01|CTU-005: Flexibilidade de uso |02| O usuário deve conseguir excluir dados conforme o desejado |Falha|
+|Usuário 02|CTU-005: Flexibilidade de uso |01| O usuário deve conseguir utilizar apenas as funcionalidades que desejar, sem que seja obrigado a utilizar as demais |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 06|CTU-001: Prevenção de erros |01| O sistema notificou as minhas ações |Exito| 
+|Usuário 01|CTU-006: Prevenção de erros |01| O sistema notificou as minhas ações |Exito| 
+|Usuário 02|CTU-006: Prevenção de erros |01|- Todas as funcionalidades devem emitir alerta, evitando que dados sejam apagados sem querer pelo usuário |Exito| 
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 07|CTU-001: Mensagens e alertas |03| Login não respeita o formato de e-mail e senha padrão (ex: ...@gmail.com) |Falha|
+|Usuário 01|CTU-007: Mensagens e alertas |01| Login não respeita o formato de e-mail e senha padrão (ex: ...@gmail.com) |Exito|
+|Usuário 02|CTU-007: Mensagens e alertas |03| Todos os casos de erro devem ter mensagem e/ou alerta que indique ao usuário o motivo do erro e dê instruções para um uso correto da funcionalidade |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 08|CTU-001: Restrições |01| Não houve restrições ou impedimentos de acesso nem acesso a outros perfis de usuário |Exito|
+|Usuário 02|CTU-008: Restrição de acesso às páginas |01| O usuário não deve conseguir visitar as páginas inadequadas ao seu tipo de acesso |Exito|
+|Usuário 01|CTU-008: Restrição de acesso às páginas |01| - 
+O acesso do usuário deve ser limitado às páginas apropriadas para seu perfil, impedindo a visualização de conteúdo impróprio |Exito|
+
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 09|CTU-001: Acesso aos dados |01| Os dados do usuário corresponde de forma correta sem erros e alterações |Exito|
+|Usuário 01|CTU-009: Acesso aos dados |01| O usuário não deve ter acesso aos dados de outros usuários|Exito|
+|Usuário 02|CTU-009: Acesso aos dados |01| - Os dados devem ser exibidos nas páginas correspondentes |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 10|CTU-001: Tamanho em diferentes telas |02| Falha em telas de smartphone, tablets e monitores com resolução abaixo de 480p |Falha|
-|Usuário 10|CTU-002: Responsividade|01| O sistema atua em perfeita sincronização com cronograma, calendário e eventos |Exito|
+|Usuário 01|CTU-010: Responsividade |02|O site deve se adequar esteticamente a diferentes tamanhos de tela |Exito|
+|Usuário 02|CTU-010: Responsividade|01|- O usuário deve conseguir navegar por todo o site e utilizar todas as funcionalidades independente do tamanho da tela |Exito|
