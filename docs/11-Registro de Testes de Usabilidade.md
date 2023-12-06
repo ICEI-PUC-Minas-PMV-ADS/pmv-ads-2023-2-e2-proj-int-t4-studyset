@@ -30,7 +30,7 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 01|CTU-001: Visibilidade |01| Mantém os usuários informados sobre o que está acontecendo na tela|Exito|
 |Usuário 01|CTU-002: Falha calendário |02| Calendário falhando em marcar com cor as datas específicas quando adicionadas |Falha|
-|Usuário 01|CTU-003: Falha de preenchimento |03| Em "adicionar evendos" não preenche o campo "Prioridade" |Falha| 
+|Usuário 01|CTU-003: Falha de preenchimento |03| Em "adicionar eventos" não preenche o campo "Prioridade" |Falha| 
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
@@ -43,13 +43,13 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 04|CTU-001: Menu |01| Navegação siplificada e ágil com acesso livre a todas as abas da aplicação |Exito|
+|Usuário 04|CTU-001: Menu |01| Navegação simplificada e ágil com acesso livre a todas as abas da aplicação |Exito|
 |Usuário 04|CTU-002: Páginas de retorno |02| Todas as abas tem retorno simplificado |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
 |Usuário 05|CTU-001: Login/Logout |01| Falha em fazer login |Falha|
-|Usuário 05|CTU-002: Funcionalidades|02| O usuário consegue utilizar a aplicação com de forma independentes entre si e como desejar |Exito|
+|Usuário 05|CTU-002: Funcionalidades|02| O usuário consegue utilizar a aplicação de forma independente e como desejar |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
@@ -61,11 +61,11 @@ Estabelecemos a seguinte escala para classificar os níveis de questões de usab
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 08|CTU-001: Restições |01| Não houve restrições ou impedimentos de acesso nem acesso a outros perfis de usuário |Exito|
+|Usuário 08|CTU-001: Restrições |01| Não houve restrições ou impedimentos de acesso nem acesso a outros perfis de usuário |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
-|Usuário 09|CTU-001: Acesso aos dados |01| Os dados do usuário corresponde de forma correta sem erros e alteração|Exito|
+|Usuário 09|CTU-001: Acesso aos dados |01| Os dados do usuário corresponde de forma correta sem erros e alterações |Exito|
 
 |Usuários|Caso de Teste de Usuário |Nota de Usuário |Comentários e observações|Exito ou Falha|
 |:---:|:---:|:---:|:---:|:---:|
