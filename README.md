@@ -4,7 +4,7 @@
 `PROJETO: DESENVOLVIMENTO DE APLICAÇÃO WEB`
 `TURMA 4|EIXO 2|2023.2`
 
-`Este trabalho procura resolver o problema da dificuldade de organização e gestão de conteúdo para estudantes através de um site que automatize e simplifique esses processos.`
+`Este trabalho tem como objetivo resolver o problema da dificuldade de organizar a rotina e gerenciar o tempo de de estudos.`
 
 ## Integrantes
 
@@ -20,13 +20,9 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+A aplicação está disponível para acesso no link: https://studysetapp.azurewebsites.net/
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+O usuário deve fazer um cadastro para testar a aplicação. Após inserir os dados principais e realizar o cadastro, deve preencher na página "Meu Perfil" seu tempo disponível para estudo e sua meta de estudo, em horas. Por fim, pode utilizar as demais funcionalidades do site.
 
 # Documentação
 
@@ -48,10 +44,10 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src/mvc/studyset/studyset"> Código Fonte</a></li>
 
 # Apresentação
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-studyset/assets/129805332/c075c99e-18d8-4972-8a14-fb2a6a11eeed
+<li><a href="presentation/studysetVideo.mp4">Vídeo do projeto</a></li>
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="presentation/studysetPDF.pdf">Apresentação da solução</a></li>
